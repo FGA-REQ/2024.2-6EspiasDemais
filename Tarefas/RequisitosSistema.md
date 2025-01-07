@@ -8,7 +8,7 @@
 5. Gabriel Henrique Rodrigues de Lima - 221022284
 6. Ruan Sobreira Carvalho - 211043763
 
-## Regras de Negócio do Banco de Dados
+## Requisitos do Sistema
 
 ### Categorias
 1. Cada categoria deve possuir um nome único e descritivo.
