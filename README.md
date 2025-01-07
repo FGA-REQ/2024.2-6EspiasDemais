@@ -17,7 +17,7 @@
  <img src="https://avatars.githubusercontent.com/u/110188236?v=4" width="100" />
  <img src="https://avatars.githubusercontent.com/u/129335105?v=4" width="100"/>
  <img src="https://avatars.githubusercontent.com/u/110177629?v=4" width="100"/>
- <img src="" width="100"/>
- <img src="" width="100"/>
+ <img src="https://avatars.githubusercontent.com/u/90479596?v=4" width="100"/>
+ <img src="https://avatars.githubusercontent.com/u/164399093?v=4" width="100"/>
  
 </div>
