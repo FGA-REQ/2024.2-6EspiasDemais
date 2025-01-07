@@ -53,7 +53,7 @@ Organize as tarefas em categorias para facilitar o acompanhamento. Exemplos de c
 </div> 
 <!-- Foto dos participantes do grupo -->
 <div align="center"> 
- <img src="https://avatars.githubusercontent.com/u/119907827?v=4" width="100"/>
+ <img src="https://avatars.githubusercontent.com/u/176343509?v=4" width="100"/>
  <img src="https://avatars.githubusercontent.com/u/110188236?v=4" width="100" />
  <img src="https://avatars.githubusercontent.com/u/129335105?v=4" width="100"/>
  <img src="https://avatars.githubusercontent.com/u/110177629?v=4" width="100"/>
