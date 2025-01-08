@@ -49,10 +49,6 @@ Os tipos de commit utilizados no projeto são:
 
 As branches secundárias são criadas conforme a necessidade e removidas após o merge ou conclusão da tarefa.
 
-### Padrão de branches
-
-Durante a criação das branches secundarias, será utilizado 
-
 ## Bibliografia
 
 > https://www.conventionalcommits.org/en/v1.0.0/#specification. Acesso em: 07/01/2025.

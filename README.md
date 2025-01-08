@@ -1,21 +1,25 @@
-# template-repository
+# ConectaCiência
 
-Template de Repositório para a matéria de Requisitos de Software coordenado pela Professora Cristiane Ramos.
+## Introdução
 
-## Especificações Técnicas do Repositório
+Nosso grupo faz parte da disciplina de Requisitos de Software, ministrada pela professora Cristiane Ramos. Este repositório foi criado com o propósito de documentar e reunir todo o trabalho desenvolvido ao longo do curso.
 
-Este repositório é planejado e estruturado para que seja realizado documentações de software. Caso haja outra necessidades, deve-se consultar a professora.
+Como parte da disciplina, estamos trabalhando no desenvolvimento do ConectaCiência. Um sistema projetado para conectar pessoas interessadas em divulgar conhecimento científico, promovendo a colaboração e a disseminação de informações na área da ciência.
 
-Atualmente se usa a ferramenta MkDocs para gerar sua documentação baseado nos seus arquivos markdowns, vocês podem achar mais instruções sobre o MkDocs através do link da documentação da ferramenta: [https://www.mkdocs.org/](https://www.mkdocs.org/).
+## Colaboradores
 
-Também é usado uma "sub-ferramenta" do MkDocs para sua estilização, o Material Theme, que pode ser consultado através do link: [https://squidfunk.github.io/mkdocs-material/](https://squidfunk.github.io/mkdocs-material/).
+<font size="3"><p style="text-align: left">**Tabela 1** - Colaboradores.</p></font>
 
-Este repositório também conta com uma pipeline de automatização de deploy do seu conteúdo MkDocs, para que a cada commit feito na main, a pipeline gere uma versão atualizada da sua documentação em minutos. Vale ressaltar que é importante realizar uma configuração para que tudo funcione da forma correta, as instruções são as seguintes:
+| <img src="https://github.com/Jauzimm.png" width="150px" > | <img src="https://github.com/xzxjesse.png" width="150px"> | <img src="https://github.com/GHenriqueLima.png" width="150px"> | <img src="https://github.com/PedroGusta.png" width="150px"> | <img src="https://github.com/Ruan-Carvalho.png" width="150px"> | <img src="https://github.com/carlinn1.png" width="150px"> |
+| :-------------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------------: | :-------------------------------------------------------------: | :------------------------------------------------------------: | :------------------------------------------------------------: |
+|      [João Vitor Santos](https://github.com/Jauzimm)      |       [Jesse Eveline](https://github.com/xzxjesse)        |      [Gabriel Henrique](https://github.com/GHenriqueLima)      |       [Pedro Gustavo](https://github.com/PedroGusta)       |       [Ruan Carvalho](https://github.com/Ruan-Carvalho)        |       [Carlos Henrique](https://github.com/carlinn1)        |
 
-* Acesse as configurações do repositório;
-* Procure a aba de "Pages"
-* Em "Source" escolha a opção "Deploy from a branch";
-* Em "Branch" escolha "gh-pages";
-* Clique em salvar e pronto;
+Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 
-Após essas etapas de configuração, o seu GitPages deve funcionar normalmente.
+## Histórico de Versões
+
+<font size="3"><p style="text-align: left">**Tabela 2** - Histórico de versões.</p></font>
+
+| Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
+| :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
+|  1.0   | Versão inicial da descrição do projeto | [João Vitor](https://github.com/Jauzimm) | 07/01/2025 |  |  |
