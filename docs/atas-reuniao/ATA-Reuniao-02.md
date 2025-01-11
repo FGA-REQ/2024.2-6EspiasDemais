@@ -71,6 +71,7 @@ Autor: (Carlos Henrique de Souza Bispo)
 * **Organização do Repositório** 
 
 * Responsável: Gabriel.
+
 • Estrutura das branches:
 
 • Main: Receberá somente código finalizado e aprovado.
@@ -86,42 +87,63 @@ Autor: (Carlos Henrique de Souza Bispo)
 * **2. Atualização da Visão do Produto e Projeto** 
 
 * Responsável: Pedro.
+
 • Tarefas:
+
 • Revisar as regras de negócio e requisitos mencionados pela professora.
-• Atualizar o documento de visão, destacando:
+
+• Atualizar o documento de visão, destacando.
+
 • Diferenciais do site.
+
 • Pontos positivos e negativos de concorrentes.
+
 • Motivos que tornam o projeto uma escolha atrativa para os usuários.
 
 * **3. Desenvolvimento do Backlog e Definição do MVP** 
 
 • Responsáveis: João.
+
 • Tarefas:
+
 • Estruturar o backlog no formato SAF (user stories).
+
 • Propor a estrutura de MVP para validação e discussão com a equipe.
 
 * **4. Modelagem de Processos de Desenvolvimento** 
 
 • Responsáveis: Juan e Carlos.
+
 • Tarefas:
+
 • Definir entradas, saídas e a relação entre atividades do processo.
+
 • Estruturar a modelagem com base no backlog e MVP desenvolvidos.
 
 * **5. Cronograma e Prazos** 
 
 • Prazo para entrega inicial: 13 de janeiro de 2025, até o meio-dia.
+
 • Entrega com documentação atualizada e código no GitHub Pages.
+
 • Melhorias e finalização: 15 de janeiro de 2025.
+
 • Ajustes e refinamentos com base em feedback e revisão interna.
 
 * **6. Padronização e Deploy no GitHub Pages**
 
 • Processo de Merge:
+
 • Branches específicas devem ser revisadas e integradas em Develop/Docs.
+
 • Após testes e validações, será feita a integração final para Main.
+
 • Discussões e Alinhamentos Adicionais
+
 • A equipe destacou a importância de evitar alterações simultâneas em Develop para evitar conflitos.
+
 • Foi recomendado utilizar nomes de branches em inglês para manter consistência.
+
 • A documentação será incluída no deploy junto com o código.
 
 
