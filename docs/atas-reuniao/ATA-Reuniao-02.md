@@ -86,7 +86,7 @@ Autor: (Carlos Henrique de Souza Bispo)
 
 * **2. Atualização da Visão do Produto e Projeto** 
 
-* Responsável: Pedro.
+• Responsável: Pedro.
 
 • Tarefas:
 
