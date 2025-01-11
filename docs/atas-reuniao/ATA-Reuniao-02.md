@@ -11,9 +11,10 @@
 
 **Tabela 1:** Cabeçalho com datas, horarios e realizadores.
 
-| Data |      Hora de Início Previsto   | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local       | Redator | Projeto | Revisor |
-|------------|--------------------------|--------------------------|--------------------------|---------------------------|-------------|-----------------------------|
-| 10/01/2025 | 13:00                    | 13:00                    | 13:29                    |     13:29                 | Remoto Teams| Carlos  |         | Carlos  |
+| Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local        | Redator | Projeto | Revisor |
+|------------|-------------------------|--------------------------|--------------------------|---------------------------|--------------|---------|---------|---------|
+| 10/01/2025 | 13:00                   | 13:00                    | 13:29                    | 13:29                     | Remoto Teams | Carlos  |         | Carlos  |
+
 
 Autor: (Carlos Henrique de Souza Bispo)
 
