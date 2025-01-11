@@ -33,21 +33,42 @@ Os tipos de commit utilizados no projeto são:
 - Inicie a descrição com letra maiúscula e finalize com um ponto final.
 - (Opcional) Detalhe mais a fundo o que foi feito na descrição do commit.
 
-**Exemplo:** git commit -m "docs: Revisão da metodologia."
+**Exemplo:** `git commit -m "docs: Revisão da metodologia."`
 
 ## Branches
 
 ### Branches principais
 
-- **main**:  
-  Contém o código estável, pronto para produção.
+- **main**: Contém o código estável. Somente alterações revisadas e aprovadas que passaram pela develop devem ser mescladas nesta branch. _**Nenhuma alteração deve ser feita diretamente aqui.**_
 
-- **gh-pages**:  
-  Usada para hospedar a versão estática do site ou documentação.
+- **gh-pages**: Utilizada para hospedar a versão estática do site do projeto. Atualizada automaticamente com base nas mudanças na branch **docs**.
 
-### Branches secundárias
+- **docs**: Dedicada à documentação do projeto. Após revisão, todas as atualizações devem ser mescladas nesta branch.
 
-As branches secundárias são criadas conforme a necessidade e removidas após o merge ou conclusão da tarefa.
+- **develop**: Contém o código em desenvolvimento. Todas as branches relacionadas ao desenvolvimento de funcionalidades ou correções de código devem partir desta branch.
+
+### Branches Secundárias
+
+As branches secundárias são criadas temporariamente para atender demandas específicas, como o desenvolvimento de funcionalidades, correção de bugs ou atualização de documentação. Elas devem ser removidas após a conclusão da tarefa e o merge, garantindo a organização do repositório.
+
+#### 1. Desenvolvimento de Código
+
+- **Origem**: Branches de código devem ser criadas a partir da branch **develop**.
+- **Nome**: Devem começar com o prefixo `dev:` seguido de uma descrição clara e objetiva da tarefa.  
+  **Exemplos**:  
+  - `dev:feature-pomodoro`  
+  - `dev:fix-login-bug`
+
+#### 2. Atualização de Documentação
+- **Origem**: Branches relacionadas à documentação devem ser criadas a partir da branch **docs**.
+- **Nome**: Devem começar com o prefixo `doc:` seguido de uma descrição clara da tarefa.  
+  **Exemplos**:  
+  - `doc:update-readme`  
+  - `doc:guide-setup`
+
+### Decisão de Padronização
+
+Durante a reunião da equipe, ficou definido que branches de código devem ser criadas a partir da branch **develop** com o prefixo `dev:`, e branches de documentação devem se basear na branch **docs** com o prefixo `doc:`. Essa padronização ajuda a identificar o propósito de cada branch, mantém o fluxo de trabalho organizado e reduz erros na integração.
 
 ## Bibliografia
 
@@ -60,3 +81,4 @@ As branches secundárias são criadas conforme a necessidade e removidas após o
 | Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1.0 | Criação do documento de padronização de commits e branches | [João Vitor](https://github.com/Jauzimm) | 07/01/2025 |  |  |
+| 1.1 | Alteração e adição de informações em branches | [João Vitor](https://github.com/Jauzimm) | 11/01/2025 |  |  |
