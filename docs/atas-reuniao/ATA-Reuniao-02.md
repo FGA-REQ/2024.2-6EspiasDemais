@@ -70,13 +70,13 @@ Autor: (Carlos Henrique de Souza Bispo)
 
 * **Organização do Repositório** 
 
-  Responsável: Gabriel.
-  Estrutura das branches:
-  Main: Receberá somente código finalizado e aprovado.
-  Develop: Servirá para integração e teste de funcionalidades.
-  Docs: Centralizará a documentação, separada do código principal.
-  Para cada tarefa, será criada uma branch específica ramificada de Develop ou Docs, que será integrada de volta após revisão.
-  Deploy no GitHub Pages integrará as branches Main e Docs.
+* Responsável: Gabriel.
+* Estrutura das branches:
+* Main: Receberá somente código finalizado e aprovado.
+* Develop: Servirá para integração e teste de funcionalidades.
+* Docs: Centralizará a documentação, separada do código principal.
+* Para cada tarefa, será criada uma branch específica ramificada de Develop ou Docs, que será integrada de volta após revisão.
+* Deploy no GitHub Pages integrará as branches Main e Docs.
 
 * **2. Atualização da Visão do Produto e Projeto** 
 
