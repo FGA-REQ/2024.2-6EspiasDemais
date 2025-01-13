@@ -40,7 +40,10 @@ O cenário atual de publicação e gestão de artigos científicos está repleto
   - **Recursos limitados para artigos científicos**: Assim como o Wix, o Blog do Google não oferece uma organização adequada para artigos acadêmicos, além de limitações de personalização para um site específico para a gestão de publicações científicas.
   - **Segurança e controle**: A mesma conta compartilhada por todos pode gerar problemas de segurança e de controle, além de dificultar o processo de rastrear contribuições individuais.
 
+O produto proposto visa resolver essas lacunas, oferecendo uma plataforma específica, segura e eficiente, que atenda às necessidades de publicação acadêmica, promova a organização e fortaleça o processo de colaboração e rastreabilidade
 
+## Espinha de Peixe
+![Espinha de Peixe](fishbone.jpg)
 ## Declaração de Posição do Produto
 ### Produto Proposto
 Uma plataforma digital projetada para simplificar e aprimorar a publicação, organização e compartilhamento de artigos científicos. Desenvolvida especificamente para o meio acadêmico, a solução visa atender às necessidades de alunos, professores e pesquisadores, proporcionando ferramentas personalizadas que promovem colaboração, eficiência e segurança.
@@ -58,11 +61,31 @@ Uma plataforma digital projetada para simplificar e aprimorar a publicação, or
 4. **Facilidade e Acessibilidade**:
    Apesar de ser uma plataforma focada em artigos acadêmicos, o Conecta Ciência terá uma **interface simples e intuitiva**, acessível tanto para novatos quanto para usuários mais experientes, ao contrário de algumas plataformas que exigem níveis mais altos de aprendizado.
 
-
 ### Usuários-Alvo e Clientes
 - **Alunos:** Facilitando a divulgação de suas produções acadêmicas.
 - **Professores:** Oferecendo uma ferramenta centralizada para compartilhar pesquisas e incentivar a produção acadêmica.
 - **Pesquisadores:** Proporcionando uma plataforma para disseminar resultados de estudos e colaborar com outros acadêmicos.
+
+### Razões para Ultilizar o Produto:
+1. Facilidade e Eficiência:
+* Elimina as complexidades de plataformas não especializadas, otimizando tempo e esforço.
+2. Segurança e Privacidade:
+- Controle total sobre contas e acesso, com rastreabilidade de postagens e alterações.
+3. Profissionalismo e Credibilidade:
+- Oferece um espaço moderno e eficiente, que reflete a qualidade acadêmica dos usuários e aumenta sua visibilidade. 
+
+Essa solução se posiciona como um marco no ambiente acadêmico, promovendo eficiência, organização e excelência na publicação e gestão de artigos científicos
+Desenvolvida sob medida, a plataforma reflete um compromisso com a qualidade e atende de forma precisa às necessidades do público-alvo.
+
+
+| **Elemento**      | **Descrição**                                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Para**          | Os principais usuários e clientes do produto são alunos, professores e pesquisadores da Universidade de Brasília (UnB), que buscam uma solução prática e eficiente para publicar, organizar e acessar artigos científicos. O produto é escalável, com potencial para atender outros públicos além dos previstos inicialmente. |
+| **Quem**          | Necessitam de uma plataforma prática, segura e eficiente para publicar, organizar e acessar artigos científicos.                                      |
+| **O Conecta Ciência** | É uma plataforma de publicação e gestão de artigos científicos.                                                                                      |
+| **Que**           | Simplifica a divulgação de produções acadêmicas, promove a colaboração entre os usuários e melhora a visibilidade dos trabalhos publicados.           |
+| **Ao contrário**  | De plataformas genéricas, como o Wix, que são limitadas e pouco adaptadas às necessidades acadêmicas.                                                 |
+| **Nosso produto** | Oferece uma solução personalizada, intuitiva, com funcionalidades específicas para o meio acadêmico, como filtros específicos, múltiplos autores e interatividade. |
 
 ## Motivação do Projeto
 A motivação para o desenvolvimento do **Conecta Ciência** surgiu da necessidade observada pelos alunos durante o uso de plataformas genéricas como o Wix. A experiência frustrante de publicar de forma colaborativa, com falta de controle e a dificuldade em organizar e acessar artigos, destacou a oportunidade de criar uma solução específica para o problema identificado no meio acadêmico. Acreditamos que o **Conecta Ciência** poderá resolver esses problemas de forma eficiente, promovendo uma maior colaboração acadêmica, com **ferramentas de publicação mais seguras, eficientes e focadas no que o ambiente acadêmico realmente precisa**.
@@ -77,3 +100,4 @@ Desenvolver uma plataforma interativa e acessível que funcione como um espaço 
 - **Aumentar a Visibilidade das Produções Científicas:** Oferecer aos autores a possibilidade de divulgar seus trabalhos amplamente.
 - **Garantir Segurança e Organização:** Implementar sistemas de controle de acesso e rastreabilidade de postagens.
 - **Criar um Ambiente de Aprendizado Interativo:** Estabelecer um espaço digital que incentive debates e colaboração contínua.
+
