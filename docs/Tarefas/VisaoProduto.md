@@ -47,16 +47,16 @@ Uma plataforma digital projetada para simplificar e aprimorar a publicação, or
 
 ### Diferenciais do Produto
 1. **Foco Exclusivo no Acadêmico**:
-   Diferentemente do Wix, LinkedIn, Medium e Google Blog, que são plataformas genéricas, a Conecta Ciência é criada sob medida para o meio acadêmico**, com todas as funcionalidades que facilitam a organização e o compartilhamento de artigos científicos.
+   Diferentemente do Wix, LinkedIn, Medium e Google Blog, que são plataformas genéricas, **o Conecta Ciência é criada sob medida para o meio acadêmico**, com todas as funcionalidades que facilitam a organização e o compartilhamento de artigos científicos.
 
 2. **Segurança e Controle de Acesso**:
-   Cada usuário terá uma conta individual e permissões personalizadas, garantindo que as postagens possam ser rastreadas, e que o ambiente seja seguro e organizado. Diferente do Wix, onde as postagens são feitas por múltiplos usuários com uma única conta, a Conecta Ciência evita os problemas de falta de rastreabilidade e confusão organizacional.
+   Cada usuário terá uma **conta individual e permissões personalizadas**, garantindo que as postagens possam ser rastreadas, e que o ambiente seja seguro e organizado. Diferente do Wix, onde as postagens são feitas por múltiplos usuários com uma única conta, a Conecta Ciência evita os problemas de falta de rastreabilidade e confusão organizacional.
 
 3. **Ferramentas de Categorização e Busca Avançada**:
-   A plataforma oferece ferramentas adequadas para a categorização eficiente de artigos, com sistemas de tags e filtros avançados, otimizando a experiência do usuário e tornando a busca por artigos muito mais eficiente que em plataformas como o Medium e LinkedIn, onde essas funções são bastante limitadas.
+   A plataforma oferece ferramentas adequadas para a **categorização eficiente de artigos**, com sistemas de tags e filtros avançados, otimizando a experiência do usuário e tornando a busca por artigos muito mais eficiente que em plataformas como o Medium e LinkedIn, onde essas funções são bastante limitadas.
 
 4. **Facilidade e Acessibilidade**:
-   Apesar de ser uma plataforma focada em artigos acadêmicos, a **Conecta Ciência** terá uma interface simples e intuitiva, acessível tanto para novatos quanto para usuários mais experientes, ao contrário de algumas plataformas que exigem níveis mais altos de aprendizado.
+   Apesar de ser uma plataforma focada em artigos acadêmicos, o Conecta Ciência terá uma **interface simples e intuitiva**, acessível tanto para novatos quanto para usuários mais experientes, ao contrário de algumas plataformas que exigem níveis mais altos de aprendizado.
 
 
 ### Usuários-Alvo e Clientes
@@ -65,7 +65,7 @@ Uma plataforma digital projetada para simplificar e aprimorar a publicação, or
 - **Pesquisadores:** Proporcionando uma plataforma para disseminar resultados de estudos e colaborar com outros acadêmicos.
 
 ## Motivação do Projeto
-A motivação para o desenvolvimento da **Conecta Ciência** surgiu da necessidade observada pelos alunos durante o uso de plataformas genéricas como o Wix. A experiência frustrante de publicar de forma colaborativa, com falta de controle e a dificuldade em organizar e acessar artigos, destacou a oportunidade de criar uma solução específica para o problema identificado no meio acadêmico. Acreditamos que a **Conecta Ciência** poderá resolver esses problemas de forma eficiente, promovendo uma maior colaboração acadêmica, com ferramentas de publicação mais **seguras, eficientes e focadas no que o ambiente acadêmico realmente precisa.
+A motivação para o desenvolvimento do **Conecta Ciência** surgiu da necessidade observada pelos alunos durante o uso de plataformas genéricas como o Wix. A experiência frustrante de publicar de forma colaborativa, com falta de controle e a dificuldade em organizar e acessar artigos, destacou a oportunidade de criar uma solução específica para o problema identificado no meio acadêmico. Acreditamos que o **Conecta Ciência** poderá resolver esses problemas de forma eficiente, promovendo uma maior colaboração acadêmica, com **ferramentas de publicação mais seguras, eficientes e focadas no que o ambiente acadêmico realmente precisa**.
 
 ## Objetivos do Produto
 ### Objetivo Principal
