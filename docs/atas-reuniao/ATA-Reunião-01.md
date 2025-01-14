@@ -7,13 +7,13 @@
 * Término: 20:30
 * Local: Google Meet
 * Redator: [Ruan Carvalho](https://github.com/Ruan-Carvalho)
-* Revisor: [Jéssica Eveline] (https://github.com/xzxjesse)
+* Revisor: [Jéssica Eveline](https://github.com/xzxjesse)
 
 <font size="3"><p style="text-align: left">**Tabela 1** - Cabeçalho com datas, horários e realizadores.</p></font>
 
 | Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local       | Redator     | Revisor |
 |------------|--------------------------|--------------------------|--------------------------|---------------------------|-------------|-------------|--------|
-| 06/01/2025 | 20:00                    | 20:16                    | 20:30                    | 20:30                     | Google Meet | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | [Jéssica Eveline] (https://github.com/xzxjesse) |
+| 06/01/2025 | 20:00                    | 20:16                    | 20:30                    | 20:30                     | Google Meet | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | [Jéssica Eveline](https://github.com/xzxjesse) |
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
@@ -83,4 +83,4 @@ Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
-|  1.0   | Versão inicial da ata | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 09/01/2025 | [Jéssica Eveline] (https://github.com/xzxjesse) |     14/01/2025 |
+|  1.0   | Versão inicial da ata | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 09/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) |     14/01/2025 |
