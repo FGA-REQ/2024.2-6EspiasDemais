@@ -5,14 +5,14 @@
 * Data: 10 de janeiro de 2025
 * Início: 13:00
 * Término: 13:29
-* Local: Remoto Teams
+* Local: Google Meets
 * Redator: [Carlos Henrique](https://github.com/carlinn1)
 * Revisor: [Jéssica Eveline](https://github.com/xzxjesse)
 
 **Tabela 1:** Cabeçalho com datas, horarios e realizadores.
 
 | Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local        | Redator | Revisor |
-|------------|-------------------------|--------------------------|--------------------------|---------------------------|--------------|---------|---------|---------|
+|------------|-------------------------|--------------------------|--------------------------|---------------------------|--------------|---------|---------|
 | 10/01/2025 | 13:00                   | 13:00                    | 13:29                    | 13:29                     | Remoto Teams | [Carlos Henrique](https://github.com/carlinn1) | [Jéssica Eveline](https://github.com/xzxjesse)|
 
 
