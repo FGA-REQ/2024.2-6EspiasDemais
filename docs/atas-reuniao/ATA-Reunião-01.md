@@ -7,13 +7,13 @@
 * Término: 20:30
 * Local: Google Meet
 * Redator: [Ruan Carvalho](https://github.com/Ruan-Carvalho)
-* Revisor: 
+* Revisor: [Jéssica Eveline] (https://github.com/xzxjesse)
 
-<font size="3"><p style="text-align: left">**Tabela 1** - Cabeçalho com datas, horarios e realizadores.</p></font>
+<font size="3"><p style="text-align: left">**Tabela 1** - Cabeçalho com datas, horários e realizadores.</p></font>
 
 | Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local       | Redator     | Revisor |
 |------------|--------------------------|--------------------------|--------------------------|---------------------------|-------------|-------------|--------|
-| 06/01/2025 | 20:00                    | 20:16                    | 20:30                    | 20:30                     | Google Meet | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 
+| 06/01/2025 | 20:00                    | 20:16                    | 20:30                    | 20:30                     | Google Meet | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | [Jéssica Eveline] (https://github.com/xzxjesse) |
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
@@ -55,13 +55,13 @@ Nenhum pedência anterior.
 | 4  | Elaboração do cronograma - Revisão | Pendência |
 | 6  | Definição do projeto | Decisão |
 | 5  | Definição da proxima reunião | Decisão |
-| 7  | Definição dos horarios e dias para reunião | Pendência |
+| 7  | Definição dos horários e dias para reunião | Pendência |
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
 ## 5. Próxima Reunião
 
-Proxima reunião será na sexta as 13 horas, dia 10/01/2025. Sendo realizada no Google Meet. 
+Próxima reunião será na sexta-feira às 13:00, dia 10/01/2025. Sendo realizada no Google Meet. 
 
 ## 6. Compromissos
 
@@ -72,7 +72,7 @@ Proxima reunião será na sexta as 13 horas, dia 10/01/2025. Sendo realizada no 
 | 1  | Fazer a ata da reunião | Ruan Carvalho | 09/01 |
 | 2  | Organizar o repositório | João Vitor | 09/01 |
 | 3  | Estruturar arquivos | Carlos | 09/01 |
-| 4  | Revisão geral | pedro | 09/01 |
+| 4  | Revisão geral | Pedro | 09/01 |
 | 5  | Fazer o merge com a main | Gabriel | 10/01 |
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
@@ -83,4 +83,4 @@ Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
-|  1.0   | Versão inicial da ata | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 09/01/2025 |  |      |
+|  1.0   | Versão inicial da ata | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 09/01/2025 | [Jéssica Eveline] (https://github.com/xzxjesse) |     14/01/2025 |
