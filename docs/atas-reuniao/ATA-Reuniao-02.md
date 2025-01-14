@@ -6,17 +6,17 @@
 * Início: 13:00
 * Término: 13:29
 * Local: Remoto Teams
-* Redator: Carlos Henrique
-* Revisor: Carlos Henrique
+* Redator: [Carlos Henrique](https://github.com/carlinn1)
+* Revisor: [Jéssica Eveline](https://github.com/xzxjesse)
 
 **Tabela 1:** Cabeçalho com datas, horarios e realizadores.
 
-| Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local        | Redator | Projeto | Revisor |
+| Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local        | Redator | Revisor |
 |------------|-------------------------|--------------------------|--------------------------|---------------------------|--------------|---------|---------|---------|
-| 10/01/2025 | 13:00                   | 13:00                    | 13:29                    | 13:29                     | Remoto Teams | Carlos  |         | Carlos  |
+| 10/01/2025 | 13:00                   | 13:00                    | 13:29                    | 13:29                     | Remoto Teams | [Carlos Henrique](https://github.com/carlinn1) | [Jéssica Eveline](https://github.com/xzxjesse)|
 
 
-Autor: (Carlos Henrique de Souza Bispo)
+Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 ### Participantes: 
 
@@ -34,11 +34,11 @@ Autor: (Carlos Henrique de Souza Bispo)
 | [Ruan Carvalho](https://github.com/Ruan-Carvalho) |Prensente |
 | [Gabriel Henrique](https://github.com/gabrielhrlima) |Prensente |
 
-Autor: (Carlos Henrique de Souza Bispo)
+Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 Link da gravação: https://www.youtube.com/watch?v=0uRRmm1IS5I
 
-Autor: (João Vitor)
+Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 ## 2. Pauta
 
@@ -65,7 +65,7 @@ Autor: (João Vitor)
 | 06  | Padronização e Deploy no GitHub Pages       | Técnico                         |
 | 07  | Discussões e Alinhamentos Adicionais        | Geral                           |
 
-Autor: (Carlos Henrique de Souza Bispo)
+Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 ##  **Decisão e Apresentação:** 
 
@@ -103,7 +103,7 @@ Autor: (Carlos Henrique de Souza Bispo)
 
 * **3. Desenvolvimento do Backlog e Definição do MVP** 
 
-• Responsáveis: João.
+• Responsáveis: João e Jéssica.
 
 • Tarefas:
 
@@ -113,7 +113,7 @@ Autor: (Carlos Henrique de Souza Bispo)
 
 * **4. Modelagem de Processos de Desenvolvimento** 
 
-• Responsáveis: Juan e Carlos.
+• Responsáveis: Ruan e Carlos.
 
 • Tarefas:
 
@@ -137,22 +137,22 @@ Autor: (Carlos Henrique de Souza Bispo)
 
 • Branches específicas devem ser revisadas e integradas em Develop/Docs.
 
-• Após testes e validações, será feita a integração final para Main.
+• Após testes e validações, será feita a integração final da Develop para Main.
 
 • Discussões e Alinhamentos Adicionais
 
-• A equipe destacou a importância de evitar alterações simultâneas em Develop para evitar conflitos.
+• A equipe destacou a importância de evitar alterações simultâneas na Main para evitar conflitos.
 
-• Foi recomendado utilizar nomes de branches em inglês para manter consistência.
+• Foi recomendado utilizar nomes de branches padronizados para manter consistência.
 
-• A documentação será incluída no deploy junto com o código.
+• A documentação será incluída no deploy junto para o pages.
 
 
 * **Definição:** Todas definições resolvidas.
 
 * **Solicitação:** Todas solicitações resolvidas.
 
-* **Pendência:** Todas Pendências e dúvidas resolvidas.
+* **Pendência:** Todas as dúvidas resolvidas.
 
 
 ## 5. Próxima Reunião
@@ -169,7 +169,7 @@ Autor: (Carlos Henrique de Souza Bispo)
 |----|-----------------------------------------------|---------------|------------|
 | 01 | Organização do Repositório                    | Gabriel       | 15/01/2025 |
 | 02 | Atualização da Visão do Produto e Projeto     | Pedro         | 15/01/2025 |
-| 03 | Desenvolvimento do Backlog e Definição do MVP | João          | 15/01/2025 |
+| 03 | Desenvolvimento do Backlog e Definição do MVP | João e Jéssica         | 15/01/2025 |
 | 04 | Modelagem de Processos de Desenvolvimento     | Carlos e Juan | 15/01/2025 |
 
 Autor: (Carlos Henrique de Souza Bispo)
@@ -182,14 +182,14 @@ Autor: (Carlos Henrique de Souza Bispo)
 
 * Versão: 1.1.
 * Descrição: Evitar alterações simultâneas em Develop para prevenir conflitos e dividir as tarefas a serem feitas para realização da entrega.
-* Autor: Carlos Henrique de Souza Bispo.
+* Autor: [Carlos Henrique](https://github.com/carlinn1)
 * Data: 11/01/2025.
-* Revisor: Carlos Henrique de Souza Bispo.
-* Data de revisão: 11/01/2025.
+* Revisor: [Jéssica Eveline](https://github.com/xzxjesse)
+* Data de revisão: 14/01/2025.
 
 | Versão |               Descrição                |   Autor                                        |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------------------------------------------: | :--------: | :------------: | :-------------: |
-| 1.1 | Versão Ata reunião 02                     | [Carlos Henrique](https://github.com/carlinn1) | 11/01/2025 |  Carlos        |  11/01/2025     |
+| 1.1 | Versão Ata reunião 02                     | [Carlos Henrique](https://github.com/carlinn1) | 11/01/2025 |  [Jéssica Eveline](https://github.com/xzxjesse)        |  14/01/2025     |
 
 ## Histórico de Versões
 
@@ -197,5 +197,4 @@ Autor: (Carlos Henrique de Souza Bispo)
 
 | Versão |               Descrição                |   Autor                                        |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------------------------------------------: | :--------: | :------------: | :-------------: |
-| 1.0 | Versão inicial da ata padrão              | [João Vitor](https://github.com/Jauzimm)       | 11/01/2025 |  João Vitor    |  11/01/2025     |
-| 1.1 | Versão Ata reunião 02                     | [Carlos Henrique](https://github.com/carlinn1) | 11/01/2025 |  Carlos        |  11/01/2025     |
+| 1.0 | Ata reunião 02                     | [Carlos Henrique](https://github.com/carlinn1) | 11/01/2025 |  [Jéssica Eveline](https://github.com/xzxjesse)        |  14/01/2025     |
