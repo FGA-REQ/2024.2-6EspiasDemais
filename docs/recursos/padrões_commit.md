@@ -80,5 +80,5 @@ Durante a reunião da equipe, ficou definido que branches de código devem ser c
 
 | Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1.0 | Criação do documento de padronização de commits e branches | [João Vitor](https://github.com/Jauzimm) | 07/01/2025 |  |  |
-| 1.1 | Alteração e adição de informações em branches | [João Vitor](https://github.com/Jauzimm) | 11/01/2025 |  |  |
+| 1.0 | Criação do documento de padronização de commits e branches | [João Vitor](https://github.com/Jauzimm) | 07/01/2025 | [Gabriel Henrique](https://github.com/gabrielhrlima)  | 15/01/2025 |
+| 1.1 | Alteração e adição de informações em branches | [João Vitor](https://github.com/Jauzimm) | 11/01/2025 |[Gabriel Henrique](https://github.com/gabrielhrlima)   | 15/01/2025 |
