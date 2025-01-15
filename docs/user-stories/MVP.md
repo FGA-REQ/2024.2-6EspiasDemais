@@ -117,6 +117,6 @@ As histórias escolhidas estão detalhadas abaixo, com links para suas respectiv
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
-|  1.0   | Versão inicial do MVP | [João Vitor](https://github.com/Jauzimm) | 15/01/2025 |  |  |
+|  1.0   | Versão inicial do MVP | [João Vitor](https://github.com/Jauzimm) | 15/01/2025 | [Gabriel Henrique](https://github.com/gabrielhrlima)  | 15/01/2025 |
 
 
