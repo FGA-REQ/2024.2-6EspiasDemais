@@ -43,7 +43,7 @@ O cenário atual de publicação e gestão de artigos científicos está repleto
 O produto proposto visa resolver essas lacunas, oferecendo uma plataforma específica, segura e eficiente, que atenda às necessidades de publicação acadêmica, promova a organização e fortaleça o processo de colaboração e rastreabilidade
 
 ## Espinha de Peixe
-![Espinha de Peixe](fishbone.jpg)
+![Espinha de Peixe](Img\fishbone.jpg)
 ## Declaração de Posição do Produto
 ### Produto Proposto
 Uma plataforma digital projetada para simplificar e aprimorar a publicação, organização e compartilhamento de artigos científicos. Desenvolvida especificamente para o meio acadêmico, a solução visa atender às necessidades de alunos, professores e pesquisadores, proporcionando ferramentas personalizadas que promovem colaboração, eficiência e segurança.
