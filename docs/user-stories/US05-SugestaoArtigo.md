@@ -18,4 +18,4 @@ Eu, como usuário, quero poder enviar sugestões de artigos para publicação.
    - Se os dados forem enviados com sucesso, deve exibir uma mensagem de confirmação: "Sua sugestão de artigo foi enviada com sucesso!"
    - Em caso de erro, deve exibir uma mensagem clara com o motivo do erro.
 5. O layout do formulário deve ser responsivo, garantindo boa visualização em dispositivos móveis e desktops.
-6. O formulário deve estar acessível na página **Formularios.aspx**.
+6. O formulário deve estar acessível na página formularios.

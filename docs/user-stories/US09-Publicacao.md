@@ -6,7 +6,7 @@ Eu, como usuário logado, quero poder publicar artigos para compartilhar conteú
 ---
 
 ## Critérios de Aceite:
-1. A funcionalidade de publicação deve estar disponível na página **Publicar.aspx** e ser acessível apenas para usuários logados.
+1. A funcionalidade de publicação deve estar disponível na página publicar e ser acessível apenas para usuários logados.
 2. O formulário de publicação deve conter os seguintes campos obrigatórios:
    - **Título**: Campo de texto para o título do artigo.
    - **Conteúdo**: Campo de texto ou editor para o corpo do artigo.

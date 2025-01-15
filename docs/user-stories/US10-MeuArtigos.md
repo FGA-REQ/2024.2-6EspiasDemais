@@ -14,6 +14,6 @@ Eu, como usuário logado, quero acessar a página com os artigos publicados por 
    - **Categoria**.
    - **Botão de editar** (para modificar o artigo).
    - **Botão de excluir** (para remover o artigo).
-4. Deve haver um botão ou link para **Criar Novo Artigo**, que redirecione o usuário para a página **Publicar.aspx**.
+4. Deve haver um botão ou link para **Criar Novo Artigo**, que redirecione o usuário para a página publicar.
 5. A página deve ser responsiva, garantindo boa visualização em dispositivos móveis e desktops.
 6. Caso o usuário não tenha publicado nenhum artigo, a página deve exibir a mensagem: "Você ainda não publicou nenhum artigo."

@@ -6,7 +6,7 @@ Eu, como usuário, quero poder me cadastrar para publicar artigos no site.
 ---
 
 ## Critérios de Aceite:
-1. O formulário de cadastro deve estar disponível na página **Cadastro.aspx**.
+1. O formulário de cadastro deve estar disponível na página cadastro.
 2. O formulário deve conter os seguintes campos obrigatórios:
    - **Nome**: Campo de texto para o nome do usuário.
    - **E-mail**: Campo de texto para o e-mail do usuário.

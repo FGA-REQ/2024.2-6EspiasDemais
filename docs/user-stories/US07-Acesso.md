@@ -6,7 +6,7 @@ Eu, como usuário, quero poder fazer login para publicar artigos no site.
 ---
 
 ## Critérios de Aceite:
-1. O formulário de login deve estar disponível na página **Acesso.aspx**.
+1. O formulário de login deve estar disponível na página acesso.
 2. O formulário deve conter os seguintes campos obrigatórios:
    - **E-mail**: Campo de texto para o e-mail do usuário.
    - **Senha**: Campo de texto para a senha do usuário.

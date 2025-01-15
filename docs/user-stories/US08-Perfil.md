@@ -6,7 +6,7 @@ Eu, como usuário logado, quero acessar uma tela com meu perfil para visualizar 
 ---
 
 ## Critérios de Aceite:
-1. A tela de perfil deve estar disponível na página **Perfil.aspx** e ser acessível apenas para usuários logados.
+1. A tela de perfil deve estar disponível na página perfil e ser acessível apenas para usuários logados.
 2. A tela deve exibir as seguintes informações do usuário logado:
    - Nome.
    - E-mail.
