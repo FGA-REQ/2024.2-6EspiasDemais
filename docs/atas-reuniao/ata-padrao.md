@@ -121,4 +121,4 @@ Autor: (Coloque aqui o nome de quem preencheu a tabela acima)
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
-| 1.0 | Versão inicial da ata padrão | [João Vitor](https://github.com/Jauzimm) | 11/01/2025 |  |  |
+| 1.0 | Versão inicial da ata padrão | [João Vitor](https://github.com/Jauzimm) | 11/01/2025 | [Jesse Eveline](https://github.com/xzxjesse) | 15/01/2025 |
