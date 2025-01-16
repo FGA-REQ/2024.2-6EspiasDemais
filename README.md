@@ -22,4 +22,4 @@ Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
-|  1.0   | Versão inicial da descrição do projeto | [João Vitor](https://github.com/Jauzimm) | 07/01/2025 |  |  |
+|  1.0   | Versão inicial da descrição do projeto | [João Vitor](https://github.com/Jauzimm) | 07/01/2025 | [Jesse Eveline](https://github.com/xzxjesse)  | 15/01/2025 |
