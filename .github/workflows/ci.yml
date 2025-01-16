@@ -21,12 +21,5 @@ jobs:
 
       - name: Checkout Docs branch
         uses: actions/checkout@v3
-        with:
-          ref: Docs
-          path: docs
-
-      - name: Copy Docs Files to Root
-        run: |
-          cp -r docs/* ./  # Copia o conteúdo da branch Docs para o diretório atual
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
