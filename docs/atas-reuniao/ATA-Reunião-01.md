@@ -32,7 +32,9 @@ Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
-**Link da gravação:** [reunião 1](https://www.youtube.com/watch?v=igaGR_eqLNs)
+**Link da gravação:** 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/igaGR_eqLNs?si=WKUR-WhtZ3w8ZLTr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 2. Pauta
 

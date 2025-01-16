@@ -36,7 +36,9 @@ Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
-Link da gravação: https://www.youtube.com/watch?v=0uRRmm1IS5I
+**Link da gravação:** 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0uRRmm1IS5I?si=d_mmSK7Umt0Wz0AD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 

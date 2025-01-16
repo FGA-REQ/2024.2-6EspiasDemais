@@ -1,12 +1,50 @@
-site_name: Documentação
+site_name: ConectaCiência
 
 nav:
-  - Instruções mkdocs: "README.md"
+  - Introdução: "index.md"
   - Atas de Reunião:
-    - Ata 1: "docs/atas-reuniao/ata-reuniao-1.md"
-    - Ata 2: "docs/atas-reuniao/ATA-reuniao-01.md"
+    - Ata: "atas-reuniao/ata-padrao.md"
+    - Ata 1: "atas-reuniao/ATA-Reunião-01.md"
+    - Ata 2: "atas-reuniao/ATA-Reuniao-02.md"
   - Recursos:
-    - Padrões de Commit: "docs/recursos/padrões_commit.md"
+    - Padrões de commit e branch: "recursos/padrões_commit.md"
+    - Ferramentas: "recursos/tecnologias.md"
+
+  - Tarefas: 
+    - Regras de Negócio: "Tarefas/RegrasNegocio.md"
+    - Requisitos do Sistema: "Tarefas/RequisitosSistema.md"
+    - Visão do Produto: "Tarefas/VisaoProduto.md"
+  - User Stories: 
+    - MVP: "user-stories/MVP.md"
+    - US:
+      - US01: "user-stories/US01-Sobre.md"
+      - US02: "user-stories/US02-Feed.md"
+      - US03: "user-stories/US03-Filtros.md"
+      - US04: "user-stories/US04-SugestaoTema.md"
+      - US05: "user-stories/US05-SugestaoArtigo.md"
+      - US06: "user-stories/US06-Cadastro.md"
+      - US07: "user-stories/US07-Acesso.md"
+      - US08: "user-stories/US08-Perfil.md"
+      - US09: "user-stories/US09-Publicacao.md"
+      - US010: "user-stories/US10-MeuArtigos.md"
+      - US011: "user-stories/US11-EditarExcluir.md"
+      - US012: "user-stories/US12-CurtirComentar.md"
+      - US013: "user-stories/US13-PerfilPublico.md"
+      - US014: "user-stories/US14-RecomendacoesFeed.md"
+      - US015: "user-stories/US15-SeguirUsuarios.md"
+      - US016: "user-stories/US16-Notificacoes.md"
 
 theme:
   name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: light
+      toggle:
+        icon: material/weather-night
+        name: Mudar para o modo escuro
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Mudar para o modo claro

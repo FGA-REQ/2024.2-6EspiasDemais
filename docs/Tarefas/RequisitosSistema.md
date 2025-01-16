@@ -1,13 +1,5 @@
 # Regras de Negócio
 
-## Participantes:
-1. Jéssica Eveline Saraiva Araujo - 221022319
-2. Carlos Henrique de Souza Bispo - 211061529
-3. Pedro Gustavo de Souza Santos - 221008605
-4. João Vitor Santos de Oliveira - 221022337
-5. Gabriel Henrique Rodrigues de Lima - 221022284
-6. Ruan Sobreira Carvalho - 211043763
-
 ## Requisitos do Sistema
 
 ### Categorias
