@@ -1,0 +1,6 @@
+@API_ConectaCiencia_HostAddress = http://localhost:5140
+
+GET {{API_ConectaCiencia_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
