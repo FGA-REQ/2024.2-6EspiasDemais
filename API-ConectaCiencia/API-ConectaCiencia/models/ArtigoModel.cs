@@ -9,5 +9,7 @@ namespace API_ConectaCiencia.models
         public string Titulo { get; set; }
         public string Conteudo { get; set; }
         public CategoriaModel Categoria { get; set; }
+        public UsuarioSimplificado Usuario { get; set; }
+
     }
 }
