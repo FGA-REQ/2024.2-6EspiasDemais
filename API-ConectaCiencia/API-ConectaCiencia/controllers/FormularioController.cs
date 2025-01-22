@@ -1,40 +1,40 @@
-﻿using API_ConectaCiencia.models;
+﻿using Microsoft.AspNetCore.Mvc;
+using API_ConectaCiencia.Model;
 using API_ConectaCiencia.repositories;
-using Microsoft.AspNetCore.Mvc;
+using API_ConectaCiencia.Repository;
+using System.Collections.Generic;
+using API_ConectaCiencia.models;
 
 namespace API_ConectaCiencia.controllers
 {
-    public class FormularioController
+    [ApiController]
+    [Route("api/[controller]")]
+    public class FormularioController : ControllerBase
     {
-        [ApiController]
-        [Route("api/[controller]")]
-        public class FormulariosController : ControllerBase
-        {
-            private readonly FormularioRepository _formularioRepository;
+        private readonly FormularioRepository _formularioRepository;
 
-            public FormulariosController(IConfiguration configuration)
+        public FormularioController(IConfiguration configuration)
+        {
+            var connectionString = configuration.GetConnectionString("conexao");
+            _formularioRepository = new FormularioRepository(connectionString);
+        }
+
+        [HttpPost("tema")]
+        public async Task<IActionResult> AdicionarTema([FromBody] FormularioModel.FormularioTema formularioTema)
+        {
+            if (formularioTema == null)
             {
-                var connectionString = configuration.GetConnectionString("conexao");
-                _formularioRepository = new FormularioRepository(connectionString);
+                return BadRequest("Dados do formulário de tema não fornecidos.");
             }
 
-            [HttpPost("tema")]
-            public async Task<IActionResult> AdicionarTema([FromBody] FormularioModel.FormularioTema formularioTema)
+            try
             {
-                if (formularioTema == null)
-                {
-                    return BadRequest("Dados do formulário de tema não fornecidos.");
-                }
-
-                try
-                {
-                    await _formularioRepository.AdicionarTema(formularioTema);
-                    return Ok("Sugestão de tema adicionada com sucesso.");
-                }
-                catch (Exception ex)
-                {
-                    return StatusCode(500, $"Erro ao adicionar a sugestão de tema: {ex.Message}");
-                }
+                await _formularioRepository.AdicionarTema(formularioTema);
+                return Ok("Sugestão de tema adicionada com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao adicionar a sugestão de tema: {ex.Message}");
             }
         }
     }
