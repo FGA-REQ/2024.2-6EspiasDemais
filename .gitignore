@@ -1,0 +1,6 @@
+# Ignorar pastas de build e cache
+obj/
+bin/
+
+# Ignorar configurações sensíveis
+appsettings.json
