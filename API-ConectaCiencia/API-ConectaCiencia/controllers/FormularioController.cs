@@ -37,5 +37,24 @@ namespace API_ConectaCiencia.controllers
                 return StatusCode(500, $"Erro ao adicionar a sugestão de tema: {ex.Message}");
             }
         }
+
+        [HttpPost("artigo")]
+        public async Task<IActionResult> AdicionarArtigo([FromBody] FormularioModel.FormularioArtigo formularioArtigo)
+        {
+            if (formularioArtigo == null)
+            {
+                return BadRequest("Dados do formulário de artigo não fornecidos.");
+            }
+
+            try
+            {
+                await _formularioRepository.AdicionarArtigo(formularioArtigo);
+                return Ok("Sugestão de artigo adicionada com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao adicionar a sugestão de artigo: {ex.Message}");
+            }
+        }
     }
 }
