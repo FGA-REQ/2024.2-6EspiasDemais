@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ProjetoFinal_DotNET.Model
+namespace WebForms_ConectaCiencia.Model
 {
     public class Formularios
     {
