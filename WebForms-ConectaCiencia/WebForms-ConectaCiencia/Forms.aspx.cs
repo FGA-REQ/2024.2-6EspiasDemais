@@ -26,7 +26,7 @@ namespace WebForms_ConectaCiencia
         {
             try
             {
-                string apiUrl = "https://localhost:7259/api/Categoria";
+                string apiUrl = "https://localhost:5140/api/Categoria";
 
                 HttpResponseMessage response = await client.GetAsync(apiUrl);
 
@@ -63,6 +63,72 @@ namespace WebForms_ConectaCiencia
                 ExibirMensagem("alertError", "Erro ao carregar categorias: " + ex.Message);
             }
         }
-    }
 
+        protected async void BtnEnviarArtigo_Click(object sender, EventArgs e)
+        {
+            string nome = txtNomeArtigo.Text.Trim();
+            string email = txtEmailArtigo.Text.Trim();
+            string titulo = txtTituloArtigo.Text.Trim();
+            string conteudo = txtConteudoArtigo.Text.Trim();
+            int idCategoria;
+
+            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(titulo) || string.IsNullOrEmpty(conteudo) || !int.TryParse(ddlCategoriaArtigo.SelectedValue, out idCategoria) || idCategoria == 0)
+            {
+                ExibirMensagem("alertError", "Todos os campos são obrigatórios e uma categoria deve ser selecionada.");
+                return;
+            }
+
+            try
+            {
+                string apiUrl = "https://localhost:5140/api/Formularios/artigo";
+
+                var categoriaSelecionada = new Categoria
+                {
+                    Id_Categoria = idCategoria,
+                    Nome_Categoria = ddlCategoriaArtigo.SelectedItem.Text
+                };
+
+                var formularioArtigo = new FormularioArtigo
+                {
+                    Nome = nome,
+                    Email = email,
+                    Titulo = titulo,
+                    Conteudo = conteudo,
+                    Id_Categoria = idCategoria,
+                    Categoria = categoriaSelecionada
+                };
+
+                HttpResponseMessage response = await client.PostAsJsonAsync(apiUrl, formularioArtigo);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    LimparCamposArtigo();
+                    ExibirMensagem("alertSuccess", "Sugestão de artigo enviada com sucesso!");
+                }
+                else
+                {
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    ExibirMensagem("alertError", $"Erro ao enviar sugestão de artigo: {response.StatusCode} - {responseBody}");
+                }
+            }
+            catch (Exception ex)
+            {
+                ExibirMensagem("alertError", "Erro ao salvar dados: " + ex.Message);
+            }
+        }
+
+        private void ExibirMensagem(string idAlert, string mensagem)
+        {
+            ScriptManager.RegisterStartupScript(this, GetType(), "ShowAlert", $"mostrarMensagem('{idAlert}', '{mensagem}');", true);
+        }
+
+        private void LimparCamposArtigo()
+        {
+            txtNomeArtigo.Text = "";
+            txtEmailArtigo.Text = "";
+            txtTituloArtigo.Text = "";
+            txtConteudoArtigo.Text = "";
+            ddlCategoriaArtigo.SelectedIndex = 0;
+        }
+    }
 }
