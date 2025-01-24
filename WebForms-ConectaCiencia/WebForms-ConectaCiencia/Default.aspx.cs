@@ -99,6 +99,74 @@ namespace WebForms_ConectaCiencia
 
                 await CarregarArtigos(textoPesquisa, nomeCategoria, dataPublicacao);
             }));
+
+        }
+        private async Task CarregarArtigos(string textoPesquisa, string nomeCategoria, DateTime? dataPublicacao)
+        {
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    string apiUrl = "https://localhost:7259/api/Feed";
+
+                    var queryParams = new List<string>();
+
+                    if (!string.IsNullOrEmpty(textoPesquisa))
+                    {
+                        queryParams.Add($"textoPesquisa={Uri.EscapeDataString(textoPesquisa)}");
+                    }
+
+                    if (!string.IsNullOrEmpty(nomeCategoria))
+                    {
+                        queryParams.Add($"nomeCategoria={Uri.EscapeDataString(nomeCategoria)}");
+                    }
+
+                    if (dataPublicacao.HasValue)
+                    {
+                        queryParams.Add($"dataPublicacao={dataPublicacao.Value.ToString("yyyy-MM-dd")}");
+                    }
+
+                    if (queryParams.Count > 0)
+                    {
+                        apiUrl += "?" + string.Join("&", queryParams);
+                    }
+
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode && response.Content.Headers.ContentType.MediaType == "application/json")
+                    {
+                        var artigos = await response.Content.ReadFromJsonAsync<List<Artigo>>();
+
+                        if (artigos != null && artigos.Count > 0)
+                        {
+                            lblMensagem.Visible = false;
+                            ArticlesRepeater.DataSource = artigos;
+                            ArticlesRepeater.DataBind();
+                        }
+                        else
+                        {
+                            lblMensagem.Text = "Nenhum artigo encontrado.";
+                            lblMensagem.Visible = true;
+                            ArticlesRepeater.DataSource = null;
+                            ArticlesRepeater.DataBind();
+                        }
+                    }
+                    else
+                    {
+                        lblMensagem.Text = $"Erro ao buscar artigos: {response.ReasonPhrase}";
+                        lblMensagem.Visible = true;
+                        ArticlesRepeater.DataSource = null;
+                        ArticlesRepeater.DataBind();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                lblMensagem.Text = "Erro: " + ex.Message;
+                lblMensagem.Visible = true;
+                ArticlesRepeater.DataSource = null;
+                ArticlesRepeater.DataBind();
+            }
         }
     }
 }
