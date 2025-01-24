@@ -70,5 +70,35 @@ namespace WebForms_ConectaCiencia
         {
             await CarregarArtigos(null, null, null);
         }
+        protected void BtnPesquisar_Click(object sender, EventArgs e)
+        {
+            RegisterAsyncTask(new PageAsyncTask(async () =>
+            {
+                string textoPesquisa = txtTextoPesquisa.Text.Trim();
+                string nomeCategoria = ddlCategoria.SelectedItem.Text;
+                DateTime? dataPublicacao = null;
+
+                if (!string.IsNullOrEmpty(txtDataPublicacao.Text))
+                {
+                    if (DateTime.TryParse(txtDataPublicacao.Text, out DateTime tempData))
+                    {
+                        dataPublicacao = tempData;
+                    }
+                    else
+                    {
+                        lblMensagem.Text = "Data inválida. Por favor, insira uma data válida.";
+                        lblMensagem.Visible = true;
+                        return;
+                    }
+                }
+
+                if (ddlCategoria.SelectedIndex == 0)
+                {
+                    nomeCategoria = null;
+                }
+
+                await CarregarArtigos(textoPesquisa, nomeCategoria, dataPublicacao);
+            }));
+        }
     }
 }
