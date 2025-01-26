@@ -2,45 +2,57 @@
 
 ## Requisitos do Sistema
 
-### Categorias
+### Requisitos Funcionais
 
-1. Cada categoria deve possuir um nome único e descritivo.
+#### Categorias
+1. Cada **categoria** deve possuir um **nome único e descritivo**.
 
-### Formulário Tema
+#### Formulário Tema
+1.  Os campos **nome**, **email**, **tema** e **categoria** são obrigatórios para cada sugestão.
+2.  A **categoria** deve referenciar uma categoria existente.
 
-1. Os campos nome, email, tema e categoria são obrigatórios para cada sugestão.
-2. A categoria deve referenciar uma categoria existente.
+#### Formulário Artigo
+1. Os campos **nome**, **email**, **título**, **conteúdo** e **categoria** são obrigatórios.
+2. A **categoria** deve referenciar uma categoria existente.
 
-### Formulário Artigo
+#### Artigos
+1. Cada **artigo** deve ter um **título** e **conteúdo** associados a um **autor identificado**.
+2. Apenas **usuários cadastrados** podem submeter artigos, vinculados ao **id_usuario**.
+3. Um artigo deve estar obrigatoriamente associado a uma **categoria válida**.
+4. A **data de submissão** é automaticamente registrada e não pode ser alterada manualmente.
 
-1. Os campos nome, email, título, conteúdo e categoria são obrigatórios.
-2. A categoria deve referenciar uma categoria existente.
+#### Usuários
+1. O **email dos usuários** deve ser **único** no banco de dados.
+2. A **senha** deve ser armazenada de forma segura, utilizando técnicas de **hash**.
+3. Apenas **usuários autenticados** devem ter permissão para criar, modificar artigos e interagir com artigos já publicados.
 
-### Artigos
+#### Relacionamentos
+1. Um **usuário** pode submeter vários artigos, mas cada **artigo pertence a um único usuário**.
+2. Cada **artigo** deve estar associado a uma **única categoria**.
 
-1. Cada artigo deve ter um título e um conteúdo associado a um autor identificado.
-2. Apenas usuários cadastrados podem submeter artigos, vinculados ao id_usuario.
-3. Um artigo deve estar obrigatoriamente associado a uma categoria válida.
-4. A data de submissão é automaticamente registrada e não pode ser alterada manualmente.
+### Requisitos Não Funcionais
 
-### Usuários
+#### Segurança
+1. As **senhas dos usuários** devem ser armazenadas de forma segura utilizando técnicas de **hash**.
 
-1. O email dos usuários deve ser único no banco de dados.
-2. A senha deve ser armazenada de forma segura, utilizando técnicas de hash.
-3. Apenas usuários autenticados devem ter permissão para criar, modificar artigos e interagir com artigos já publicados.
+#### Usabilidade
+1. O **email** dos usuários deve ser único, garantindo um bom fluxo de cadastro.
 
-### Relacionamentos
+#### Performance
+1. As operações de **submissão de artigos** devem ser realizadas de forma eficiente, sem impactar na experiência do usuário.
 
-1. Um usuário pode submeter vários artigos, mas cada artigo pertence a um único usuário.
-2. Cada artigo deve estar associado a uma única categoria.
+#### Integridade de Dados
+1. A **categoria associada** aos artigos e aos temas deve ser válida e existirem previamente cadastradas no sistema.
 
 ## Regras de Negócio da API
 
-### Categorias
+### Requisitos Funcionais
+
+#### Categorias
 
 1. Todas as categorias cadastradas devem ser retornadas, ordenadas por nome em ordem alfabética.
 
-### Feed (Artigos)
+#### Feed (Artigos)
 
 1. Deve existir a opção de adicionar Artigo:
 
@@ -61,7 +73,7 @@
 4. Excluir Artigo:
    - Apenas o autor ou administradores podem excluir um artigo.
 
-### Formulários (Sugestões)
+#### Formulários (Sugestões)
 
 1. Adicionar Tema:
 
@@ -72,11 +84,11 @@
    - O nome, e-mail, categoria, título e conteúdo do artigo sugerido são obrigatórios.
    - Sugestões de artigos não criam publicações automaticamente.
 
-### Login e Cadastro
+#### Login e Cadastro
 
 1. Realizar Login:
 
-   - O sistema deve validar e-mails e senhas em conformidade com a autenticação segura (armazenamento de senhas com hash).
+   - O sistema deve validar e-mails e senhas em conformidade com a autenticação segura.
    - O login falhará caso o e-mail não esteja cadastrado ou a senha esteja incorreta.
 
 2. Registrar Usuário:
@@ -84,13 +96,30 @@
    - E-mails devem ser únicos no sistema.
    - Senhas devem conter no mínimo 8 caracteres.
 
+### Requisitos Não Funcionais
+
+#### Segurança
+1. As senhas dos usuários devem ser armazenadas de forma segura utilizando técnicas de hash.
+2. Todos os endpoints devem validar a entrada do usuário para prevenir ataques de SQL Injection.
+
+#### Usabilidade
+1. Os filtros de pesquisa de artigos devem ser opcionais, facilitando a navegação do usuário.
+
+#### Performance
+1. Os artigos devem ser retornados em ordem decrescente de data de publicação por padrão, garantindo consultas rápidas e organizadas.
+
+#### Conformidade
+1. O sistema de autenticação deve seguir boas práticas de segurança.
+
 ## Segurança e Auditoria
 
 1. Todos os endpoints devem validar a entrada do usuário para prevenir ataques de SQL Injection.
 
 ## Regras de Negócio para o FrontEnd
 
-### Páginas Públicas
+### Requisitos Funcionais
+
+#### Páginas Públicas
 
 1. **Sobre.aspx:** Deve exibir informações gerais do blog.
 2. **Feed.aspx:** Deve apresentar um feed de artigos publicados, organizados por ordem cronológica. Usuários podem aplicar filtros de busca por:
@@ -106,19 +135,18 @@
    - Mensagens de confirmação ou erro devem ser exibidas após tentativa de envio.
    - Deve ser realizada a validação de email.
 
-### Página Login
+#### Página Login
 
 1. **Acesso.aspx:**
 
    - Campos obrigatórios: email e senha.
-   - O botão de login deve permanecer desativado até que os dois campos sejam preenchidos.
    - Ao falhar no login, exibir mensagem indicando erro.
 
 2. **Cadastro.aspx:**
    - Campos obrigatórios: nome, email e senha.
    - O botão de cadastro só é ativado após o preenchimento de todos os campos obrigatórios de forma válida.
 
-### Páginas Logadas
+#### Páginas Logadas
 
 1. **Perfil.aspx:** Deve exibir as informações do usuário logado e suas publicações pessoais. Deve oferecer a opção de Sair.
 2. **MeusArtigos.aspx:** Deve ser uma página de feed pessoal do usuário, onde ele pode:
@@ -135,6 +163,23 @@
    - A categoria deve ser selecionada de uma lista fornecida pela API.
    - Os dados do autor devem ser fornecidos pela autenticação dele no acesso.
    - As informações de data e hora devem ser preenchidas automaticamente.
+
+### Requisitos Não Funcionais
+
+#### Usabilidade
+- O botão de login deve permanecer **desativado** até que os campos obrigatórios estejam preenchidos.
+- O **botão de cadastro** deve ser ativado apenas quando todos os campos obrigatórios estiverem preenchidos corretamente.
+- As páginas devem **apresentar mensagens de confirmação ou erro** em casos apropriados.
+
+#### Segurança
+- **Validação de email** deve ser realizada nos formulários de envio.
+
+#### Performance
+- As **páginas** devem carregar os dados de maneira eficiente e rápida, especialmente para **feeds** e listagens de artigos.
+
+#### Integração
+- A **categoria** no formulário de publicação deve ser **selecionada de uma lista** fornecida pela **API**.
+- O sistema de **autenticação** deve fornecer os dados do autor ao publicar um artigo.
 
 ## Histórico de Versões
 
