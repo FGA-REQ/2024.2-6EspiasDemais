@@ -133,5 +133,5 @@ Autor: (Carlos Henrique de Souza Bispo)
 | Versão |   Descrição    |                     Autor                      |    Data    |                    Revisor                     | Data de revisão |
 | :----: | :------------: | :--------------------------------------------: | :--------: | :--------------------------------------------: | :-------------: |
 |  1.1   | Ata reunião 02 | [Carlos Henrique](https://github.com/carlinn1) | 11/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) |   14/01/2025    |
-|  1.3   | Ata reunião 02 | [Carlos Henrique](https://github.com/carlinn1) | 27/01/2025 |                                                |                 |
+|  1.3   | Ata reunião 04 | [Carlos Henrique](https://github.com/carlinn1) | 27/01/2025 |                                                |                 |
 
