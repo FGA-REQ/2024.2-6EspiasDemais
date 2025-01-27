@@ -30,7 +30,7 @@ namespace WebForms_ConectaCiencia
             {
                 using (var client = new HttpClient())
                 {
-                    string apiUrl = "https://localhost:7259/api/Categoria";
+                    string apiUrl = "https://localhost:7146/api/Categoria";
 
                     HttpResponseMessage response = await client.GetAsync(apiUrl);
 
@@ -107,7 +107,7 @@ namespace WebForms_ConectaCiencia
             {
                 using (var client = new HttpClient())
                 {
-                    string apiUrl = "https://localhost:7259/api/Feed";
+                    string apiUrl = "https://localhost:7146/api/Feed";
 
                     var queryParams = new List<string>();
 

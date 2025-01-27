@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API-ConectaCiencia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+accc6bed795ea11bcabd564aec2c07532419117d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cad6875d753f39815419dfb771c8832c6722ba99")]
 [assembly: System.Reflection.AssemblyProductAttribute("API-ConectaCiencia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API-ConectaCiencia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
