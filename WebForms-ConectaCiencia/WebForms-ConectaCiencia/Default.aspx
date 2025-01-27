@@ -1,44 +1,39 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebForms_ConectaCiencia._Default" %>
+﻿<%@ Page Title="Feed" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebForms_ConectaCiencia._Default" Async="true" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="container">
+        <h1 class="my-4">Artigos</h1>
 
-    <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-        </section>
+        <div class="container mt-4">
+            <div class="d-flex flex-rows gap-3 mb-4">
+                <asp:TextBox ID="txtTextoPesquisa" runat="server" CssClass="form-control" Placeholder="Busca..." />
+                <asp:DropDownList ID="ddlCategoria" runat="server" CssClass="form-control">
+                    <asp:ListItem Text="Selecione uma Categoria" Value="" />
+                </asp:DropDownList>
+                <asp:TextBox ID="txtDataPublicacao" runat="server" CssClass="form-control" TextMode="Date" Placeholder="Data de Publicação" />
+                <asp:Button ID="BtnPesquisar" runat="server" Text="Pesquisar" OnClick="BtnPesquisar_Click" CssClass="btn btn-primary" />
+            </div>
 
-        <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
+            <div class="container mt-4 text-center">
+                <asp:Label ID="lblMensagem" runat="server" CssClass="alert alert-info" Visible="false"></asp:Label>
+            </div>
+
+            <asp:Repeater ID="Repeater1" runat="server">
+            </asp:Repeater>
         </div>
-    </main>
 
+        <asp:Repeater ID="ArticlesRepeater" runat="server">
+            <ItemTemplate>
+                <div class="card mb-4 border p-2 shadow">
+                    <div class="card-body">
+                        <h2 class="card-title"><%# Eval("Titulo") %></h2>
+                        <p class="card-text"><%# Eval("Conteudo") %></p>
+                        <footer class="blockquote-footer">
+                            Publicado por <%# Eval("Usuario.Nome") %> em <%# Eval("Data", "{0:dd/MM/yyyy}") %>
+                        </footer>
+                    </div>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
 </asp:Content>
