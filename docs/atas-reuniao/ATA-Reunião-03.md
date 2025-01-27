@@ -6,7 +6,7 @@
 
 | Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local       | Redator     | Revisor |
 |------------|--------------------------|--------------------------|--------------------------|---------------------------|-------------|-------------|--------|
-| 06/01/2025 | 20:00                    | 20:16                    | 20:30                    | 20:30                     | Google Meet | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | [Jéssica Eveline](https://github.com/xzxjesse) |
+| 17/01/2025 | 13:00                    | 13:10                    | 13:30                    | 13:33                    | Google Meet | [Ruan Carvalho](https://github.com/Ruan-Carvalho) |  |
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
@@ -21,18 +21,18 @@ Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 | [Jéssica Eveline](https://github.com/xzxjesse) |Sim|
 | [João Vitor](https://github.com/Jauzimm) |Sim|
 | [Pedro Gustavo](https://github.com/PedroGusta) |Sim|
-| [Ruan Carvalho](https://github.com/Ruan-Carvalho) |Não|
+| [Ruan Carvalho](https://github.com/Ruan-Carvalho) |Sim|
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
 **Link da gravação:** 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/igaGR_eqLNs?si=WKUR-WhtZ3w8ZLTr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/-zOEuQVXawc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 2. Pauta
 
-* Conversa inicial sobre o desenvolvimento do projeto.
-* Distribuição das tarefas.
+* Acertos com os integrantes do grupo acerca da padronização de commits e branchs.
+* Distribuição das tarefas para a primeira sprint.
 
 ## 3. Pendências Anteriores
 
@@ -44,19 +44,15 @@ Nenhum pedência anterior.
 
 | N° | Descrição | Tipo   |
 |----|-----------|--------|
-| 1  | Fazer a REAMD.ME | Pendência |
-| 2  | Fazer a REAMD.ME - Revisão | Pendência |
-| 3  | Elaboração do cronograma | Pendência |
-| 4  | Elaboração do cronograma - Revisão | Pendência |
-| 6  | Definição do projeto | Decisão |
-| 5  | Definição da proxima reunião | Decisão |
-| 7  | Definição dos horários e dias para reunião | Pendência |
+| 1  | Elaboração das Issues | Apresentação |
+| 2  | Elaboração do Figma | Apresentação |
+| 3  | Atribuição de tarefas para a sprint | Decisão |
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
 ## 5. Próxima Reunião
 
-Próxima reunião será na sexta-feira às 13:00, dia 10/01/2025. Sendo realizada no Google Meet. 
+Próxima reunião será na sexta-feira às 13:00, dia 24/01/2025. Sendo realizada no Google Meet. 
 
 ## 6. Compromissos
 
@@ -64,11 +60,12 @@ Próxima reunião será na sexta-feira às 13:00, dia 10/01/2025. Sendo realizad
 
 | N° | Compromisso | Responsável | Data |
 |----|-------------|-------------|------|
-| 1  | Fazer a ata da reunião | Ruan Carvalho | 09/01 |
-| 2  | Organizar o repositório | João Vitor | 09/01 |
-| 3  | Estruturar arquivos | Carlos | 09/01 |
-| 4  | Revisão geral | Pedro | 09/01 |
-| 5  | Fazer o merge com a main | Gabriel | 10/01 |
+| 1  | Fazer a ata da reunião | Ruan Carvalho | 24/01 |
+| 2  | Implementação da API | João Vitor e Jesse | 24/01 |
+| 3  | Implementação da sugestão de temas | Carlos | 24/01 |
+| 4  | Criação dos filtros de pesquisa | Pedro | 24/01 |
+| 5  | Implementação do feed de artigos | Gabriel | 24/01 |
+| 6  | Implementação da sugestão de artigos | Ruan | 24/01 |
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
@@ -78,4 +75,4 @@ Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
-|  1.0   | Versão inicial da ata | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 09/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) |     14/01/2025 |
+|  1.0   | Ata da reunião 03 | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 27/01/2025 |  |  |
