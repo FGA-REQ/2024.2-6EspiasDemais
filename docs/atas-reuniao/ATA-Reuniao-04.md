@@ -7,19 +7,19 @@
 - Término: 13:30
 - Local: Google Meets
 - Redator: [Carlos Henrique](https://github.com/carlinn1)
-- Revisor: [Jéssica Eveline](https://github.com/xzxjesse)
+- Revisor: 
 
-**Tabela 1:** Cabeçalho com datas, horários e realizadores.
+**Tabela 1:** Cabeçalho com datas, horarios e realizadores.
 
 | Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local        | Redator                                        | Revisor                                        |
 | ---------- | ----------------------- | ------------------------ | ------------------------ | ------------------------- | ------------ | ---------------------------------------------- | ---------------------------------------------- |
-| 24/01/2025 | 13:00                   | 13:00                    | 13:30                    | 13:30                     | Google Meets | [Carlos Henrique](https://github.com/carlinn1) | [Jéssica Eveline](https://github.com/xzxjesse) |
+| 10/01/2025 | 13:00                   | 13:00                    | 13:30                    | 13:30                     | Google Meets | [Carlos Henrique](https://github.com/carlinn1) |                                                |
 
 Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 ### Participantes:
 
-- Presente: Marcar somente as pessoas que participaram da reunião.
+- Presente: Marcar somente as pessoas que participaram da reunião;
 - Nome: Listas todas as pessoas que foram convocadas para a reunião.
 
 **Tabela 2:** Participantes e suas presenças.
@@ -37,68 +37,75 @@ Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 **Link da gravação:**
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=itwcH2xuepI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=itwcH2xuepI&feature=youtu.be" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 ## 2. Pauta
 
-- Revisão das atividades realizadas na última semana.
-- Organização de pendências para as próximas semanas.
-- Planejamento para entrega final do projeto.
+- Alinhamento semanal sobre o progresso do projeto.
+- Revisão de tarefas da sprint 1.
+- Planejamento e organização para a sprint 2.
+- Definição de responsabilidades para correções e melhorias.
 
 ## 3. Pendências Anteriores
 
-- Finalização da API para categorias e sugestões de temas.
-- Correção dos formulários para integração com o cliente.
+- Finalizar a ata da reunião do dia 17/01/2025 (responsabilidade atribuída a Ruan).
+- Corrigir e finalizar formulários de usuário (responsabilidade atribuída a Gabriel).
+- Reorganizar requisitos funcionais e regras de negócio.
+- Implementar funcionalidades pendentes da API e corrigir erros nos commits.
 
 ## 4. Assuntos Tratados
 
 **Tabela 3:** Assuntos a serem tratados e seu tipo.
 
-| N°  | Descrição                                          | Tipo          |
-| --- | ------------------------------------------------ | ------------- |
-| 01  | Revisão da Sprint 2021                          | Geral         |
-| 02  | Correção dos formulários                        | Planejamento  |
-| 03  | Divisão de responsabilidades                   | Gerenciamento |
-| 04  | Padrão de ícones e organização de regras       | Técnico       |
-| 05  | Planejamento para a próxima Sprint              | Planejamento  |
-
-**Resumo dos Assuntos Tratados:**
-
-1. **Atividades Concluídas:**
-   - API para categorias e sistema de sugestões iniciada (Jéssica e João).
-   - Parte inicial do feed implementada (Gabriel).
-2. **Pendências:**
-   - Correção dos formulários.
-   - Revisão e organização das categorias de regras de negócio.
-3. **Responsabilidades Definidas:**
-   - **Correção de formulários:** Gabriel.
-   - **Padronização de ícones:** Ruan.
-   - **Organização de regras de negócio:** Pedro.
-
-## 5. Próxima Reunião
-
-- Data: 31 de janeiro de 2025, às 14:00.
-
-## 6. Compromissos
-
-**Tabela 4:** Compromissos com data e o nome do responsável.
-
-| N°  | Compromisso                                                   | Responsável       | Data       |
-| --- | ------------------------------------------------------------- | ----------------- | ---------- |
-| 01  | Ata do 17/01                                                  | Ruan              | 29/01/2025 |
-| 02  | Fazer funcionar o que já foi commitado (formulários)          | Jéssica e Ruan    | 29/01/2025 |
-| 03  | Finalizar formulários US 01 - 05                              | Pedro             | 29/01/2025 |
-| 04  | Organizar o processo no padrão BPMN                           | Ruan              | 29/01/2025 |
-| 05  | Organizar as regras de negócio/requisitos dentro categorias   | Pedro e Carlos    | 29/01/2025 |
-| 06  | Correção de formulários e junção                              | Gabriel           | 29/01/2025 |
-| 07  | Padronização de ícones                                        | Ruan              | 29/01/2025 |
-| 08  | Organização de regras de negócio                              | Pedro             | 29/01/2025 |
-
+| N°  | Descrição                                                                                                   | Tipo          |
+| --- | ----------------------------------------------------------------------------------------------------------- | ------------- |
+| 01  | Assuntos Tratados                                                                                           | Geral         |
+| 02  | API refeita, incluindo categorias, sugestão de temas e artigos (responsabilidade de Jéssica e João – concluído). | Estratégico   |
+| 03  | Feed implementado por Gabriel, com necessidade de revisão nos formulários.                                  | Planejamento  |
+| 04  | Problemas técnicos relatados nos commits para sugestão de temas e artigos, exigindo retrabalho na próxima semana. | Técnico       |
+| 05  | Discussão sobre a importância de rastreabilidade e feedback nas issues do Jira.                             | Gerenciamento |
+| 06  | Planejamento de um formulário unificado para reunir todas as histórias de usuário (responsabilidade atribuída a Gabriel). | Técnico       |
+| 07  | Padronização dos ícones do diagrama BPMN (Juan).                                                            | Geral         |
+| 08  | Reorganização de regras de negócio e requisitos funcionais/não funcionais (Pedro e Carlos).                 | Geral         |
+| 09  | Pesquisa sobre criptografia no banco de dados e métodos POST para login (Juan).                             | Geral         |
 
 
 Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
+
+## **Decisão e Apresentação:**
+
+- Foco no final de semana para corrigir pendências da sprint 1.
+
+- Definição das histórias de usuário e divisões de tarefas na próxima reunião (segunda-feira).
+
+- Necessidade de reorganizar as regras e requisitos em dois documentos e validar rastreabilidade com o cliente e a professora.
+
+
+## 5. Próxima Reunião
+
+- 31 de Janeiro de 2025 a 13:00 da Tarde.
+
+## 6. Compromissos
+
+- Registrar os compromissos acordados durante a reunião (identificados como pendências nos assuntos tratados), identificando o responsável e a data acordada para a conclusão da atividade.
+
+**Tabela 4:** Compromissos com data e o nome do responsável.
+
+| N°  | Compromisso                                                             | Responsável         | Data       |
+| --- | ----------------------------------------------------------------------- | ------------------- | ---------- |
+| 01  | Criar formulário unificado com base nas histórias de usuário            | Gabriel             | 29/01/2025 |
+| 02  | Reorganizar regras e requisitos, com suporte ao cliente e rastreabilidade | Pedro e Carlos    | 29/01/2025 |
+| 03  | Desenvolvimento do Backlog e Definição do MVP                           | João e Jéssica      | 29/01/2025 |
+| 04  | Finalizar atas pendentes (17/01)                                        | Juan                | 29/01/2025 |
+| 05  | Padronizar ícones do diagrama BPMN                                      | Juan                | 29/01/2025 |
+| 06  | Pesquisar soluções de criptografia e segurança no banco de dados        | Juan                | 29/01/2025 |
+| 07  | Finalizar atas pendentes (24/01)                                        | Carlos              | 29/01/2025 |
+| 08  | Revisar e corrigir problemas nos commits e integração com a API         | Jéssica e João      | 29/01/2025 |
+
+
+Autor: (Carlos Henrique de Souza Bispo)
 
 ## Referências
 
@@ -107,13 +114,24 @@ Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 ## Histórico de Versões
 
 - Versão: 1.3.
-- Descrição: Registro da reunião semanal do dia 24/01/2025.
+- Descrição: Evitar alterações simultâneas em Develop para prevenir conflitos e dividir as tarefas a serem feitas para realização da entrega.
 - Autor: [Carlos Henrique](https://github.com/carlinn1)
-- Data: 24/01/2025.
-- Revisor: [Jéssica Eveline](https://github.com/xzxjesse)
-- Data de revisão: 25/01/2025.
+- Data: 27/01/2025.
+- Revisor:
+- Data de revisão: 
+
+| Versão |       Descrição       |                     Autor                      |    Data    |                    Revisor                     | Data de revisão |
+| :----: | :-------------------: | :--------------------------------------------: | :--------: | :--------------------------------------------: | :-------------: |
+|  1.1   | Versão Ata reunião 02 | [Carlos Henrique](https://github.com/carlinn1) | 11/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) |   14/01/2025    |
+|  1.3   | Versão Ata reunião 04 | [Carlos Henrique](https://github.com/carlinn1) | 27/01/2025 |                                                |                 |
+
+
+## Histórico de Versões
+
+<font size="3"><p style="text-align: left">**Tabela 5** - Histórico de versões.</p></font>
 
 | Versão |   Descrição    |                     Autor                      |    Data    |                    Revisor                     | Data de revisão |
 | :----: | :------------: | :--------------------------------------------: | :--------: | :--------------------------------------------: | :-------------: |
-|  1.3   | Ata reunião 04  | [Carlos Henrique](https://github.com/carlinn1) | 24/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) |   25/01/2025    |
+|  1.1   | Ata reunião 02 | [Carlos Henrique](https://github.com/carlinn1) | 11/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) |   14/01/2025    |
+|  1.3   | Ata reunião 02 | [Carlos Henrique](https://github.com/carlinn1) | 27/01/2025 |                                                |                 |
 
