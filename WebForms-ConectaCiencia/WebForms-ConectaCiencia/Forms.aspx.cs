@@ -130,5 +130,69 @@ namespace WebForms_ConectaCiencia
             txtConteudoArtigo.Text = "";
             ddlCategoriaArtigo.SelectedIndex = 0;
         }
+
+        protected async void BtnEnviarTema_Click(object sender, EventArgs e)
+        {
+            string nome = txtNomeTema.Text.Trim();
+            string email = txtEmailTema.Text.Trim();
+            string tema = txtTema.Text.Trim();
+            int idCategoria;
+
+            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(tema) || !int.TryParse(ddlCategoriaTema.SelectedValue, out idCategoria) || idCategoria == 0)
+            {
+                ExibirMensagem("alertError", "Todos os campos são obrigatórios e uma categoria deve ser selecionada.");
+                return;
+            }
+
+            try
+            {
+                string apiUrl = "https://localhost:7259/api/Formularios/tema";
+
+                var categoriaSelecionada = new Categoria
+                {
+                    Id_Categoria = idCategoria,
+                    Nome_Categoria = ddlCategoriaTema.SelectedItem.Text
+                };
+
+                var formularioTema = new FormularioTema
+                {
+                    Nome = nome,
+                    Email = email,
+                    Tema = tema,
+                    Id_Categoria = idCategoria,
+                    Categoria = categoriaSelecionada
+                };
+
+                using (var client = new HttpClient())
+                {
+                    HttpResponseMessage response = await client.PostAsJsonAsync(apiUrl, formularioTema);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        LimparCamposTema();
+                        ExibirMensagem("alertSuccess", "Sugestão de tema enviada com sucesso!");
+                    }
+                    else
+                    {
+                        string responseBody = await response.Content.ReadAsStringAsync();
+                        ExibirMensagem("alertError", $"Erro ao enviar sugestão de tema: {response.StatusCode} - {responseBody}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ExibirMensagem("alertError", "Erro ao salvar dados: " + ex.Message);
+            }
+        }
+
+         private void LimparCamposTema()
+        {
+            txtNomeTema.Text = "";
+            txtEmailTema.Text = "";
+            txtTema.Text = "";
+            ddlCategoriaTema.SelectedIndex = 0;
+        }
     }
 }
+    
+
