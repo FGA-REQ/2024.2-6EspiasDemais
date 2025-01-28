@@ -7,6 +7,29 @@
 
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="p-4 border shadow-lg" style="width: 100%; max-width: 400px;">
+                        <h2 class="text-center">Sugerir Tema</h2>
+                        <div class="form-group d-flex justify-content-center">
+                            <asp:TextBox ID="txtNomeTema" CssClass="form-control mb-2" runat="server" Placeholder="Nome*" />
+                        </div>
+                        <div class="form-group d-flex justify-content-center">
+                            <asp:TextBox ID="txtEmailTema" CssClass="form-control mb-2" runat="server" Placeholder="Email*" />
+                        </div>
+                        <div class="form-group d-flex justify-content-center">
+                            <asp:TextBox ID="txtTema" CssClass="form-control mb-2" runat="server" TextMode="MultiLine" Placeholder="Tema*" />
+                        </div>
+                        <div class="form-group d-flex justify-content-center">
+                            <asp:DropDownList ID="ddlCategoriaTema" runat="server" CssClass="form-control">
+                                <asp:ListItem Text="Selecione uma Categoria" Value="" />
+                            </asp:DropDownList>
+                        </div>
+                        <div class="text-center">
+                            <asp:Button ID="BtnEnviarTema" CssClass="btn btn-primary mt-2" runat="server" Text="Enviar" OnClick="BtnEnviarTema_Click" Enabled="false" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="p-4 border shadow-lg" style="width: 100%; max-width: 400px;">
                         <h2 class="text-center">Sugerir Artigo</h2>
                         <div class="form-group d-flex justify-content-center">
                             <asp:TextBox ID="txtNomeArtigo" CssClass="form-control mb-2" runat="server" Placeholder="Nome*" />
