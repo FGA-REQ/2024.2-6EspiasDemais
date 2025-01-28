@@ -18,5 +18,73 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "API_ConectaCiencia.controllers.FeedController",
+    "Method": "Pesquisa",
+    "RelativePath": "api/Feed",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "textoPesquisa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "nomeCategoria",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dataPublicacao",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[API_ConectaCiencia.models.ArtigoModel, API-ConectaCiencia, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_ConectaCiencia.controllers.FormularioController",
+    "Method": "AdicionarArtigo",
+    "RelativePath": "api/Formulario/artigo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formularioArtigo",
+        "Type": "API_ConectaCiencia.models.FormularioModel\u002BFormularioArtigo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_ConectaCiencia.controllers.FormularioController",
+    "Method": "AdicionarTema",
+    "RelativePath": "api/Formulario/tema",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "formularioTema",
+        "Type": "API_ConectaCiencia.models.FormularioModel\u002BFormularioTema",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
