@@ -294,6 +294,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Model_API\Artigos.cs" />
+    <Compile Include="Model_API\Formularios.cs" />
     <Compile Include="Model_API\Categoria.cs" />
     <Compile Include="Model_API\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
