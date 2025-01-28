@@ -116,5 +116,19 @@ namespace WebForms_ConectaCiencia
                 ExibirMensagem("alertError", "Erro ao salvar dados: " + ex.Message);
             }
         }
+        
+         private void ExibirMensagem(string idAlert, string mensagem)
+        {
+            ScriptManager.RegisterStartupScript(this, GetType(), "ShowAlert", $"mostrarMensagem('{idAlert}', '{mensagem}');", true);
+        }
+
+        private void LimparCamposArtigo()
+        {
+            txtNomeArtigo.Text = "";
+            txtEmailArtigo.Text = "";
+            txtTituloArtigo.Text = "";
+            txtConteudoArtigo.Text = "";
+            ddlCategoriaArtigo.SelectedIndex = 0;
+        }
     }
 }
