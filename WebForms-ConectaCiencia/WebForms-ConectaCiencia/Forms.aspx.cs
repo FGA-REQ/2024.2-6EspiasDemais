@@ -26,7 +26,7 @@ namespace WebForms_ConectaCiencia
         {
             try
             {
-                string apiUrl = "https://localhost:5140/api/Categoria";
+                string apiUrl = "https://localhost:7146/api/Categoria";
 
                 HttpResponseMessage response = await client.GetAsync(apiUrl);
 
@@ -36,17 +36,8 @@ namespace WebForms_ConectaCiencia
 
                     if (categorias != null && categorias.Count > 0)
                     {
-                        ddlCategoriaTema.DataSource = categorias;
-                        ddlCategoriaTema.DataTextField = "Nome_Categoria";
-                        ddlCategoriaTema.DataValueField = "Id_Categoria";
-                        ddlCategoriaTema.DataBind();
-                        ddlCategoriaTema.Items.Insert(0, new ListItem("Selecione uma Categoria", ""));
-
-                        ddlCategoriaArtigo.DataSource = categorias;
-                        ddlCategoriaArtigo.DataTextField = "Nome_Categoria";
-                        ddlCategoriaArtigo.DataValueField = "Id_Categoria";
-                        ddlCategoriaArtigo.DataBind();
-                        ddlCategoriaArtigo.Items.Insert(0, new ListItem("Selecione uma Categoria", ""));
+                        ConfigurarDropDown(ddlCategoriaTema, categorias);
+                        ConfigurarDropDown(ddlCategoriaArtigo, categorias);
                     }
                     else
                     {
@@ -62,6 +53,15 @@ namespace WebForms_ConectaCiencia
             {
                 ExibirMensagem("alertError", "Erro ao carregar categorias: " + ex.Message);
             }
+        }
+
+        private void ConfigurarDropDown(DropDownList dropDownList, List<Categoria> categorias)
+        {
+            dropDownList.DataSource = categorias;
+            dropDownList.DataTextField = "Nome_Categoria";
+            dropDownList.DataValueField = "Id_Categoria";
+            dropDownList.DataBind();
+            dropDownList.Items.Insert(0, new ListItem("Selecione uma Categoria", ""));
         }
 
         protected async void BtnEnviarArtigo_Click(object sender, EventArgs e)
@@ -80,13 +80,7 @@ namespace WebForms_ConectaCiencia
 
             try
             {
-                string apiUrl = "https://localhost:5140/api/Formularios/artigo";
-
-                var categoriaSelecionada = new Categoria
-                {
-                    Id_Categoria = idCategoria,
-                    Nome_Categoria = ddlCategoriaArtigo.SelectedItem.Text
-                };
+                string apiUrl = "https://localhost:7146/api/Formulario/artigo";
 
                 var formularioArtigo = new FormularioArtigo
                 {
@@ -95,7 +89,11 @@ namespace WebForms_ConectaCiencia
                     Titulo = titulo,
                     Conteudo = conteudo,
                     Id_Categoria = idCategoria,
-                    Categoria = categoriaSelecionada
+                    Categoria = new Categoria
+                    {
+                        Id_Categoria = idCategoria,
+                        Nome_Categoria = ddlCategoriaArtigo.SelectedItem.Text
+                    }
                 };
 
                 HttpResponseMessage response = await client.PostAsJsonAsync(apiUrl, formularioArtigo);
@@ -116,20 +114,6 @@ namespace WebForms_ConectaCiencia
                 ExibirMensagem("alertError", "Erro ao salvar dados: " + ex.Message);
             }
         }
-        
-         private void ExibirMensagem(string idAlert, string mensagem)
-        {
-            ScriptManager.RegisterStartupScript(this, GetType(), "ShowAlert", $"mostrarMensagem('{idAlert}', '{mensagem}');", true);
-        }
-
-        private void LimparCamposArtigo()
-        {
-            txtNomeArtigo.Text = "";
-            txtEmailArtigo.Text = "";
-            txtTituloArtigo.Text = "";
-            txtConteudoArtigo.Text = "";
-            ddlCategoriaArtigo.SelectedIndex = 0;
-        }
 
         protected async void BtnEnviarTema_Click(object sender, EventArgs e)
         {
@@ -146,13 +130,7 @@ namespace WebForms_ConectaCiencia
 
             try
             {
-                string apiUrl = "https://localhost:7259/api/Formularios/tema";
-
-                var categoriaSelecionada = new Categoria
-                {
-                    Id_Categoria = idCategoria,
-                    Nome_Categoria = ddlCategoriaTema.SelectedItem.Text
-                };
+                string apiUrl = "https://localhost:7146/api/Formulario/tema";
 
                 var formularioTema = new FormularioTema
                 {
@@ -160,32 +138,47 @@ namespace WebForms_ConectaCiencia
                     Email = email,
                     Tema = tema,
                     Id_Categoria = idCategoria,
-                    Categoria = categoriaSelecionada
+                    Categoria = new Categoria
+                    {
+                        Id_Categoria = idCategoria,
+                        Nome_Categoria = ddlCategoriaTema.SelectedItem.Text
+                    }
                 };
 
-                using (var client = new HttpClient())
-                {
-                    HttpResponseMessage response = await client.PostAsJsonAsync(apiUrl, formularioTema);
+                HttpResponseMessage response = await client.PostAsJsonAsync(apiUrl, formularioTema);
 
-                    if (response.IsSuccessStatusCode)
-                    {
-                        LimparCamposTema();
-                        ExibirMensagem("alertSuccess", "Sugestão de tema enviada com sucesso!");
-                    }
-                    else
-                    {
-                        string responseBody = await response.Content.ReadAsStringAsync();
-                        ExibirMensagem("alertError", $"Erro ao enviar sugestão de tema: {response.StatusCode} - {responseBody}");
-                    }
+                if (response.IsSuccessStatusCode)
+                {
+                    LimparCamposTema();
+                    ExibirMensagem("alertSuccess", "Sugestão de tema enviada com sucesso!");
+                }
+                else
+                {
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    ExibirMensagem("alertError", $"Erro ao enviar sugestão de tema: {response.StatusCode} - {responseBody}");
                 }
             }
             catch (Exception ex)
             {
                 ExibirMensagem("alertError", "Erro ao salvar dados: " + ex.Message);
-            }
-        }
+            }
+        }
 
-         private void LimparCamposTema()
+        private void ExibirMensagem(string idAlert, string mensagem)
+        {
+            ScriptManager.RegisterStartupScript(this, GetType(), "ShowAlert", $"mostrarMensagem('{idAlert}', '{mensagem}');", true);
+        }
+
+        private void LimparCamposArtigo()
+        {
+            txtNomeArtigo.Text = "";
+            txtEmailArtigo.Text = "";
+            txtTituloArtigo.Text = "";
+            txtConteudoArtigo.Text = "";
+            ddlCategoriaArtigo.SelectedIndex = 0;
+        }
+
+        private void LimparCamposTema()
         {
             txtNomeTema.Text = "";
             txtEmailTema.Text = "";
@@ -194,5 +187,3 @@ namespace WebForms_ConectaCiencia
         }
     }
 }
-    
-

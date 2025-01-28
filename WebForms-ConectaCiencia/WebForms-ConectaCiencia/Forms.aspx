@@ -57,4 +57,72 @@
         </div>
     </div>
 
+    <script type="text/javascript">
+        function mostrarMensagem(idAlert, mensagem) {
+            var alertSuccess = document.getElementById('alertSuccess');
+            var alertError = document.getElementById('alertError');
+
+            if (idAlert === "alertSuccess") {
+                alertSuccess.textContent = mensagem;
+                alertSuccess.classList.remove('d-none');
+                alertError.classList.add('d-none'); 
+            } else if (idAlert === "alertError") {
+                alertError.textContent = mensagem;
+                alertError.classList.remove('d-none');
+                alertSuccess.classList.add('d-none'); 
+            }
+
+            setTimeout(function () {
+                alertSuccess.classList.add('d-none');
+                alertError.classList.add('d-none');
+            }, 5000);
+        }
+
+        function validarCamposTema() {
+            var nomeTema = document.getElementById('<%= txtNomeTema.ClientID %>').value.trim();
+            var emailTema = document.getElementById('<%= txtEmailTema.ClientID %>').value.trim();
+            var tema = document.getElementById('<%= txtTema.ClientID %>').value.trim();
+            var categoriaTema = document.getElementById('<%= ddlCategoriaTema.ClientID %>').value;
+
+            var botaoEnviarTema = document.getElementById('<%= BtnEnviarTema.ClientID %>');
+
+            if (nomeTema !== "" && emailTema !== "" && tema !== "" && categoriaTema !== "") {
+                botaoEnviarTema.disabled = false;
+            } else {
+                botaoEnviarTema.disabled = true;
+            }
+        }
+
+        function validarCamposArtigo() {
+            var nome = document.getElementById('<%= txtNomeArtigo.ClientID %>').value.trim();
+            var email = document.getElementById('<%= txtEmailArtigo.ClientID %>').value.trim();
+            var titulo = document.getElementById('<%= txtTituloArtigo.ClientID %>').value.trim();
+            var conteudo = document.getElementById('<%= txtConteudoArtigo.ClientID %>').value.trim();
+            var categoria = document.getElementById('<%= ddlCategoriaArtigo.ClientID %>').value;
+
+            var botaoEnviar = document.getElementById('<%= BtnEnviarArtigo.ClientID %>');
+
+            if (nome !== "" && email !== "" && titulo !== "" && conteudo !== "" && categoria !== "") {
+                botaoEnviar.disabled = false;
+            } else {
+                botaoEnviar.disabled = true;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('<%= txtNomeTema.ClientID %>').addEventListener('input', validarCamposTema);
+            document.getElementById('<%= txtEmailTema.ClientID %>').addEventListener('input', validarCamposTema);
+            document.getElementById('<%= txtTema.ClientID %>').addEventListener('input', validarCamposTema);
+            document.getElementById('<%= ddlCategoriaTema.ClientID %>').addEventListener('change', validarCamposTema);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('<%= txtNomeArtigo.ClientID %>').addEventListener('input', validarCamposArtigo);
+            document.getElementById('<%= txtEmailArtigo.ClientID %>').addEventListener('input', validarCamposArtigo);
+            document.getElementById('<%= txtTituloArtigo.ClientID %>').addEventListener('input', validarCamposArtigo);
+            document.getElementById('<%= txtConteudoArtigo.ClientID %>').addEventListener('input', validarCamposArtigo);
+            document.getElementById('<%= ddlCategoriaArtigo.ClientID %>').addEventListener('change', validarCamposArtigo);
+        });
+    </script>
+
 </asp:Content>

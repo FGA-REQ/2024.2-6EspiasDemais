@@ -57,8 +57,8 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Meu aplicativo ASP.NET</p>
+            <footer style="display: flex; justify-content: center; align-items: center; height: 100px;">
+                <p>&copy; <%: DateTime.Now.Year %> - 6 espiãs demais</p>
             </footer>
         </div>
     </form>
