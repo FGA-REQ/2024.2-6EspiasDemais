@@ -6,7 +6,7 @@
 
 | Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local       | Redator     | Revisor |
 |------------|--------------------------|--------------------------|--------------------------|---------------------------|-------------|-------------|--------|
-| 17/01/2025 | 13:00                    | 13:10                    | 13:30                    | 13:33                    | Google Meet | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | Carlos Henrique |
+| 17/01/2025 | 13:00                    | 13:10                    | 13:30                    | 13:33                    | Google Meet | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | [Carlos Henrique](https://github.com/carlinn1) |
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
@@ -76,4 +76,4 @@ Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
-|  1.2   | Ata da reunião 03 | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 27/01/2025 | Carlos Henrique | 28/01/2025 |
+|  1.2   | Ata da reunião 03 | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 27/01/2025 | [Carlos Henrique](https://github.com/carlinn1) | 28/01/2025 |
