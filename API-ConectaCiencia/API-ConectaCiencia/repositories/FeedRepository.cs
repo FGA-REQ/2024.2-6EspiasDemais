@@ -89,5 +89,65 @@ namespace API_ConectaCiencia.repositories
 
             return artigos;
         }
+
+        public IEnumerable<ArtigoModel> PesquisaMeusArtigos(int id_usuario)
+        {
+            var artigos = new List<ArtigoModel>();
+            var sql = @"SELECT a.*, c.nome_categoria, u.nome, u.id_usuario
+                        FROM Artigos a
+                        JOIN Categorias c ON a.id_categoria = c.id_categoria
+                        JOIN Usuarios u ON a.id_usuario = u.id_usuario
+                        WHERE a.id_usuario = @id_usuario
+                        ORDER BY a.data DESC;";
+
+            var parameters = new List<SqlParameter>
+            {
+                new SqlParameter("@id_usuario", id_usuario)
+            };
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(_connectionString))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddRange(parameters.ToArray());
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var artigo = new ArtigoModel
+                                {
+                                    Id_Artigo = reader.GetInt32(reader.GetOrdinal("id_artigo")),
+                                    Data = reader.GetDateTime(reader.GetOrdinal("data")),
+                                    Titulo = reader.GetString(reader.GetOrdinal("titulo")),
+                                    Conteudo = reader.GetString(reader.GetOrdinal("conteudo")),
+                                    Usuario = new UsuarioSimplificado
+                                    {
+                                        Id_Usuario = reader.GetInt32(reader.GetOrdinal("id_usuario")),
+                                        Nome = reader.GetString(reader.GetOrdinal("nome"))
+                                    },
+                                    Categoria = new CategoriaModel
+                                    {
+                                        Id_Categoria = reader.GetInt32(reader.GetOrdinal("id_categoria")),
+                                        Nome_Categoria = reader.GetString(reader.GetOrdinal("nome_categoria"))
+                                    }
+                                };
+
+                                artigos.Add(artigo);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Erro ao acessar o banco de dados.", ex);
+            }
+
+            return artigos;
+        }
     }
 }
