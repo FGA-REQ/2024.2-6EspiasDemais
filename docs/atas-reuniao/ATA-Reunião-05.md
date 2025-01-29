@@ -82,6 +82,6 @@ Autor: [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
 | Versão |   Descrição    |                     Autor                      |    Data    |                    Revisor                     | Data de revisão |
 | :----: | :------------: | :--------------------------------------------: | :--------: | :--------------------------------------------: | :-------------: |
-|  1.0   | Ata reunião 05 | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 29/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) | 29/01/202 |
+|  1.0   | Ata reunião 05 | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 29/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) | 29/01/2025 |
 
 
