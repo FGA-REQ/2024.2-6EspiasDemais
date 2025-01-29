@@ -148,14 +148,14 @@ Terceira e ultima etapa do desenvolvimento, onde serão feitas as implementaçõ
 
     - Nesta tarefa ocorre a validação final pela equipe e pelo cliente para acontecer a entrega do projeto e fim do ciclo de desenvolvimento.
 
-  1. **Decisão: A equipe aprovou?**
-
+    **Decisão: A equipe aprovou?**
+    
     - Caso a resposta seja não, o projeto retorna a tarefa de desenvolvimento para sanar os problemas encontrados pela equipe.
-
-  2. **Decisão: O cliente aprovou?**
-
+    
+    **Decisão: O cliente aprovou?**
+    
     - Caso a resposta seja não, o projeto retorna a tarefa de desenvolvimento para solucionar os problemas encontrados pelo cliente.
-
+    
     - Tendo aprovação mútua da equipe de desenvolvimento e do cliente o projeto é entregue e finalizado o seu ciclo de desenvolvimento.
 
 ## Histórico de Versões
@@ -165,4 +165,4 @@ Terceira e ultima etapa do desenvolvimento, onde serão feitas as implementaçõ
 | Versão |       Descrição        |                                             Autor(es)                                             |    Data    |                                           Revisor                                            | Data de revisão |
 | :----: | :--------------------: | :-----------------------------------------------------------------------------------------------: | :--------: | :------------------------------------------------------------------------------------------: | :-------------: |
 |  1.0   | Modelagem de Processos | [Carlos Henrique](https://github.com/carlinn1), [Ruan Carvalho](https://github.com/Ruan-Carvalho), [Jesse Eveline](https://github.com/xzxjesse) | 15/01/2025 | [Pedro Gustavo](https://github.com/PedroGusta) |   15/01/2025    |
-| 1.1 | Remodelagem do diagrama de desenvolvimento | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 28/01/2025 |  |  |
+| 1.1 | Remodelagem do diagrama de desenvolvimento | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 28/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) | 29/01/2025 |
