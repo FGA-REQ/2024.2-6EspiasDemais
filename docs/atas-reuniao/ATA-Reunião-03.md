@@ -65,7 +65,8 @@ Próxima reunião será na sexta-feira às 13:00, dia 24/01/2025. Sendo realizad
 | 3  | Implementação da sugestão de temas | Carlos | 24/01 |
 | 4  | Criação dos filtros de pesquisa | Pedro | 24/01 |
 | 5  | Implementação do feed de artigos | Gabriel | 24/01 |
-| 6  | Implementação da sugestão de artigos | Ruan | 24/01 |
+| 6  | Implementação da página sobre | Gabriel | 24/01 |
+| 7  | Implementação da sugestão de artigos | Ruan | 24/01 |
 
 Autor(es): [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
