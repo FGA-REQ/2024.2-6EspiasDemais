@@ -33,5 +33,23 @@ namespace API_ConectaCiencia.controllers
                 return StatusCode(500, $"Erro ao obter os artigos: {ex.Message}");
             }
         }
+
+        [HttpGet("MeusArtigos")]
+        public ActionResult<IEnumerable<ArtigoModel>> PesquisaMeusArtigos(int id_usuario)
+        {
+            try
+            {
+                var artigos = _feedRepository.PesquisaMeusArtigos(id_usuario);
+                if (artigos == null || !artigos.Any())
+                {
+                    return NotFound("Nenhum artigo encontrado.");
+                }
+                return Ok(artigos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao obter os artigos: {ex.Message}");
+            }
+        }
     }
 }
