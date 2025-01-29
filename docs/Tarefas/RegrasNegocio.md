@@ -73,3 +73,4 @@
 | Versão |     Descrição     |                     Autor                      |    Data    |                       Revisor                        | Data de revisão |
 | :----: | :---------------: | :--------------------------------------------: | :--------: | :--------------------------------------------------: | :-------------: |
 |  1.0   | Regras de Negócio | [Carlos Henrique](https://github.com/carlinn1) | 12/01/2025 | [Gabriel Henrique](https://github.com/gabrielhrlima) |   15/01/2025    |
+|  2.0   | Separação entre Requisitos funcionais e não funcionais | [Pedro Gustavo](https://github.com/PedroGusta) | 24/01/2025 |  |    |

@@ -1,6 +1,4 @@
-# Regras de Negócio
-
-## Requisitos do Sistema
+# Requisitos do Sistema
 
 ### Requisitos Funcionais
 
@@ -188,3 +186,4 @@
 | Versão |       Descrição       |                     Autor                      |    Data    |                       Revisor                        | Data de revisão |
 | :----: | :-------------------: | :--------------------------------------------: | :--------: | :--------------------------------------------------: | :-------------: |
 |  1.0   | Requisitos do Sistema | [Carlos Henrique](https://github.com/carlinn1) | 12/01/2025 | [Gabriel Henrique](https://github.com/gabrielhrlima) |   15/01/2025    |
+|  2.0   | Separação em categorias | [Pedro Gustavo](https://github.com/PedroGusta) | 24/01/2025 |  |    |
