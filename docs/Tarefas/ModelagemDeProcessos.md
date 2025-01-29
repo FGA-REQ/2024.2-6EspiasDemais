@@ -77,23 +77,7 @@ Todo o processo foi modelado através da ferramenta Lucidchart e pode ser acessa
     - O usuário pode criar um cadastro na plataforma.
         1. Após o cadastro, o usuário é redirecionado para **acessar o perfil**, iniciando o fluxo de **Usuário com login**.
 
-#### **Usuário sem Login**
-
-1. **Visualizar Feed de Artigos**
-
-    - O usuário pode navegar pelo feed de artigos disponíveis, acessando informações públicas sem necessidade de login.
-
-2. **Enviar Sugestões**
-
-    - O usuário pode contribuir com sugestões mesmo sem estar logado:
-
-        1. **Sugestões de Pauta**: O usuário propõe ideias para novas pautas. Após o envio, o fluxo é concluído.
-        2. **Sugestões de Artigos**: O usuário sugere temas ou conteúdos para artigos. Após o envio, o fluxo é concluído.
-
-3. **Criar Cadastro**
-
-    - O usuário pode optar por criar um cadastro na plataforma:
-        1. Após o cadastro, o usuário é redirecionado para **acessar o perfil**, iniciando o fluxo de **Usuário com login**.
+---
 
 ### Diagrama de processo de desenvolvimento
 
@@ -101,29 +85,24 @@ Todo o processo foi modelado através da ferramenta Lucidchart e pode ser acessa
 
 Etapa incial do projeto, onde se tem as primeiras conversas entre o cliente e a equipe e surgem as primeiras ideias para a definição de requisitos e criação de histórias de usuários.
 
-1. **Entendimento**
+1. **Backlog**
 
     - Onde ocorrem as primeiras conversas entre a equipe de desenvolvimento e o cliente, entendendo as necessidades do usuário para a formulação de requisitos.
-    - Entradas: conversas com o cliente e entre a equipe.
-    - Saídas: elicitação e descoberta de requisitos.
-
-2. **Backlog**
-
     - Onde os requisitos levantados nas conversas com o cliente vão ser analizados e transformados em User Stories.
     - Entradas: elicitação e descoberta de requisitos.
     - Saídas: User stories criadas, com título, cartão e critérios de aceitação.
 
-3. **Decisão: Requisitos estruturados?**
+2. **Decisão: Requisitos estruturados?**
 
     - Após a realização das etapas anteriores o time deve se questionar se os requisitos estão bem estruturados para dar prosseguimento ao projeto.
     - Caso a resposta seja não, a equipe de desenvolvimento deve retornar a tarefa de entendimento, a fim de estruturar melhor os requisitos para o sistema.
     - Caso a resposta seja sim, a equipe deve seguir adiante para a etapa de Design.
 
-#### Design
+#### Equipe de Design
 
-Segunda etapa do projeto, quando será feita a prototipação de alta fidelidade para cada história de usuário.
+Segunda etapa do projeto, sendo de responsabilidade da equipe de design, quando será feita a prototipação de alta fidelidade para cada história de usuário.
 
-1. **Design**
+1. **Desenvolvimento dos protótipos de alta fidelidade**
 
     - Nesta tarefa, a equipe deve utilizar as histórias de usuários desenvolvidas anteriormente para o desenvolvimento de protótipos a serem utilizados em suas respectivas histórias.
     - Entradas: User stories criadas, ideia e criterios de aceitação iniciais.
@@ -145,7 +124,7 @@ Segunda etapa do projeto, quando será feita a prototipação de alta fidelidade
 
 #### Develop
 
-Terceira etapa do desenvolvimento, onde serão feitas as implementações com base em todo o material produzido nas tarefas e etapas anteriores.
+Terceira e ultima etapa do desenvolvimento, onde serão feitas as implementações pela equipe de desenvolvimento, com base em todo o material produzido nas tarefas e etapas anteriores.
 
 1. **Desenvolvimento**
 
@@ -153,23 +132,19 @@ Terceira etapa do desenvolvimento, onde serão feitas as implementações com ba
     - Entradas: Protótipos de alta fidelidade e user stories validadas pelo cliente.
     - Saída: Implementação correspondente a cada história de usuário.
 
-#### Test
-
-Etapa final do desenvolvimento, ocorrendo a validação das implementações criadas na etapa anterior e validação final do cliente.
-
-1. **Teste**
+2. **Teste**
 
     - Tarefa de validação das implementações, verificando atravéz de um checklist se os critérios de aceitação foram atingidos.
     - Entradas: Implementação correspondente a cada história de usuário.
     - Saída: checklist preenchido dos critérios de aceitação de cada user storie.
 
-2. **Decisão: Todos os critérios de aceitação foram atendidos?**
+3. **Decisão: Todos os critérios de aceitação foram atendidos?**
 
     - Tarefa de verificação do checklist gerado pela tarefa anterior.
     - Caso a resposta seja sim, o desenvolvimento avança para a tarefa de verificação final.
     - Caso a resposta seja não, o desenvolvimento retorna para a tarefa de desenvolvimento na etapa anterior, com o intuito de resolver as falhas de desenvolvimento para que a implementação cumpra todos os critérios.
 
-3. **Verificação final**
+4. **Verificação final**
 
     - Nesta tarefa ocorre a validação final pela equipe e pelo cliente para acontecer a entrega do projeto e fim do ciclo de desenvolvimento.
 
@@ -190,3 +165,4 @@ Etapa final do desenvolvimento, ocorrendo a validação das implementações cri
 | Versão |       Descrição        |                                             Autor(es)                                             |    Data    |                                           Revisor                                            | Data de revisão |
 | :----: | :--------------------: | :-----------------------------------------------------------------------------------------------: | :--------: | :------------------------------------------------------------------------------------------: | :-------------: |
 |  1.0   | Modelagem de Processos | [Carlos Henrique](https://github.com/carlinn1), [Ruan Carvalho](https://github.com/Ruan-Carvalho), [Jesse Eveline](https://github.com/xzxjesse) | 15/01/2025 | [Pedro Gustavo](https://github.com/PedroGusta) |   15/01/2025    |
+| 1.1 | Remodelagem do diagrama de desenvolvimento | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 28/01/2025 |  |  |
