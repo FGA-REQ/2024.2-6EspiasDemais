@@ -6,7 +6,7 @@
 
 | Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local        | Redator                                        | Revisor                                        |
 | ---------- | ----------------------- | ------------------------ | ------------------------ | ------------------------- | ------------ | ---------------------------------------------- | ---------------------------------------------- |
-| 10/01/2025 | 13:00                   | 13:00                    | 13:30                    | 13:30                     | Google Meets | [Carlos Henrique](https://github.com/carlinn1) | [Ruan Carvalho](https://github.com/Ruan-Carvalho)                                               |
+| 24/01/2025 | 13:00                   | 13:00                    | 13:30                    | 13:30                     | Google Meets | [Carlos Henrique](https://github.com/carlinn1) | [Ruan Carvalho](https://github.com/Ruan-Carvalho)                                               |
 
 Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
@@ -41,57 +41,53 @@ Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 ## 3. Pendências Anteriores
 
 - Finalizar a ata da reunião do dia 17/01/2025 (responsabilidade atribuída a Ruan).
-- Corrigir e finalizar formulários de usuário (responsabilidade atribuída a Gabriel).
-- Reorganizar requisitos funcionais e regras de negócio.
-- Implementar funcionalidades pendentes da API e corrigir erros nos commits.
+- Corrigir e finalizar formulários de usuário (responsabilidade atribuída a Gabriel e João).
+- Reorganizar requisitos funcionais e regras de negócio (responsabilidade atribuída a Pedro).
+- Corrigir erros nos commits (responsabilidade atribuída a Jéssica).
 
 ## 4. Assuntos Tratados
 
 **Tabela 3:** Assuntos a serem tratados e seu tipo.
 
-| N°  | Descrição                                                                                                   | Tipo          |
-| --- | ----------------------------------------------------------------------------------------------------------- | ------------- |
-| 01  | Assuntos Tratados                                                                                           | Geral         |
-| 02  | API refeita, incluindo categorias, sugestão de temas e artigos (Jéssica e João – concluído).                | Estratégico   |
-| 03  | Feed implementado por Gabriel, com necessidade de revisão nos formulários.                                  | Planejamento  |
-| 04  | Problemas técnicos relatados nos commits para sugestão de temas e artigos, exigindo retrabalho na próxima semana. | Técnico       |
-| 05  | Discussão sobre a importância de rastreabilidade e feedback nas issues do Jira.                             | Gerenciamento |
-| 06  | Planejamento de um formulário unificado para reunir todas as histórias de usuário (Gabriel).                | Técnico       |
-| 07  | Padronização dos ícones do diagrama BPMN (Ruan).                                                            | Geral         |
-| 08  | Reorganização de regras de negócio e requisitos funcionais/não funcionais (Pedro e Carlos).                 | Geral         |
-| 09  | Pesquisa sobre criptografia no banco de dados e métodos POST para login (Ruan).                             | Geral         |
-
+| Nº  | Descrição                                                                                                  | Tipo          |
+|---- |------------------------------------------------------------------------------------------------------------|--------------|
+| 01  | Implementação da API, incluindo categorias, sugestão de temas e artigos.                                   | Estratégico  |
+| 02  | Implementação do feed com filtros e seção "Sobre".                                                         | Gerenciamento |
+| 03  | Problemas técnicos identificados nos commits para sugestão de temas e artigos, exigindo retrabalho.        | Técnico      |
+| 04  | Discussão sobre a importância da rastreabilidade e do feedback nas issues do Jira.                         | Gerenciamento |
+| 05  | Planejamento de um formulário unificado para centralizar todas as histórias de usuário.                    | Técnico      |
+| 06  | Padronização dos ícones no diagrama BPMN.                                                                  | Geral        |
+| 07  | Reorganização das regras de negócio e dos requisitos funcionais/não funcionais.                            | Geral        |
+| 08  | Pesquisa sobre criptografia no banco de dados e implementação de métodos POST para login.                  | Geral        |
 
 Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 ## **Decisão e Apresentação:**
 
-- Foco no final de semana para corrigir pendências da sprint 1.
+- Foco no final de semana para corrigir pendências.
 
-- Definição das histórias de usuário e divisões de tarefas na próxima reunião (segunda-feira).
+- Definição das histórias de usuário e divisões de tarefas na próxima reunião.
 
-- Necessidade de reorganizar as regras e requisitos em dois documentos e validar rastreabilidade com o cliente e a professora.
+- Necessidade de reorganizar as regras e requisitos em tipos e validar rastreabilidade com o cliente.
 
 
 ## 5. Próxima Reunião
 
-- 31 de Janeiro de 2025 a 13:00 da Tarde.
+- 31 de Janeiro de 2025 a 13:00.
 
 ## 6. Compromissos
 
 **Tabela 4:** Compromissos com data e o nome do responsável.
 
-| N°  | Compromisso                                                             | Responsável         | Data       |
-| --- | ----------------------------------------------------------------------- | ------------------- | ---------- |
-| 01  | Criar formulário unificado com base nas histórias de usuário            | Gabriel             | 29/01/2025 |
-| 02  | Reorganizar regras e requisitos, com suporte ao cliente e rastreabilidade | Pedro e Carlos    | 29/01/2025 |
-| 03  | Desenvolvimento do Backlog e Definição do MVP                           | João e Jéssica      | 29/01/2025 |
-| 04  | Finalizar atas pendentes (17/01)                                        | Ruan                | 29/01/2025 |
-| 05  | Padronizar ícones do diagrama BPMN                                      | Ruan                | 29/01/2025 |
-| 06  | Pesquisar soluções de criptografia e segurança no banco de dados        | Ruan                | 29/01/2025 |
-| 07  | Finalizar atas pendentes (24/01)                                        | Carlos              | 29/01/2025 |
-| 08  | Revisar e corrigir problemas nos commits e integração com a API         | Jéssica e João      | 29/01/2025 |
-
+| Nº  | Compromisso                                                            | Responsável         | Data       |
+|-----|------------------------------------------------------------------------|---------------------|------------|
+| 01  | Criar formulário unificado com base nas histórias de usuário           | Gabriel e João      | 27/01/2025 |
+| 02  | Reorganizar regras e requisitos em tipos                               | Pedro               | 27/01/2025 |
+| 03  | Padronizar ícones do diagrama BPMN                                     | Ruan                | 27/01/2025 |
+| 04  | Finalizar atas pendentes (17/01)                                       | Ruan                | 27/01/2025 |
+| 05  | Criar ata da reunião (24/01)                                           | Carlos              | 27/01/2025 |
+| 06  | Pesquisar soluções de criptografia e segurança no banco de dados       | João                | 27/01/2025 |
+| 07  | Revisar e corrigir problemas nos commits e integrações                 | Jéssica             | 27/01/2025 |
 
 Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
