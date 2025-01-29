@@ -36,8 +36,17 @@ namespace WebForms_ConectaCiencia
 
                     if (categorias != null && categorias.Count > 0)
                     {
-                        ConfigurarDropDown(ddlCategoriaTema, categorias);
-                        ConfigurarDropDown(ddlCategoriaArtigo, categorias);
+                        ddlCategoriaTema.DataSource = categorias;
+                        ddlCategoriaTema.DataTextField = "Nome_Categoria";
+                        ddlCategoriaTema.DataValueField = "Id_Categoria";
+                        ddlCategoriaTema.DataBind();
+                        ddlCategoriaTema.Items.Insert(0, new ListItem("Selecione uma Categoria", ""));
+
+                        ddlCategoriaArtigo.DataSource = categorias;
+                        ddlCategoriaArtigo.DataTextField = "Nome_Categoria";
+                        ddlCategoriaArtigo.DataValueField = "Id_Categoria";
+                        ddlCategoriaArtigo.DataBind();
+                        ddlCategoriaArtigo.Items.Insert(0, new ListItem("Selecione uma Categoria", ""));
                     }
                     else
                     {
@@ -52,66 +61,6 @@ namespace WebForms_ConectaCiencia
             catch (Exception ex)
             {
                 ExibirMensagem("alertError", "Erro ao carregar categorias: " + ex.Message);
-            }
-        }
-
-        private void ConfigurarDropDown(DropDownList dropDownList, List<Categoria> categorias)
-        {
-            dropDownList.DataSource = categorias;
-            dropDownList.DataTextField = "Nome_Categoria";
-            dropDownList.DataValueField = "Id_Categoria";
-            dropDownList.DataBind();
-            dropDownList.Items.Insert(0, new ListItem("Selecione uma Categoria", ""));
-        }
-
-        protected async void BtnEnviarArtigo_Click(object sender, EventArgs e)
-        {
-            string nome = txtNomeArtigo.Text.Trim();
-            string email = txtEmailArtigo.Text.Trim();
-            string titulo = txtTituloArtigo.Text.Trim();
-            string conteudo = txtConteudoArtigo.Text.Trim();
-            int idCategoria;
-
-            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(titulo) || string.IsNullOrEmpty(conteudo) || !int.TryParse(ddlCategoriaArtigo.SelectedValue, out idCategoria) || idCategoria == 0)
-            {
-                ExibirMensagem("alertError", "Todos os campos são obrigatórios e uma categoria deve ser selecionada.");
-                return;
-            }
-
-            try
-            {
-                string apiUrl = "https://localhost:7146/api/Formulario/artigo";
-
-                var formularioArtigo = new FormularioArtigo
-                {
-                    Nome = nome,
-                    Email = email,
-                    Titulo = titulo,
-                    Conteudo = conteudo,
-                    Id_Categoria = idCategoria,
-                    Categoria = new Categoria
-                    {
-                        Id_Categoria = idCategoria,
-                        Nome_Categoria = ddlCategoriaArtigo.SelectedItem.Text
-                    }
-                };
-
-                HttpResponseMessage response = await client.PostAsJsonAsync(apiUrl, formularioArtigo);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    LimparCamposArtigo();
-                    ExibirMensagem("alertSuccess", "Sugestão de artigo enviada com sucesso!");
-                }
-                else
-                {
-                    string responseBody = await response.Content.ReadAsStringAsync();
-                    ExibirMensagem("alertError", $"Erro ao enviar sugestão de artigo: {response.StatusCode} - {responseBody}");
-                }
-            }
-            catch (Exception ex)
-            {
-                ExibirMensagem("alertError", "Erro ao salvar dados: " + ex.Message);
             }
         }
 
@@ -132,30 +81,35 @@ namespace WebForms_ConectaCiencia
             {
                 string apiUrl = "https://localhost:7146/api/Formulario/tema";
 
+                var categoriaSelecionada = new Categoria
+                {
+                    Id_Categoria = idCategoria,
+                    Nome_Categoria = ddlCategoriaTema.SelectedItem.Text
+                };
+
                 var formularioTema = new FormularioTema
                 {
                     Nome = nome,
                     Email = email,
                     Tema = tema,
                     Id_Categoria = idCategoria,
-                    Categoria = new Categoria
-                    {
-                        Id_Categoria = idCategoria,
-                        Nome_Categoria = ddlCategoriaTema.SelectedItem.Text
-                    }
+                    Categoria = categoriaSelecionada
                 };
 
-                HttpResponseMessage response = await client.PostAsJsonAsync(apiUrl, formularioTema);
+                using (var client = new HttpClient())
+                {
+                    HttpResponseMessage response = await client.PostAsJsonAsync(apiUrl, formularioTema);
 
-                if (response.IsSuccessStatusCode)
-                {
-                    LimparCamposTema();
-                    ExibirMensagem("alertSuccess", "Sugestão de tema enviada com sucesso!");
-                }
-                else
-                {
-                    string responseBody = await response.Content.ReadAsStringAsync();
-                    ExibirMensagem("alertError", $"Erro ao enviar sugestão de tema: {response.StatusCode} - {responseBody}");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        LimparCamposTema();
+                        ExibirMensagem("alertSuccess", "Sugestão de tema enviada com sucesso!");
+                    }
+                    else
+                    {
+                        string responseBody = await response.Content.ReadAsStringAsync();
+                        ExibirMensagem("alertError", $"Erro ao enviar sugestão de tema: {response.StatusCode} - {responseBody}");
+                    }
                 }
             }
             catch (Exception ex)
@@ -164,9 +118,69 @@ namespace WebForms_ConectaCiencia
             }
         }
 
+        protected async void BtnEnviarArtigo_Click(object sender, EventArgs e)
+        {
+            string nome = txtNomeArtigo.Text.Trim();
+            string email = txtEmailArtigo.Text.Trim();
+            string titulo = txtTituloArtigo.Text.Trim();
+            string conteudo = txtConteudoArtigo.Text.Trim();
+            int idCategoria;
+
+            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(titulo) || string.IsNullOrEmpty(conteudo) || !int.TryParse(ddlCategoriaArtigo.SelectedValue, out idCategoria) || idCategoria == 0)
+            {
+                ExibirMensagem("alertError", "Todos os campos são obrigatórios e uma categoria deve ser selecionada.");
+                return;
+            }
+
+            try
+            {
+                string apiUrl = "https://localhost:7146/api/Formulario/artigo";
+
+                var categoriaSelecionada = new Categoria
+                {
+                    Id_Categoria = idCategoria,
+                    Nome_Categoria = ddlCategoriaArtigo.SelectedItem.Text
+                };
+
+                var formularioArtigo = new FormularioArtigo
+                {
+                    Nome = nome,
+                    Email = email,
+                    Titulo = titulo,
+                    Conteudo = conteudo,
+                    Id_Categoria = idCategoria,
+                    Categoria = categoriaSelecionada
+                };
+
+                HttpResponseMessage response = await client.PostAsJsonAsync(apiUrl, formularioArtigo);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    LimparCamposArtigo();
+                    ExibirMensagem("alertSuccess", "Sugestão de artigo enviada com sucesso!");
+                }
+                else
+                {
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    ExibirMensagem("alertError", $"Erro ao enviar sugestão de artigo: {response.StatusCode} - {responseBody}");
+                }
+            }
+            catch (Exception ex)
+            {
+                ExibirMensagem("alertError", "Erro ao salvar dados: " + ex.Message);
+            }
+        }
         private void ExibirMensagem(string idAlert, string mensagem)
         {
             ScriptManager.RegisterStartupScript(this, GetType(), "ShowAlert", $"mostrarMensagem('{idAlert}', '{mensagem}');", true);
+        }
+
+        private void LimparCamposTema()
+        {
+            txtNomeTema.Text = "";
+            txtEmailTema.Text = "";
+            txtTema.Text = "";
+            ddlCategoriaTema.SelectedIndex = 0;
         }
 
         private void LimparCamposArtigo()
@@ -176,14 +190,6 @@ namespace WebForms_ConectaCiencia
             txtTituloArtigo.Text = "";
             txtConteudoArtigo.Text = "";
             ddlCategoriaArtigo.SelectedIndex = 0;
-        }
-
-        private void LimparCamposTema()
-        {
-            txtNomeTema.Text = "";
-            txtEmailTema.Text = "";
-            txtTema.Text = "";
-            ddlCategoriaTema.SelectedIndex = 0;
         }
     }
 }

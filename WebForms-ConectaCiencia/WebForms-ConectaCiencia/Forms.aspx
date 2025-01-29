@@ -1,10 +1,13 @@
 ﻿<%@ Page Title="Formulários" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Forms.aspx.cs" Inherits="WebForms_ConectaCiencia.Forms" Async="true"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <div id="alertSuccess" class="toast toast-success d-none" role="alert"></div>
+    <div id="alertError" class="toast toast-error d-none" role="alert"></div>
+
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="container p-4" style="max-width: 1200px;"> 
             <div class="row">
-
+                
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="p-4 border shadow-lg" style="width: 100%; max-width: 400px;">
                         <h2 class="text-center">Sugerir Tema</h2>
@@ -26,7 +29,7 @@
                             <asp:Button ID="BtnEnviarTema" CssClass="btn btn-primary mt-2" runat="server" Text="Enviar" OnClick="BtnEnviarTema_Click" Enabled="false" />
                         </div>
                     </div>
-                </div>
+                </div>
 
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="p-4 border shadow-lg" style="width: 100%; max-width: 400px;">
@@ -73,8 +76,13 @@
             }
 
             setTimeout(function () {
-                alertSuccess.classList.add('d-none');
-                alertError.classList.add('d-none');
+                alertSuccess.classList.add('show');
+                alertError.classList.add('show');
+            }, 10);
+
+            setTimeout(function () {
+                alertSuccess.classList.remove('show');
+                alertError.classList.remove('show');
             }, 5000);
         }
 
@@ -124,5 +132,32 @@
             document.getElementById('<%= ddlCategoriaArtigo.ClientID %>').addEventListener('change', validarCamposArtigo);
         });
     </script>
+
+    <style>
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            min-width: 200px;
+            padding: 15px;
+            color: #fff;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            z-index: 1050;
+        }
+
+        .toast.show {
+            opacity: 1;
+        }
+
+        .toast-success {
+            background-color: #28a745;
+        }
+
+        .toast-error {
+            background-color: #dc3545;
+        }
+    </style>
 
 </asp:Content>
