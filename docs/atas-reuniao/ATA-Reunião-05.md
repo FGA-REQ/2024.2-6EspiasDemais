@@ -6,7 +6,7 @@
 
 | Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local        | Redator                                        | Revisor                                        |
 | ---------- | ----------------------- | ------------------------ | ------------------------ | ------------------------- | ------------ | ---------------------------------------------- | ---------------------------------------------- |
-| 27/01/2025 | 12:00                   | 12:15                    | 13:30                    | 13:30                     | Presencial - FCTE |  [Ruan Carvalho](https://github.com/Ruan-Carvalho) |                                               |
+| 27/01/2025 | 12:00                   | 12:15                    | 13:30                    | 13:30                     | Presencial - FCTE |  [Ruan Carvalho](https://github.com/Ruan-Carvalho) |         [Jéssica Eveline](https://github.com/xzxjesse)                                      |
 
 Autor:  [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
@@ -66,7 +66,8 @@ Próxima reunião será na sexta-feira às 13:00, dia 31/01/2025. Sendo realizad
 | 01  | Resolução de bugs no formulário de sugestão de arigo                   | Ruan e Jéssica      | 28/01/2025 |
 | 02  | Resolução de bugs no formulário de sugestão de tema                    | Carlos e Jéssica    | 28/01/2025 |
 | 03  | Padronizar ícones do diagrama BPMN                                     | Ruan                | 28/01/2025 |
-| 04  | Criar ata da reunião (27/01)                                           | Ruan                | 29/01/2025 |
+| 04  | Organizar Regras de Negócio e Requisitos por tipos                     | Pedro               | 28/01/2025 |
+| 05  | Criar ata da reunião (27/01)                                           | Ruan                | 29/01/2025 |
 | 06  | Finalizar formulário para avaliação do usuário                         | Gabriel e João      | 29/01/2025 |
 
 Autor: [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
@@ -81,6 +82,6 @@ Autor: [Ruan Carvalho](https://github.com/Ruan-Carvalho), 2025.
 
 | Versão |   Descrição    |                     Autor                      |    Data    |                    Revisor                     | Data de revisão |
 | :----: | :------------: | :--------------------------------------------: | :--------: | :--------------------------------------------: | :-------------: |
-|  1.0   | Ata reunião 05 | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 29/01/2025 |  |  |
+|  1.0   | Ata reunião 05 | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 29/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) | 29/01/202 |
 
 
