@@ -3,43 +3,53 @@
 ### Requisitos Funcionais
 
 #### Categorias
+
 1. Cada **categoria** deve possuir um **nome único e descritivo**.
 
 #### Formulário Tema
+
 1.  Os campos **nome**, **email**, **tema** e **categoria** são obrigatórios para cada sugestão.
 2.  A **categoria** deve referenciar uma categoria existente.
 
 #### Formulário Artigo
+
 1. Os campos **nome**, **email**, **título**, **conteúdo** e **categoria** são obrigatórios.
 2. A **categoria** deve referenciar uma categoria existente.
 
 #### Artigos
+
 1. Cada **artigo** deve ter um **título** e **conteúdo** associados a um **autor identificado**.
 2. Apenas **usuários cadastrados** podem submeter artigos, vinculados ao **id_usuario**.
 3. Um artigo deve estar obrigatoriamente associado a uma **categoria válida**.
 4. A **data de submissão** é automaticamente registrada e não pode ser alterada manualmente.
 
 #### Usuários
+
 1. O **email dos usuários** deve ser **único** no banco de dados.
 2. A **senha** deve ser armazenada de forma segura, utilizando técnicas de **hash**.
 3. Apenas **usuários autenticados** devem ter permissão para criar, modificar artigos e interagir com artigos já publicados.
 
 #### Relacionamentos
+
 1. Um **usuário** pode submeter vários artigos, mas cada **artigo pertence a um único usuário**.
 2. Cada **artigo** deve estar associado a uma **única categoria**.
 
 ### Requisitos Não Funcionais
 
 #### Segurança
+
 1. As **senhas dos usuários** devem ser armazenadas de forma segura utilizando técnicas de **hash**.
 
 #### Usabilidade
+
 1. O **email** dos usuários deve ser único, garantindo um bom fluxo de cadastro.
 
 #### Performance
+
 1. As operações de **submissão de artigos** devem ser realizadas de forma eficiente, sem impactar na experiência do usuário.
 
 #### Integridade de Dados
+
 1. A **categoria associada** aos artigos e aos temas deve ser válida e existirem previamente cadastradas no sistema.
 
 ## Regras de Negócio da API
@@ -97,16 +107,20 @@
 ### Requisitos Não Funcionais
 
 #### Segurança
+
 1. As senhas dos usuários devem ser armazenadas de forma segura utilizando técnicas de hash.
 2. Todos os endpoints devem validar a entrada do usuário para prevenir ataques de SQL Injection.
 
 #### Usabilidade
+
 1. Os filtros de pesquisa de artigos devem ser opcionais, facilitando a navegação do usuário.
 
 #### Performance
+
 1. Os artigos devem ser retornados em ordem decrescente de data de publicação por padrão, garantindo consultas rápidas e organizadas.
 
 #### Conformidade
+
 1. O sistema de autenticação deve seguir boas práticas de segurança.
 
 ## Segurança e Auditoria
@@ -165,17 +179,21 @@
 ### Requisitos Não Funcionais
 
 #### Usabilidade
+
 - O botão de login deve permanecer **desativado** até que os campos obrigatórios estejam preenchidos.
 - O **botão de cadastro** deve ser ativado apenas quando todos os campos obrigatórios estiverem preenchidos corretamente.
 - As páginas devem **apresentar mensagens de confirmação ou erro** em casos apropriados.
 
 #### Segurança
+
 - **Validação de email** deve ser realizada nos formulários de envio.
 
 #### Performance
+
 - As **páginas** devem carregar os dados de maneira eficiente e rápida, especialmente para **feeds** e listagens de artigos.
 
 #### Integração
+
 - A **categoria** no formulário de publicação deve ser **selecionada de uma lista** fornecida pela **API**.
 - O sistema de **autenticação** deve fornecer os dados do autor ao publicar um artigo.
 
@@ -183,7 +201,7 @@
 
 <font size="3"><p style="text-align: left">**Tabela 1** - Histórico de versões.</p></font>
 
-| Versão |       Descrição       |                     Autor                      |    Data    |                       Revisor                        | Data de revisão |
-| :----: | :-------------------: | :--------------------------------------------: | :--------: | :--------------------------------------------------: | :-------------: |
-|  1.0   | Requisitos do Sistema | [Carlos Henrique](https://github.com/carlinn1) | 12/01/2025 | [Gabriel Henrique](https://github.com/gabrielhrlima) |   15/01/2025    |
-|  2.0   | Separação em categorias | [Pedro Gustavo](https://github.com/PedroGusta) | 24/01/2025 |  |    |
+| Versão |        Descrição        |                     Autor                      |    Data    |                       Revisor                        | Data de revisão |
+| :----: | :---------------------: | :--------------------------------------------: | :--------: | :--------------------------------------------------: | :-------------: |
+|  1.0   |  Requisitos do Sistema  | [Carlos Henrique](https://github.com/carlinn1) | 12/01/2025 | [Gabriel Henrique](https://github.com/gabrielhrlima) |   15/01/2025    |
+|  2.0   | Separação em categorias | [Pedro Gustavo](https://github.com/PedroGusta) | 24/01/2025 | [Gabriel Henrique](https://github.com/gabrielhrlima) |   29/01/2025    |
