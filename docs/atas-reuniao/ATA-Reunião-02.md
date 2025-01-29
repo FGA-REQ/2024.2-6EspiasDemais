@@ -2,13 +2,6 @@
 
 ## 1. Identificação
 
-- Data: 10 de janeiro de 2025
-- Início: 13:00
-- Término: 13:29
-- Local: Google Meets
-- Redator: [Carlos Henrique](https://github.com/carlinn1)
-- Revisor: [Jéssica Eveline](https://github.com/xzxjesse)
-
 **Tabela 1:** Cabeçalho com datas, horarios e realizadores.
 
 | Data       | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local        | Redator                                        | Revisor                                        |
@@ -160,8 +153,6 @@ Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 ## 6. Compromissos
 
-- Registrar os compromissos acordados durante a reunião (identificados como pendências nos assuntos tratados), identificando o responsável e a data acordada para a conclusão da atividade.
-
 **Tabela 4:** Compromissos com data e o nome do responsável.
 
 | N°  | Compromisso                                   | Responsável    | Data       |
@@ -171,24 +162,11 @@ Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 | 03  | Desenvolvimento do Backlog e Definição do MVP | João e Jéssica | 15/01/2025 |
 | 04  | Modelagem de Processos de Desenvolvimento     | Carlos e Juan  | 15/01/2025 |
 
-Autor: (Carlos Henrique de Souza Bispo)
+Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 ## Referências
 
 > [Ata de Reunião](https://pdp.mctic.gov.br/MCTI-PDP/guidances/examples/Ata%20Reuniao_21C35EC2.html) do Ministério da Ciência, Tecnologia e Inovação (MCTI).
-
-## Histórico de Versões
-
-- Versão: 1.1.
-- Descrição: Evitar alterações simultâneas em Develop para prevenir conflitos e dividir as tarefas a serem feitas para realização da entrega.
-- Autor: [Carlos Henrique](https://github.com/carlinn1)
-- Data: 11/01/2025.
-- Revisor: [Jéssica Eveline](https://github.com/xzxjesse)
-- Data de revisão: 14/01/2025.
-
-| Versão |       Descrição       |                     Autor                      |    Data    |                    Revisor                     | Data de revisão |
-| :----: | :-------------------: | :--------------------------------------------: | :--------: | :--------------------------------------------: | :-------------: |
-|  1.1   | Versão Ata reunião 02 | [Carlos Henrique](https://github.com/carlinn1) | 11/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse) |   14/01/2025    |
 
 ## Histórico de Versões
 
