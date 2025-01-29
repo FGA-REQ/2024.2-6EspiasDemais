@@ -5,7 +5,10 @@ nav:
   - Atas de Reunião:
     - Ata: "atas-reuniao/ata-padrao.md"
     - Ata 1: "atas-reuniao/ATA-Reunião-01.md"
-    - Ata 2: "atas-reuniao/ATA-Reuniao-02.md"
+    - Ata 2: "atas-reuniao/ATA-Reunião-02.md"
+    - Ata 3: "atas-reuniao/ATA-Reunião-03.md"
+    - Ata 4: "atas-reuniao/ATA-Reunião-04.md"
+    - Ata 5: "atas-reuniao/ATA-Reunião-05.md"
   - Recursos:
     - Padrões de commit e branch: "recursos/padrões_commit.md"
     - Ferramentas: "recursos/tecnologias.md"

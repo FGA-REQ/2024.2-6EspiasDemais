@@ -12,9 +12,6 @@ Autor: [Carlos Henrique](https://github.com/carlinn1), 2025.
 
 ### Participantes:
 
-- Presente: Marcar somente as pessoas que participaram da reunião;
-- Nome: Listas todas as pessoas que foram convocadas para a reunião.
-
 **Tabela 2:** Participantes e suas presenças.
 
 |                         Nome                         | Presente |
