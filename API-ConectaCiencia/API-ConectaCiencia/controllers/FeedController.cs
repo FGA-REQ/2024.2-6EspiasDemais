@@ -150,5 +150,25 @@ namespace API_ConectaCiencia.controllers
                 return StatusCode(500, $"Erro ao atualizar a publicação: {ex.Message}");
             }
         }
+
+        [HttpDelete("Artigo/Delete/{id}")]
+        public async Task<IActionResult> DeletarPublicacao(int id)
+        {
+            var artigoExistente = await _feedRepository.ObterPublicacaoPorId(id);
+            if (artigoExistente == null)
+            {
+                return NotFound("Publicação não encontrada.");
+            }
+
+            try
+            {
+                await _feedRepository.DeletarPublicacao(id);
+                return Ok("Publicação deletada com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao deletar a publicação: {ex.Message}");
+            }
+        }
     }
 }
