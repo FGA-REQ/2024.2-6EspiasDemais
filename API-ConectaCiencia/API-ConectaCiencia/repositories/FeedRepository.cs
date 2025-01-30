@@ -215,5 +215,29 @@ namespace API_ConectaCiencia.repositories
                 }
             }
         }
+
+        public async Task<bool> AtualizarPublicacao(ArtigoModel artigoModel)
+        {
+            var sql = @"UPDATE Artigos
+                SET titulo = @titulo,
+                    conteudo = @conteudo,
+                    id_categoria = @id_categoria
+                WHERE id_artigo = @id_artigo";
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@titulo", artigoModel.Titulo);
+                    command.Parameters.AddWithValue("@conteudo", artigoModel.Conteudo);
+                    command.Parameters.AddWithValue("@id_categoria", artigoModel.Categoria.Id_Categoria);
+                    command.Parameters.AddWithValue("@id_artigo", artigoModel.Id_Artigo);
+
+                    connection.Open();
+                    int rowsAffected = await command.ExecuteNonQueryAsync();
+                    return rowsAffected > 0;
+                }
+            }
+        }
     }
 }
