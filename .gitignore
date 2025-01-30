@@ -1,0 +1,10 @@
+# Ignorar pastas de build e cache
+obj/
+bin/
+
+# Ignorar configurações sensíveis
+appsettings.json
+Web.config
+
+# Ignorar arquivos e pastas do Visual Studio
+.vs/
