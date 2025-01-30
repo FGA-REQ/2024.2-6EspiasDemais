@@ -105,5 +105,50 @@ namespace API_ConectaCiencia.controllers
                 return StatusCode(500, $"Erro ao adicionar a publicação: {ex.Message}");
             }
         }
+
+        [HttpPatch("Artigo/Patch/{id}")]
+        public async Task<IActionResult> AtualizarPublicacao(int id, [FromBody] ArtigoModel artigoModel)
+        {
+            if (artigoModel == null)
+            {
+                return BadRequest("Dados de publicação não fornecidos.");
+            }
+
+            if (string.IsNullOrEmpty(artigoModel.Titulo) && string.IsNullOrEmpty(artigoModel.Conteudo) && artigoModel.Categoria == null)
+            {
+                return BadRequest("Pelo menos um dos seguintes campos deve ser preenchido: título, conteúdo ou categoria.");
+            }
+
+            var artigoExistente = await _feedRepository.ObterPublicacaoPorId(id);
+            if (artigoExistente == null)
+            {
+                return NotFound("Publicação não encontrada.");
+            }
+
+            if (artigoModel.Titulo != null)
+            {
+                artigoExistente.Titulo = artigoModel.Titulo;
+            }
+
+            if (artigoModel.Conteudo != null)
+            {
+                artigoExistente.Conteudo = artigoModel.Conteudo;
+            }
+
+            if (artigoModel.Categoria != null)
+            {
+                artigoExistente.Categoria = artigoModel.Categoria;
+            }
+
+            try
+            {
+                await _feedRepository.AtualizarPublicacao(artigoExistente);
+                return Ok("Publicação atualizada com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao atualizar a publicação: {ex.Message}");
+            }
+        }
     }
 }
