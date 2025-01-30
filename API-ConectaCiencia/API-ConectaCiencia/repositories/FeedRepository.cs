@@ -239,5 +239,22 @@ namespace API_ConectaCiencia.repositories
                 }
             }
         }
+
+        public async Task<bool> DeletarPublicacao(int id)
+        {
+            var sql = @"DELETE FROM Artigos WHERE id_artigo = @id_artigo";
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@id_artigo", id);
+
+                    connection.Open();
+                    int rowsAffected = await command.ExecuteNonQueryAsync();
+                    return rowsAffected > 0;
+                }
+            }
+        }
     }
 }
