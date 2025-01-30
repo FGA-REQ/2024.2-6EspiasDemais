@@ -63,5 +63,47 @@ namespace API_ConectaCiencia.controllers
 
             return Ok(artigoExistente);
         }
+
+        [HttpPost("Artigo")]
+        public async Task<IActionResult> AdicionarPublicacao([FromBody] ArtigoModel artigoModel)
+        {
+            if (artigoModel == null)
+            {
+                return BadRequest("Dados de publicação não fornecidos.");
+            }
+
+            if (string.IsNullOrEmpty(artigoModel.Titulo) || string.IsNullOrEmpty(artigoModel.Conteudo) || artigoModel.Categoria == null)
+            {
+                return BadRequest("Dados incompletos: título, conteúdo e categoria são obrigatórios.");
+            }
+
+            if (artigoModel.Usuario == null || artigoModel.Usuario.Id_Usuario <= 0 || string.IsNullOrEmpty(artigoModel.Usuario.Nome))
+            {
+                return Unauthorized("Usuário não está autenticado.");
+            }
+
+            var artigoCompleto = new ArtigoModel
+            {
+                Titulo = artigoModel.Titulo,
+                Conteudo = artigoModel.Conteudo,
+                Categoria = artigoModel.Categoria,
+                Usuario = new UsuarioSimplificado
+                {
+                    Id_Usuario = artigoModel.Usuario.Id_Usuario,
+                    Nome = artigoModel.Usuario.Nome
+                },
+                Data = DateTime.UtcNow
+            };
+
+            try
+            {
+                await _feedRepository.AdicionarPublicacao(artigoCompleto);
+                return Ok("Publicação adicionada com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro ao adicionar a publicação: {ex.Message}");
+            }
+        }
     }
 }
