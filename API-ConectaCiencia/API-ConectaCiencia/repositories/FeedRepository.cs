@@ -193,5 +193,27 @@ namespace API_ConectaCiencia.repositories
 
             return artigo;
         }
+
+        public async Task AdicionarPublicacao(ArtigoModel artigoModel)
+        {
+            var sql = @"INSERT INTO Artigos (titulo, conteudo, id_categoria, id_usuario, nome, data) 
+                VALUES (@titulo, @conteudo, @id_categoria, @id_usuario, @nome, @data)";
+
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@titulo", artigoModel.Titulo);
+                    command.Parameters.AddWithValue("@conteudo", artigoModel.Conteudo);
+                    command.Parameters.AddWithValue("@id_categoria", artigoModel.Categoria.Id_Categoria);
+                    command.Parameters.AddWithValue("@id_usuario", artigoModel.Usuario.Id_Usuario);
+                    command.Parameters.AddWithValue("@nome", artigoModel.Usuario.Nome);
+                    command.Parameters.AddWithValue("@data", artigoModel.Data);
+
+                    connection.Open();
+                    await command.ExecuteNonQueryAsync();
+                }
+            }
+        }
     }
 }
