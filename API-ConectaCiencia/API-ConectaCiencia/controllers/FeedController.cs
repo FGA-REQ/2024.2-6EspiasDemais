@@ -51,5 +51,17 @@ namespace API_ConectaCiencia.controllers
                 return StatusCode(500, $"Erro ao obter os artigos: {ex.Message}");
             }
         }
+
+        [HttpGet("Artigo/{id}")]
+        public async Task<IActionResult> ObterArtigoPorId(int id)
+        {
+            var artigoExistente = await _feedRepository.ObterPublicacaoPorId(id);
+            if (artigoExistente == null)
+            {
+                return null;
+            }
+
+            return Ok(artigoExistente);
+        }
     }
 }
