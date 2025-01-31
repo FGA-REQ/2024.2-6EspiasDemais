@@ -122,3 +122,54 @@ namespace ProjetoFinal_DotNET
         {
             await CarregarArtigos();
         }
+        
+        protected async void btnSalvar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var artigoId = Convert.ToInt32(hfArtigoId.Value);
+                var titulo = txtTitulo.Text.Trim();
+                var conteudo = txtConteudo.Text.Trim();
+                var categoriaId = Convert.ToInt32(ddlCategorias.SelectedValue);
+                var nomeCategoria = ddlCategorias.SelectedItem.Text;
+
+                var artigoModel = new Artigo
+                {
+                    Id_Artigo = artigoId,
+                    Data = DateTime.UtcNow,
+                    Titulo = titulo,
+                    Conteudo = conteudo,
+                    Categoria = new Categoria
+                    {
+                        Id_Categoria = categoriaId,
+                        Nome_Categoria = nomeCategoria
+                    },
+                    Usuario = new UsuarioSimplificado
+                    {
+                        Id_Usuario = (int)Session["IdUsuario"],
+                        Nome = (string)Session["NomeUsuario"]
+                    }
+                };
+
+                string apiUrl = $"https://localhost:7146/api/Feed/Artigo/Patch/{artigoId}";
+                var response = await client.PatchAsJsonAsync(apiUrl, artigoModel);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    lblMensagem.Text = "Artigo atualizado com sucesso.";
+                    lblMensagem.Visible = true;
+                    await BindArtigos();
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    lblMensagem.Text = $"Erro ao atualizar artigo: {response.ReasonPhrase} - {errorContent}";
+                    lblMensagem.Visible = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                lblMensagem.Text = "Erro: " + ex.Message;
+                lblMensagem.Visible = true;
+            }
+        }
