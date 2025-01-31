@@ -8,15 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <Compile Remove="Controller\**" />
+    <Compile Remove="Model\**" />
+    <Compile Remove="Repository\**" />
+    <Content Remove="Controller\**" />
+    <Content Remove="Model\**" />
+    <Content Remove="Repository\**" />
+    <EmbeddedResource Remove="Controller\**" />
+    <EmbeddedResource Remove="Model\**" />
+    <EmbeddedResource Remove="Repository\**" />
+    <None Remove="Controller\**" />
+    <None Remove="Model\**" />
+    <None Remove="Repository\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="Model\" />
-    <Folder Include="Repository\" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
 </Project>
