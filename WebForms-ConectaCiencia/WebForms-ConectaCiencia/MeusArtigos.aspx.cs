@@ -173,3 +173,34 @@ namespace ProjetoFinal_DotNET
                 lblMensagem.Visible = true;
             }
         }
+
+        protected async void btnExcluir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var artigoId = Convert.ToInt32((sender as Button).CommandArgument);
+                string apiUrl = $"https://localhost:7146/api/Feed/Artigo/Delete/{artigoId}";
+
+                var response = await client.DeleteAsync(apiUrl);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    lblMensagem.Text = "Artigo excluído com sucesso.";
+                    lblMensagem.Visible = true;
+                    await BindArtigos();
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    lblMensagem.Text = $"Erro ao excluir artigo: {response.ReasonPhrase} - {errorContent}";
+                    lblMensagem.Visible = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                lblMensagem.Text = "Erro: " + ex.Message;
+                lblMensagem.Visible = true;
+             }
+        }
+    }
+}
