@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace WebForms_ConectaCiencia
 {
@@ -11,7 +7,32 @@ namespace WebForms_ConectaCiencia
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["IdUsuario"] != null && Session["NomeUsuario"] != null)
+            {
+                if (!IsPostBack)
+                {
+                    string userName = Session["NomeUsuario"].ToString();
+                    UserNameLiteral.Text = userName;
+                }
+            }
+            else
+            {
+                Response.Redirect("Acesso.aspx");
+            }
+        }
 
+        protected void btnSair_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+
+            Response.Redirect("Acesso.aspx");
+        }
+
+        protected void btnMeusArtigos_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MeusArtigos.aspx", false);
+            HttpContext.Current.ApplicationInstance.CompleteRequest();
         }
     }
 }
