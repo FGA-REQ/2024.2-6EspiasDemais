@@ -62,11 +62,11 @@
                 <div class="modal-body">
                     <asp:HiddenField ID="hfArtigoId" runat="server" />
                     <div class="mb-3 text-center">
-                        <label for="txtTitulo" class="form-label">Título</label>
+                        <label for="txtTitulo" class="form-label">Titulo</label>
                         <asp:TextBox ID="txtTitulo" runat="server" CssClass="form-control mx-auto" style="max-width: 300px;" />
                     </div>
                     <div class="mb-3 text-center">
-                        <label for="txtConteudo" class="form-label">Conteúdo</label>
+                        <label for="txtConteudo" class="form-label">Conteudo</label>
                         <asp:TextBox ID="txtConteudo" runat="server" TextMode="MultiLine" CssClass="form-control mx-auto" Rows="5" style="max-width: 300px;" />
                     </div>
                     <div class="mb-3 text-center">
