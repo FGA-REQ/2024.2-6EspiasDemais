@@ -103,7 +103,7 @@ namespace WebForms_ConectaCiencia
                 }
                 else
                 {
-                    lblMensagem.Text = $"Erro ao buscar artigos: {response.ReasonPhrase}";
+                    lblMensagem.Text = "Sem artigos publicados ainda, que tal fazer uma publicação?";
                     lblMensagem.Visible = true;
                     ArticlesRepeater.DataSource = null;
                     ArticlesRepeater.DataBind();
