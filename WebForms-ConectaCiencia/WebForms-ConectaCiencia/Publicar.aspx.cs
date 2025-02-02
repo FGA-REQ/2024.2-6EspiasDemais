@@ -10,7 +10,7 @@ using WebForms_ConectaCiencia.Model;
 
 namespace WebForms_ConectaCiencia
 {
-    public partial class _Publicar : Page
+    public partial class Publicar : Page
     {
         private static readonly HttpClient client = new HttpClient();
 
@@ -18,7 +18,7 @@ namespace WebForms_ConectaCiencia
         {
             if (Session["IdUsuario"] == null || Session["NomeUsuario"] == null)
             {
-                Response.Redirect("Login.aspx", false);
+                Response.Redirect("Acesso.aspx", false);
                 Context.ApplicationInstance.CompleteRequest();
                 return;
             }

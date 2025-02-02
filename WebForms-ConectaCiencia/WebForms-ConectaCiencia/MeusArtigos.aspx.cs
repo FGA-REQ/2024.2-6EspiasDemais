@@ -8,7 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebForms_ConectaCiencia.Model;
 
-namespace ProjetoFinal_DotNET
+namespace WebForms_ConectaCiencia
 {
     public partial class MeusArtigos : System.Web.UI.Page
     {
@@ -18,7 +18,7 @@ namespace ProjetoFinal_DotNET
         {
             if (Session["IdUsuario"] == null || Session["NomeUsuario"] == null)
             {
-                Response.Redirect("Login.aspx", false);
+                Response.Redirect("Acesso.aspx", false);
                 Context.ApplicationInstance.CompleteRequest();
                 return;
             }
@@ -122,7 +122,7 @@ namespace ProjetoFinal_DotNET
         {
             await CarregarArtigos();
         }
-        
+
         protected async void btnSalvar_Click(object sender, EventArgs e)
         {
             try
@@ -200,7 +200,7 @@ namespace ProjetoFinal_DotNET
             {
                 lblMensagem.Text = "Erro: " + ex.Message;
                 lblMensagem.Visible = true;
-             }
+            }
         }
     }
 }

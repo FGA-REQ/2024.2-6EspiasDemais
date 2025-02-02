@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeeve\\Documents\\RS\\sprint2\\API-ConectaCiencia\\API-ConectaCiencia\\API-ConectaCiencia.csproj": {}
+    "C:\\Users\\jeeve\\Documents\\RS\\odio\\API-ConectaCiencia\\API-ConectaCiencia\\API-ConectaCiencia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeeve\\Documents\\RS\\sprint2\\API-ConectaCiencia\\API-ConectaCiencia\\API-ConectaCiencia.csproj": {
+    "C:\\Users\\jeeve\\Documents\\RS\\odio\\API-ConectaCiencia\\API-ConectaCiencia\\API-ConectaCiencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeeve\\Documents\\RS\\sprint2\\API-ConectaCiencia\\API-ConectaCiencia\\API-ConectaCiencia.csproj",
+        "projectUniqueName": "C:\\Users\\jeeve\\Documents\\RS\\odio\\API-ConectaCiencia\\API-ConectaCiencia\\API-ConectaCiencia.csproj",
         "projectName": "API-ConectaCiencia",
-        "projectPath": "C:\\Users\\jeeve\\Documents\\RS\\sprint2\\API-ConectaCiencia\\API-ConectaCiencia\\API-ConectaCiencia.csproj",
+        "projectPath": "C:\\Users\\jeeve\\Documents\\RS\\odio\\API-ConectaCiencia\\API-ConectaCiencia\\API-ConectaCiencia.csproj",
         "packagesPath": "C:\\Users\\jeeve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeeve\\Documents\\RS\\sprint2\\API-ConectaCiencia\\API-ConectaCiencia\\obj\\",
+        "outputPath": "C:\\Users\\jeeve\\Documents\\RS\\odio\\API-ConectaCiencia\\API-ConectaCiencia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

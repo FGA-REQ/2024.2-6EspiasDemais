@@ -65,7 +65,7 @@ namespace WebForms_ConectaCiencia
                     var json = JsonConvert.SerializeObject(usuario);
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                    string apiUrl = "https://localhost:7146/api/Login/cadastro";
+                    string apiUrl = "https://localhost:7146/api/Usuario/cadastro";
                     HttpResponseMessage response = await client.PostAsync(apiUrl, content);
 
                     if (response.IsSuccessStatusCode)

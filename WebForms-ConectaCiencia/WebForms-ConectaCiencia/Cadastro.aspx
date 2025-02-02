@@ -26,7 +26,7 @@
             </div>
 
             <div class="text-center mt-3">
-                <p>Já tem uma conta? <a href="Login.aspx">Acesse aqui</a></p>
+                <p>Já tem uma conta? <a href="Acesso.aspx">Acesse aqui</a></p>
             </div>
         </div>
     </div>
@@ -35,8 +35,8 @@
         function verificarCampos() {
             var nome = document.getElementById('<%= txtNome.ClientID %>').value.trim();
             var email = document.getElementById('<%= txtEmail.ClientID %>').value.trim();
-        var senha = document.getElementById('<%= txtSenha.ClientID %>').value.trim();
-        var botaoCadastrar = document.getElementById('<%= btnCadastrar.ClientID %>');
+            var senha = document.getElementById('<%= txtSenha.ClientID %>').value.trim();
+            var botaoCadastrar = document.getElementById('<%= btnCadastrar.ClientID %>');
 
             botaoCadastrar.disabled = !(nome && email && senha);
         }

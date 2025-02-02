@@ -1,4 +1,5 @@
-<%@ Page Title="Publicar Artigo" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Publicar.aspx.cs" Inherits="WebForms_ConectaCiencia._Publicar" Async="true" %>
+<%@ Page Title="Publicar Artigo" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Publicar.aspx.cs" Inherits="WebForms_ConectaCiencia.Publicar" Async="true" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="publicar-box border p-4 shadow" style="width: 100%; max-width: 400px;">

@@ -11,7 +11,7 @@ namespace WebForms_ConectaCiencia
 {
 
 
-    public partial class SignIn
+    public partial class Cadastro
     {
 
         /// <summary>

@@ -15,7 +15,7 @@ namespace WebForms_ConectaCiencia
             lblMensagem.Visible = false;
         }
 
-        protected async void btnLogin_Click(object sender, EventArgs e)
+        protected async void btnAcesso_Click(object sender, EventArgs e)
         {
             string email = txtEmail.Text.Trim();
             string senha = txtSenha.Text.Trim();
@@ -52,7 +52,7 @@ namespace WebForms_ConectaCiencia
             {
                 using (var client = new HttpClient())
                 {
-                    string apiUrl = $"https://localhost:7146/api/Login/login?email={email}&senha={senha}";
+                    string apiUrl = $"https://localhost:7146/api/Usuario/login?email={email}&senha={senha}";
                     HttpResponseMessage response = await client.GetAsync(apiUrl);
 
                     if (response.IsSuccessStatusCode)

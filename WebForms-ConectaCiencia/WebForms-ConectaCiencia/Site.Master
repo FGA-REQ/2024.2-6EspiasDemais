@@ -56,6 +56,7 @@
                 </div>
             </div>
         </nav>
+
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
@@ -65,6 +66,7 @@
             </footer>
         </div>
     </form>
+
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
     </asp:PlaceHolder>

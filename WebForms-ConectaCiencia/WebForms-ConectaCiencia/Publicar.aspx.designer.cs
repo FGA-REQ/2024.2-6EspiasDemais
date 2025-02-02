@@ -11,7 +11,7 @@ namespace WebForms_ConectaCiencia
 {
 
 
-    public partial class _Publicar
+    public partial class Publicar
     {
 
         /// <summary>
