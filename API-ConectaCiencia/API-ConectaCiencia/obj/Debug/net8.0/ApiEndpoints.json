@@ -57,6 +57,75 @@
   },
   {
     "ContainingType": "API_ConectaCiencia.controllers.FeedController",
+    "Method": "AdicionarPublicacao",
+    "RelativePath": "api/Feed/Artigo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artigoModel",
+        "Type": "API_ConectaCiencia.models.ArtigoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_ConectaCiencia.controllers.FeedController",
+    "Method": "ObterArtigoPorId",
+    "RelativePath": "api/Feed/Artigo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_ConectaCiencia.controllers.FeedController",
+    "Method": "DeletarPublicacao",
+    "RelativePath": "api/Feed/Artigo/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_ConectaCiencia.controllers.FeedController",
+    "Method": "AtualizarPublicacao",
+    "RelativePath": "api/Feed/Artigo/Patch/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "artigoModel",
+        "Type": "API_ConectaCiencia.models.ArtigoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_ConectaCiencia.controllers.FeedController",
     "Method": "PesquisaMeusArtigos",
     "RelativePath": "api/Feed/MeusArtigos",
     "HttpMethod": "GET",
@@ -109,6 +178,43 @@
         "Name": "formularioTema",
         "Type": "API_ConectaCiencia.models.FormularioModel\u002BFormularioTema",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_ConectaCiencia.controllers.UsuarioController",
+    "Method": "Register",
+    "RelativePath": "api/Usuario/cadastro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "API_ConectaCiencia.models.UsuarioModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API_ConectaCiencia.controllers.UsuarioController",
+    "Method": "Login",
+    "RelativePath": "api/Usuario/login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "senha",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
