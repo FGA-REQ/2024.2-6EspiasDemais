@@ -6,11 +6,11 @@
             <h2 class="text-center">Publicar Artigo</h2>
 
             <div class="form-group d-flex justify-content-center">
-                <asp:TextBox ID="txtTitulo" runat="server" CssClass="form-control" Placeholder="Título*" required onkeyup="verificarCampos()"></asp:TextBox>
+                <asp:TextBox ID="txtTitulo" runat="server" CssClass="form-control" Placeholder="Titulo*" required onkeyup="verificarCampos()"></asp:TextBox>
             </div>
 
             <div class="form-group d-flex justify-content-center">
-                <asp:TextBox ID="txtConteudo" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="5" Placeholder="Conteúdo*" required onkeyup="verificarCampos()"></asp:TextBox>
+                <asp:TextBox ID="txtConteudo" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="5" Placeholder="Conteudo*" required onkeyup="verificarCampos()"></asp:TextBox>
             </div>
 
             <div class="form-group d-flex justify-content-center">
