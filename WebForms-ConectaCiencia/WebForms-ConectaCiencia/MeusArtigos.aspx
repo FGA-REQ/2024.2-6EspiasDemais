@@ -39,6 +39,9 @@
                             </div>
                         </div>
                         <p class="card-text"><%# Eval("Conteudo") %></p>
+                        <p class="card-text">
+                            <strong>Categoria:</strong> <%# Eval("Categoria.Nome_Categoria") %>
+                        </p>
                         <footer class="blockquote-footer">
                             Publicado por <%# Eval("Usuario.Nome") %> em <%# Eval("Data", "{0:dd/MM/yyyy}") %>
                         </footer>

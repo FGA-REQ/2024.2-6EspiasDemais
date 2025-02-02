@@ -153,7 +153,7 @@ namespace WebForms_ConectaCiencia
                     }
                     else
                     {
-                        lblMensagem.Text = "Nenhum artigo foi encontrado.";
+                        lblMensagem.Text = "Erro ao carregar artigos.";
                         lblMensagem.Visible = true;
                         ArticlesRepeater.DataSource = null;
                         ArticlesRepeater.DataBind();
