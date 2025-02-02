@@ -4,7 +4,7 @@
 
 <html lang="pt">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - ConectaCiência</title>
@@ -15,7 +15,6 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
 </head>
 <body>
     <form runat="server">
@@ -47,10 +46,14 @@
                 </button>
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Forms">Sua voz na Ciência</a></li>
                         <li class="nav-item">
-                            <asp:HyperLink ID="profileLink" runat="server" CssClass="nav-link">Perfil</asp:HyperLink>
+                            <a class="nav-link" runat="server" href="~/About" id="aboutLink">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Forms" id="formsLink">Sua voz na Ciência</a>
+                        </li>
+                        <li class="nav-item">
+                            <asp:HyperLink ID="profileLink" runat="server" CssClass="nav-link" NavigateUrl="~/Acesso">Perfil</asp:HyperLink>
                         </li>
                     </ul>
                 </div>
@@ -70,5 +73,25 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
     </asp:PlaceHolder>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var currentPath = window.location.pathname.toLowerCase();
+
+            var links = {
+                "/about": "aboutLink",
+                "/forms": "formsLink",
+                "/acesso": "profileLink",
+                "/cadastro": "profileLink",
+                "/perfil": "profileLink"
+            };
+
+            for (var path in links) {
+                if (currentPath.indexOf(path) !== -1) {
+                    document.getElementById(links[path]).classList.add("active");
+                }
+            }
+        }
+    </script>
 </body>
 </html>
