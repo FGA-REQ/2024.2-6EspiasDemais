@@ -44,20 +44,33 @@
             var senhaMensagem = document.getElementById('senhaMensagem');
 
             var senhaValida = validarSenha(senha);
+            var emailValido = validarEmail(email);
 
             senhaMensagem.textContent = senhaValida || !senha
                 ? ""
                 : "A senha deve ter pelo menos 8 caracteres, incluindo uma letra maiúscula, uma letra minúscula e um número.";
 
-            botaoCadastrar.disabled = !(nome && email && senhaValida);
+            botaoCadastrar.disabled = !(nome && emailValido && senhaValida);
 
-            console.log("Nome:", nome, "Email:", email, "Senha:", senha, "Botão habilitado:", !botaoCadastrar.disabled); // Debug
+            console.log(
+                "Nome:", nome,
+                "Email:", email,
+                "Email válido:", emailValido,
+                "Senha:", senha,
+                "Botão habilitado:", !botaoCadastrar.disabled
+            ); // Debug
         }
 
         function validarSenha(senha) {
             var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
             return regex.test(senha);
         }
+
+        function validarEmail(email) {
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+
     </script>
 
 </asp:Content>

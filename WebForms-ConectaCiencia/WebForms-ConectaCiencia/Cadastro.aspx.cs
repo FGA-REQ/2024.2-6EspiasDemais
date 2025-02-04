@@ -31,6 +31,13 @@ namespace WebForms_ConectaCiencia
                 return;
             }
 
+            if (!ValidarEmail(email))
+            {
+                lblMensagem.Text = "Insira um e-mail válido.";
+                lblMensagem.CssClass = "text-danger";
+                return;
+            }
+
             if (!ValidarSenha(senha))
             {
                 lblMensagem.Text = "A senha deve ter pelo menos 8 caracteres, incluindo uma letra maiúscula, uma letra minúscula e um número.";
@@ -65,6 +72,19 @@ namespace WebForms_ConectaCiencia
                 lblMensagem.CssClass = "text-danger";
             }
         }
+
+        private bool ValidarEmail(string email)
+        {
+            var regex = new System.Text.RegularExpressions.Regex(@"^[^\s@]+@[^\s@]+\.[^\s@]+$");
+            return regex.IsMatch(email);
+        }
+
+        private bool ValidarSenha(string senha)
+        {
+            var regex = new System.Text.RegularExpressions.Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$");
+            return regex.IsMatch(senha);
+        }
+
 
         private async Task<Usuario> CadastrarUsuario(string nome, string email, string senha)
         {
@@ -105,12 +125,6 @@ namespace WebForms_ConectaCiencia
                 lblMensagem.Visible = true;
                 return null;
             }
-        }
-
-        private bool ValidarSenha(string senha)
-        {
-            var regex = new System.Text.RegularExpressions.Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$");
-            return regex.IsMatch(senha);
         }
     }
 }
