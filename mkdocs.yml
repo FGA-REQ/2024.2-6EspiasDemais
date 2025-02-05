@@ -12,6 +12,8 @@ nav:
   - Recursos:
     - Padrões de commit e branch: "recursos/padrões_commit.md"
     - Ferramentas: "recursos/tecnologias.md"
+  - Relato do Cliente:
+    - Sprint 1: "relato-cliente/relato.md"
 
   - Tarefas: 
     - Regras de Negócio: "Tarefas/RegrasNegocio.md"
