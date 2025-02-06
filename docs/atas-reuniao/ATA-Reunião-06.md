@@ -6,7 +6,7 @@
 
 | Data | Hora de Início Previsto | Hora de Início Realizado | Hora de Término Previsto | Hora de Término Realizado | Local | Redator | Revisor |
 |------------|--------------------------|--------------------------|--------------------------|---------------------------|-------------|-------------|--------------|
-| 31/01/2025 | 13:00 | 13:18 | 13:15 | 13:25 | Google Meets | [João Vitor](https://github.com/Jauzimm) |  |  
+| 31/01/2025 | 13:00 | 13:18 | 13:15 | 13:25 | Google Meets | [João Vitor](https://github.com/Jauzimm) | [Jéssica Eveline](https://github.com/xzxjesse) |  
 
 Autor: [João Vitor](https://github.com/Jauzimm), 2025.
 
@@ -56,7 +56,7 @@ Autor: [João Vitor](https://github.com/Jauzimm), 2025.
 
 ## 5. Próxima Reunião
 
-* Próxima reunião será realizada na sexta-feira, dia 07/02/2025, às 13:00, via Google Meet.
+* Gravações de vídeos de verificação, data e hora a definir, via Google Meet.
 
 ## 6. Compromissos
 
@@ -65,10 +65,9 @@ Autor: [João Vitor](https://github.com/Jauzimm), 2025.
 | N° | Compromisso | Responsável | Data |
 |----|-------------|-------------|------|
 | 01 | Finalizar commits das histórias de usuário atribuídas. | [Carlos Henrique](https://github.com/carlinn1), [Ruan Carvalho](https://github.com/Ruan-Carvalho), [Gabriel Henrique](https://github.com/gabrielhrlima) e [Pedro Gustavo](https://github.com/PedroGusta) | 01/02/2025 |
-| 02 | Revisar PRs e realizar merge na develop. | [João Vitor](https://github.com/Jauzimm) e [Jéssica Eveline](https://github.com/xzxjesse) | 02/02/2025 |
-| 03 | Documentar feedbacks e criar subtarefas no Jira. | [Jéssica Eveline](https://github.com/xzxjesse) | 05/02/2025 |
+| 02 | Revisar PRs e realizar merge na develop. | [Jéssica Eveline](https://github.com/xzxjesse) | 02/02/2025 |
+| 03 | Documentar feedbacks e criar subtarefas no Jira. | [João Vitor](https://github.com/Jauzimm) e [Jéssica Eveline](https://github.com/xzxjesse) | 05/02/2025 |
 | 04 | Criar formulário de verificação da sprint 2. | [Gabriel Henrique](https://github.com/gabrielhrlima) | 05/02/2025 |
-
 
 Autor: [João Vitor](https://github.com/Jauzimm), 2025.
 
@@ -82,4 +81,4 @@ Autor: [João Vitor](https://github.com/Jauzimm), 2025.
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
-| 1.0 | Criação da ata 06 | [João Vitor](https://github.com/Jauzimm) | 01/02/2025 |  |  |
+| 1.0 | Criação da ata 06 | [João Vitor](https://github.com/Jauzimm) | 01/02/2025 | [Jéssica Eveline](https://github.com/xzxjesse) | 06/02/2025 |
