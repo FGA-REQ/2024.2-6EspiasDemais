@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="Perfil" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Perfil.aspx.cs" Inherits="WebForms_ConectaCiencia.Perfil" Async="true"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+    <div id="alertSuccess" class="toast toast-success d-none" role="alert"></div>
+    <div id="alertError" class="toast toast-error d-none" role="alert"></div>
+
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="profile-box border p-4 shadow text-center" style="width: 100%; max-width: 400px;">
             <h2 class="text-center">Olá, <asp:Literal ID="UserNameLiteral" runat="server" Text="{nome}"></asp:Literal></h2>
@@ -15,9 +19,34 @@
         </div>
     </div>
 
-    <!-- Estrutura visual do Toast -->
-    <div id="alertSuccess" class="toast toast-success d-none" role="alert"></div>
-    <div id="alertError" class="toast toast-error d-none" role="alert"></div>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var urlParams = new URLSearchParams(window.location.search);
+            var cadastroStatus = urlParams.get('cadastro');
+
+            if (cadastroStatus === 'sucesso') {
+                var toast = document.getElementById("alertSuccess");
+                toast.textContent = "Cadastro realizado com sucesso!";
+                toast.classList.remove("d-none");
+                toast.classList.add("show");
+
+                setTimeout(function () {
+                    toast.classList.remove("show");
+                    toast.classList.add("d-none");
+                }, 3000);
+            } else if (cadastroStatus === 'erro') {
+                var toast = document.getElementById("alertError");
+                toast.textContent = "Ocorreu um erro no cadastro!";
+                toast.classList.remove("d-none");
+                toast.classList.add("show");
+
+                setTimeout(function () {
+                    toast.classList.remove("show");
+                    toast.classList.add("d-none");
+                }, 3000);
+            }
+        });
+    </script>
 
     <style>
         .toast {
@@ -50,32 +79,4 @@
         }
     </style>
 
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function () {
-            var urlParams = new URLSearchParams(window.location.search);
-            var cadastroStatus = urlParams.get('cadastro');
-
-            if (cadastroStatus === 'sucesso') {
-                var toast = document.getElementById("alertSuccess");
-                toast.textContent = "Cadastro realizado com sucesso!";
-                toast.classList.remove("d-none");
-                toast.classList.add("show");
-
-                setTimeout(function () {
-                    toast.classList.remove("show");
-                    toast.classList.add("d-none");
-                }, 3000);
-            } else if (cadastroStatus === 'erro') {
-                var toast = document.getElementById("alertError");
-                toast.textContent = "Ocorreu um erro no cadastro!";
-                toast.classList.remove("d-none");
-                toast.classList.add("show");
-
-                setTimeout(function () {
-                    toast.classList.remove("show");
-                    toast.classList.add("d-none");
-                }, 3000);
-            }
-        });
-    </script>
 </asp:Content>
