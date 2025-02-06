@@ -88,17 +88,22 @@ namespace WebForms_ConectaCiencia
 
                 if (response.IsSuccessStatusCode)
                 {
+                    Session["MensagemToast"] = "Artigo publicado com sucesso!";
                     Response.Redirect("MeusArtigos.aspx", false);
                 }
                 else
                 {
                     string errorMessage = await response.Content.ReadAsStringAsync();
                     LogError($"Erro ao publicar artigo: {response.StatusCode} - {errorMessage}");
+                    Session["MensagemToast"] = "Erro ao publicar artigo. Tente novamente.";
+                    Response.Redirect("MeusArtigos.aspx", false);
                 }
             }
             catch (Exception ex)
             {
                 LogError("Erro ao publicar artigo: " + ex.Message);
+                Session["MensagemToast"] = "Erro inesperado ao publicar o artigo.";
+                Response.Redirect("MeusArtigos.aspx", false);
             }
         }
 

@@ -30,6 +30,14 @@ namespace WebForms_ConectaCiencia
                     await CarregarCategorias();
                     await BindArtigos();
                 }));
+
+                if (Session["MensagemToast"] != null)
+                {
+                    string mensagemToast = Session["MensagemToast"].ToString();
+                    Session["MensagemToast"] = null; 
+                    ClientScript.RegisterStartupScript(this.GetType(), "toastMessage",
+                        $"showToast('success', '{mensagemToast}');", true);
+                }
             }
         }
 
