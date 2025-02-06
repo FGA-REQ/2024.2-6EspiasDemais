@@ -25,6 +25,13 @@ namespace WebForms_ConectaCiencia
 
             if (!IsPostBack)
             {
+                foreach (RepeaterItem item in ArticlesRepeater.Items)
+                {
+                    var artigoId = DataBinder.Eval(item.DataItem, "Id_Artigo").ToString();
+                    string script = $"preencherModal({artigoId});"; 
+                    ClientScript.RegisterStartupScript(this.GetType(), "preencherModal" + artigoId, script, true);
+                }
+
                 RegisterAsyncTask(new PageAsyncTask(async () =>
                 {
                     await CarregarCategorias();
@@ -34,7 +41,7 @@ namespace WebForms_ConectaCiencia
                 if (Session["MensagemToast"] != null)
                 {
                     string mensagemToast = Session["MensagemToast"].ToString();
-                    Session["MensagemToast"] = null; 
+                    Session["MensagemToast"] = null;
                     ClientScript.RegisterStartupScript(this.GetType(), "toastMessage",
                         $"showToast('success', '{mensagemToast}');", true);
                 }
@@ -164,8 +171,8 @@ namespace WebForms_ConectaCiencia
 
                 if (response.IsSuccessStatusCode)
                 {
-                    lblMensagem.Text = "Artigo atualizado com sucesso.";
-                    lblMensagem.Visible = true;
+                    lblToastMessage.Text = "Artigo editado com sucesso!";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "showToast", "showToast('success', '" + lblToastMessage.Text + "');", true);
                     await BindArtigos();
                 }
                 else
@@ -187,15 +194,30 @@ namespace WebForms_ConectaCiencia
             try
             {
                 var artigoId = Convert.ToInt32((sender as Button).CommandArgument);
+                hfArtigoId.Value = artigoId.ToString(); 
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "showDeleteModal", "$('#deleteModal').modal('show');", true);
+            }
+            catch (Exception ex)
+            {
+                lblMensagem.Text = "Erro ao preparar exclusão: " + ex.Message;
+                lblMensagem.Visible = true;
+            }
+        }
+
+        protected async void btnExcluirConfirm_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var artigoId = int.Parse(hfArtigoId.Value); 
                 string apiUrl = $"https://localhost:7146/api/Feed/Artigo/Delete/{artigoId}";
 
                 var response = await client.DeleteAsync(apiUrl);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    lblMensagem.Text = "Artigo excluído com sucesso.";
-                    lblMensagem.Visible = true;
-                    await BindArtigos();
+                    lblToastMessage.Text = "Artigo excluído com sucesso!";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "showToast", "showToast('success', '" + lblToastMessage.Text + "');", true);
+                    await BindArtigos(); 
                 }
                 else
                 {

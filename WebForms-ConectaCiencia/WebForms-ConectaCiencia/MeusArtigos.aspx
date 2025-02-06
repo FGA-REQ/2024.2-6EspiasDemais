@@ -28,12 +28,14 @@
                                     <div class="list-group">
                                         <a href="#" class="list-group-item list-group-item-action" style="width: 200px;" 
                                            data-bs-toggle="modal" data-bs-target="#editModal" 
-                                           onclick="preencherModal('<%# Eval("Id_Artigo") %>', '<%# Eval("Titulo") %>', 
+                                           onclick="preencherModal(<%# Eval("Id_Artigo") %>, '<%# Eval("Titulo") %>', 
                                            '<%# Eval("Conteudo") %>', '<%# Eval("Categoria.Id_Categoria") %>', 
                                            '<%# Eval("Categoria.Nome_Categoria") %>')">
                                            <i class="fas fa-edit"></i> Editar
                                         </a>
-                                        <asp:Button ID="btnExcluir" runat="server" Text="Excluir" CssClass="list-group-item list-group-item-action text-danger" CommandArgument='<%# Eval("Id_Artigo") %>' OnClick="btnExcluir_Click" />
+                                        <asp:Button ID="btnExcluir" runat="server" Text="Excluir" CssClass="list-group-item list-group-item-action text-danger"
+                                            CommandArgument='<%# Eval("Id_Artigo") %>' 
+                                            OnClientClick='<%# "confirmarExclusao(" + Eval("Id_Artigo") + "); return false;" %>' />
                                     </div>
                                 </div>
                             </div>
@@ -89,6 +91,23 @@
                     <asp:Label ID="lblToastMessage" runat="server"></asp:Label>
                 </div>
                 <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirmar Exclusão</h5>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Você tem certeza que deseja excluir este artigo?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <asp:Button ID="btnExcluirConfirm" runat="server" Text="Excluir" CssClass="btn btn-danger" OnClick="btnExcluirConfirm_Click" />
+                </div>
             </div>
         </div>
     </div>
@@ -149,6 +168,12 @@
                 }, 500);
             }, 3000);
         }
+
+        function confirmarExclusao(id) {
+            document.getElementById('<%= hfArtigoId.ClientID %>').value = id;
+            $('#deleteModal').modal('show');
+        }
+
     </script>
 
 </asp:Content>
