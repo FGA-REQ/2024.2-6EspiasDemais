@@ -13,7 +13,7 @@ namespace WebForms_ConectaCiencia
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblMensagem.Visible = false; 
+            lblMensagem.Visible = false;
         }
 
         protected async void btnCadastrar_Click(object sender, EventArgs e)
@@ -57,13 +57,8 @@ namespace WebForms_ConectaCiencia
                     Session["IdUsuario"] = usuario.Id_Usuario;
                     Session["NomeUsuario"] = usuario.Nome;
 
-                    Response.Redirect("Perfil.aspx", false);
+                    Response.Redirect("Perfil.aspx?cadastro=sucesso", false);
                     HttpContext.Current.ApplicationInstance.CompleteRequest();
-                }
-                else
-                {
-                    lblMensagem.Text = "Erro ao cadastrar o usuário. Por favor, tente novamente.";
-                    lblMensagem.CssClass = "text-danger";
                 }
             }
             catch (Exception ex)

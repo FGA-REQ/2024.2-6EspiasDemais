@@ -28,12 +28,14 @@
                                     <div class="list-group">
                                         <a href="#" class="list-group-item list-group-item-action" style="width: 200px;" 
                                            data-bs-toggle="modal" data-bs-target="#editModal" 
-                                           onclick="preencherModal('<%# Eval("Id_Artigo") %>', '<%# Eval("Titulo") %>', 
+                                           onclick="preencherModal(<%# Eval("Id_Artigo") %>, '<%# Eval("Titulo") %>', 
                                            '<%# Eval("Conteudo") %>', '<%# Eval("Categoria.Id_Categoria") %>', 
                                            '<%# Eval("Categoria.Nome_Categoria") %>')">
                                            <i class="fas fa-edit"></i> Editar
                                         </a>
-                                        <asp:Button ID="btnExcluir" runat="server" Text="Excluir" CssClass="list-group-item list-group-item-action text-danger" CommandArgument='<%# Eval("Id_Artigo") %>' OnClick="btnExcluir_Click" />
+                                        <asp:Button ID="btnExcluir" runat="server" Text="Excluir" CssClass="list-group-item list-group-item-action text-danger"
+                                            CommandArgument='<%# Eval("Id_Artigo") %>' 
+                                            OnClientClick='<%# "confirmarExclusao(" + Eval("Id_Artigo") + "); return false;" %>' />
                                     </div>
                                 </div>
                             </div>
@@ -82,6 +84,68 @@
         </div>
     </div>
 
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="toast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <asp:Label ID="lblToastMessage" runat="server"></asp:Label>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirmar Exclusão</h5>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Você tem certeza que deseja excluir este artigo?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <asp:Button ID="btnExcluirConfirm" runat="server" Text="Excluir" CssClass="btn btn-danger" OnClick="btnExcluirConfirm_Click" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="alertSuccess" class="toast toast-success d-none" role="alert"></div>
+    <div id="alertError" class="toast toast-error d-none" role="alert"></div>
+
+    <style>
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            min-width: 200px;
+            padding: 15px;
+            color: #fff;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            z-index: 1050;
+        }
+
+        .toast.show {
+            opacity: 1;
+        }
+
+        .toast-success {
+            background-color: #28a745;
+        }
+
+        .toast-error {
+            background-color: #dc3545;
+        }
+
+        .d-none {
+            display: none !important;
+        }
+    </style>
+
     <script>
         function preencherModal(id, titulo, conteudo, categoriaId, nomeCategoria) {
             document.getElementById('<%= hfArtigoId.ClientID %>').value = id;
@@ -89,6 +153,27 @@
             document.getElementById('<%= txtConteudo.ClientID %>').value = conteudo;
             document.getElementById('<%= ddlCategorias.ClientID %>').value = categoriaId;
         }
+
+        function showToast(type, message) {
+            const toast = document.getElementById(type === 'success' ? 'alertSuccess' : 'alertError');
+            toast.textContent = message;
+
+            toast.classList.remove('d-none');
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => {
+                    toast.classList.add('d-none');
+                }, 500);
+            }, 3000);
+        }
+
+        function confirmarExclusao(id) {
+            document.getElementById('<%= hfArtigoId.ClientID %>').value = id;
+            $('#deleteModal').modal('show');
+        }
+
     </script>
 
 </asp:Content>
