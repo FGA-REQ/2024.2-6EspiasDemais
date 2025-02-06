@@ -56,7 +56,7 @@ As perguntas feitas no formulário têm suas respostas como "Sim" ou "Não". Aqu
 | É possível acessar a página através de um menu ou link na página inicial do blog de forma clara? | Sim |
 | A página exibe corretamente os campos "Objetivo", "Como Funciona" e as informações de contato (e-mail e link ou indicação para o formulário Sua Voz na Ciência)? | Sim |
 | As informações da página são claras e a fonte usada é legível? | Sim |
-| Observações | Nenhuma |
+| Observações | Melhorar o foco da página quando o usuário a acessa |
 
 Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 
@@ -72,7 +72,7 @@ Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 | O feed carrega automaticamente ao acessar a página inicial ou ao redefinir os filtros? | Sim |
 | Caso não exista nenhum artigo sobre uma categoria, a mensagem informando que não há artigos sobre esse tema está clara? | Não |
 | As informações da página são claras e a fonte usada é legível? | Sim |
-| Observações | Nenhuma |
+| Observações | Melhorar o foco da página quando o usuário a acessa e adicionar a categoria nos artigos |
 
 Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 
