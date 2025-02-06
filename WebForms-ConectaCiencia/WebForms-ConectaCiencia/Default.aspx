@@ -28,6 +28,9 @@
                     <div class="card-body">
                         <h2 class="card-title"><%# Eval("Titulo") %></h2>
                         <p class="card-text"><%# Eval("Conteudo") %></p>
+                        <p class="card-text">
+                            <strong>Categoria:</strong> <%# Eval("Categoria.nome_Categoria") %>
+                        </p>
                         <footer class="blockquote-footer">
                             Publicado por <%# Eval("Usuario.Nome") %> em <%# Eval("Data", "{0:dd/MM/yyyy}") %>
                         </footer>
@@ -35,5 +38,6 @@
                 </div>
             </ItemTemplate>
         </asp:Repeater>
+
     </div>
 </asp:Content>

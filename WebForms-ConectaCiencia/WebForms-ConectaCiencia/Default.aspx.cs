@@ -145,7 +145,7 @@ namespace WebForms_ConectaCiencia
                         }
                         else
                         {
-                            lblMensagem.Text = "Nenhum artigo encontrado.";
+                            lblMensagem.Text = "Nenhum artigo foi encontrado.";
                             lblMensagem.Visible = true;
                             ArticlesRepeater.DataSource = null;
                             ArticlesRepeater.DataBind();
@@ -153,7 +153,7 @@ namespace WebForms_ConectaCiencia
                     }
                     else
                     {
-                        lblMensagem.Text = $"Erro ao buscar artigos: {response.ReasonPhrase}";
+                        lblMensagem.Text = "Nenhum artigo foi encontrado.";
                         lblMensagem.Visible = true;
                         ArticlesRepeater.DataSource = null;
                         ArticlesRepeater.DataBind();

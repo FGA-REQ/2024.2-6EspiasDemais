@@ -11,43 +11,34 @@ namespace WebForms_ConectaCiencia
 {
 
 
-    public partial class SiteMaster
+    public partial class Perfil
     {
 
         /// <summary>
-        /// Controle aboutLink.
+        /// Controle UserNameLiteral.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aboutLink;
+        protected global::System.Web.UI.WebControls.Literal UserNameLiteral;
 
         /// <summary>
-        /// Controle formsLink.
+        /// Controle btnMeusArtigos.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor formsLink;
+        protected global::System.Web.UI.WebControls.Button btnMeusArtigos;
 
         /// <summary>
-        /// Controle profileLink.
+        /// Controle btnSair.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink profileLink;
-
-        /// <summary>
-        /// Controle MainContent.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.LinkButton btnSair;
     }
 }

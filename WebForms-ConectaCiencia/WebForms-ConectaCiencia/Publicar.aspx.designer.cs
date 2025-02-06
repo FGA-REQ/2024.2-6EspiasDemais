@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 // <gerado automaticamente>
 //     Esse código foi gerado por uma ferramenta.
 //
@@ -11,43 +11,52 @@ namespace WebForms_ConectaCiencia
 {
 
 
-    public partial class SiteMaster
+    public partial class Publicar
     {
 
         /// <summary>
-        /// Controle aboutLink.
+        /// Controle txtTitulo.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor aboutLink;
+        protected global::System.Web.UI.WebControls.TextBox txtTitulo;
 
         /// <summary>
-        /// Controle formsLink.
+        /// Controle txtConteudo.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor formsLink;
+        protected global::System.Web.UI.WebControls.TextBox txtConteudo;
 
         /// <summary>
-        /// Controle profileLink.
+        /// Controle ddlCategoriaArtigo.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink profileLink;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCategoriaArtigo;
 
         /// <summary>
-        /// Controle MainContent.
+        /// Controle btnPublicar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button btnPublicar;
+
+        /// <summary>
+        /// Controle lblMensagem.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMensagem;
     }
 }

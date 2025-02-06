@@ -7,10 +7,13 @@
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="container p-4" style="max-width: 1200px;"> 
             <div class="row">
-                
+
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="p-4 border shadow-lg" style="width: 100%; max-width: 400px;">
                         <h2 class="text-center">Sugerir Tema</h2>
+                        <p class="text-center text-muted">
+                            Utilize este formulário para sugerir um tema para um novo artigo.
+                        </p>
                         <div class="form-group d-flex justify-content-center">
                             <asp:TextBox ID="txtNomeTema" CssClass="form-control mb-2" runat="server" Placeholder="Nome*" />
                         </div>
@@ -34,6 +37,9 @@
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="p-4 border shadow-lg" style="width: 100%; max-width: 400px;">
                         <h2 class="text-center">Sugerir Artigo</h2>
+                        <p class="text-center text-muted">
+                            Utilize este formulário para sugerir um artigo completo que poderá ser publicado.
+                        </p>
                         <div class="form-group d-flex justify-content-center">
                             <asp:TextBox ID="txtNomeArtigo" CssClass="form-control mb-2" runat="server" Placeholder="Nome*" />
                         </div>
@@ -68,11 +74,11 @@
             if (idAlert === "alertSuccess") {
                 alertSuccess.textContent = mensagem;
                 alertSuccess.classList.remove('d-none');
-                alertError.classList.add('d-none'); 
+                alertError.classList.add('d-none');
             } else if (idAlert === "alertError") {
                 alertError.textContent = mensagem;
                 alertError.classList.remove('d-none');
-                alertSuccess.classList.add('d-none'); 
+                alertSuccess.classList.add('d-none');
             }
 
             setTimeout(function () {
