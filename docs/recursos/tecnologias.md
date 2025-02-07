@@ -16,7 +16,7 @@ Este documento tem como objetivo detalhar as tecnologias e ferramentas utilizada
 |<img src="https://img.icons8.com/color/48/000000/google-meet.png" width="25">|Google Meet|Ferramenta para videoconferências e reuniões em tempo real.|
 |<img src="https://community-assets.home-assistant.io/original/4X/9/9/0/9903bcfabeb5dd0cd40a67cedbbdb8a403248cac.png" width="60">|MkDocs|Ferramenta para criação de documentação em sites estáticos.|
 |<img src="https://img.icons8.com/?size=100&id=onmbsAg4b85f&format=png&color=000000" width="25">|OBS Studio|Ferramenta para gravação de tela, utilizada para gravação de reuniões e apresentações.|
-|<img src="https://code.visualstudio.com/assets/images/code-stable.png" width="25">|Visual Studio Code|Editor de código-fonte para desenvolvimento e edição de projetos.|
+|<img src="https://yt3.googleusercontent.com/FMTpSqC7V0FS0p2dlBY0sazP5lyZA5ptoXmF3xYyf6kO00Q537NuRqxBTFpiokyfugauPTtQoA=s900-c-k-c0x00ffffff-no-rj" width="25">|Visual Studio|Editor de código-fonte para desenvolvimento e edição de projetos.|
 |<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="25">|WhatsApp|Aplicativo de mensagens instantâneas, utilizado para comunicação rápida e colaboração em equipe.|
 |<img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" width="25">|YouTube|Plataforma de hospedagem de vídeos produzidos, utilizada para publicação de reuniões e apresentações.|
 
