@@ -12,7 +12,7 @@ Como parte da disciplina, estamos trabalhando no desenvolvimento do ConectaCiên
 
 | <img src="https://github.com/Jauzimm.png" width="150px" > | <img src="https://github.com/xzxjesse.png" width="150px"> | <img src="https://github.com/gabrielhrlima.png" width="150px"> | <img src="https://github.com/PedroGusta.png" width="150px"> | <img src="https://github.com/Ruan-Carvalho.png" width="150px"> | <img src="https://github.com/carlinn1.png" width="150px"> |
 | :-------------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------------: | :-------------------------------------------------------------: | :------------------------------------------------------------: | :------------------------------------------------------------: |
-|      [João Vitor Santos](https://github.com/Jauzimm)      |       [Jesse Eveline](https://github.com/xzxjesse)        |      [Gabriel Henrique](https://github.com/gabrielhrlima)      |       [Pedro Gustavo](https://github.com/PedroGusta)       |       [Ruan Carvalho](https://github.com/Ruan-Carvalho)        |       [Carlos Henrique](https://github.com/carlinn1)        |
+|      [João Vitor Santos](https://github.com/Jauzimm)      |       [Jéssica Eveline](https://github.com/xzxjesse)        |      [Gabriel Henrique](https://github.com/gabrielhrlima)      |       [Pedro Gustavo](https://github.com/PedroGusta)       |       [Ruan Carvalho](https://github.com/Ruan-Carvalho)        |       [Carlos Henrique](https://github.com/carlinn1)        |
 
 Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 
@@ -22,4 +22,4 @@ Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
-|  1.0   | Versão inicial da descrição do projeto | [João Vitor](https://github.com/Jauzimm) | 07/01/2025 | [Jesse Eveline](https://github.com/xzxjesse)  | 15/01/2025 |
+|  1.0   | Versão inicial da descrição do projeto | [João Vitor](https://github.com/Jauzimm) | 07/01/2025 | [Jéssica Eveline](https://github.com/xzxjesse)  | 15/01/2025 |
