@@ -1,4 +1,4 @@
-# Relato do Cliente
+# Relato do Cliente - Sprint 01
 
 ## Introdução
 
@@ -43,7 +43,7 @@ Os feedbacks desta seção dizem respeito à experiência do cliente ao preenche
 - A explicação das perguntas deveria ser melhorada para garantir maior compreensão.
 - Foi solicitado remover os cartões das User Stories dos formulários, pois isso não era necessário para o contexto da validação.
 
-## Formulario
+## Formulário
 
 As perguntas feitas no formulário têm suas respostas como "Sim" ou "Não". Aqui se encontram apenas as perguntas e suas respostas, onde o foco é apenas na coleta de dados e documentação, com a inferência de um gráfico ao final, apresentando a porcentagem de aceitação pelo usuário.
 
@@ -108,4 +108,4 @@ Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
-|  1.0   | Criação do Relato | [João Vitor](https://github.com/Jauzimm) | 01/02/2025 |  |  |
+|  1.0   | Criação do Relato | [João Vitor](https://github.com/Jauzimm) | 01/02/2025 | [Jéssica Eveline](https://github.com/xzxjesse) | 07/02/2025 |
