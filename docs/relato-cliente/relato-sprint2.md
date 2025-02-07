@@ -27,46 +27,50 @@ Para a sprint 2 o feedback do cliente foi dividido em dois aspectos principais: 
 
 Os comentários nesta seção dizem respeito diretamente à experiência do usuário com o sistema.
 
-- [Melhorar o foco da página quando o usuário a acessa ✔](https://github.com/FGA-REQ/2024.2-6EspiasDemais/commit/0a6567bf430009604420bea5ab89853e76c0fead)
+- [adiciona o toast de cadastro ✔](https://github.com/FGA-REQ/2024.2-6EspiasDemais/commit/2c20aecd9a942897461d1d26d88d5664d29d98ea)
 
-- [Adicionar explicação sobre os formulários ✔](https://github.com/FGA-REQ/2024.2-6EspiasDemais/commit/ff45e7f0c5aa6c60420b84d77e9d450778846f47)
+- [adiciona o toast de publicação ✔](https://github.com/FGA-REQ/2024.2-6EspiasDemais/commit/339a94600eca4b92fb94ddbe7b81bbc8f7fd101f)
 
-- [Trocar a mensagem de erro "Not Found" quando não há artigos disponíveis ✔](https://github.com/FGA-REQ/2024.2-6EspiasDemais/commit/717d923961aa777b15129c2ca8401addfe6b8b66)
+- [adiciona o toast de edição e modal✔](https://github.com/FGA-REQ/2024.2-6EspiasDemais/commit/f38625f28715ee3127a1a4d3222b906ff2b30985)
 
-- [Adicionar a categoria nos artigos ✔](https://github.com/FGA-REQ/2024.2-6EspiasDemais/commit/4c3e31f58627b26355aa1ccee0fbc8e9525eceb5)
+- [adiciona o toast de exclusão ✔](https://github.com/FGA-REQ/2024.2-6EspiasDemais/commit/f38625f28715ee3127a1a4d3222b906ff2b30985)
 
 #### Feedback sobre o Formulário
 
-Os feedbacks desta seção dizem respeito à experiência do cliente ao preencher o formulário de validação do sistema:
+Os feedbacks desta seção dizem respeito à experiência do cliente ao preencher o formulário de validação. Um problema identificado foi uma pergunta repetida com diferentes propostas, gerando confusão. O erro poderia ter sido evitado com revisão prévia ou simulação do preenchimento do formulário.
 
-- As perguntas estavam pouco claras; sugeriu-se o uso de palavras mais objetivas.
-- As imagens fornecidas não foram suficientes; o cliente precisou rodar o sistema em seu próprio computador para validar as informações.
-- A explicação das perguntas deveria ser melhorada para garantir maior compreensão.
-- Foi solicitado remover os cartões das User Stories dos formulários, pois isso não era necessário para o contexto da validação.
+<font size="3"><p style="text-align: left">**Tabela 1** - Problema com as perguntas duplicadas.</p></font>
+
+| Pergunta problemática | Resposta |
+|-----------------------|----------|
+| Caso nenhum artigo tenha sido publicado, é mostrada a mensagem "Sem artigos publicados, que tal fazer uma publicação?"? | Sim |
+| Caso o usuário não tenha realizado nenhuma publicação, é exibida a mensagem "Você ainda não publicou nenhum artigo"? | A mensagem relatada na pergunta não aparece dessa forma. Mas a forma que está no site está ótima. |
+
+Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 
 ## Formulario
 
-As perguntas feitas no formulário têm suas respostas como "Sim" ou "Não". Aqui se encontram apenas as perguntas e suas respostas, onde o foco é apenas na coleta de dados e documentação, com a inferência de um gráfico ao final, apresentando a porcentagem de aceitação pelo usuário.
+As perguntas feitas no formulário têm suas respostas como "Sim", "Não" ou "Observação". Aqui se encontram apenas as perguntas e suas respostas, onde o foco é apenas na coleta de dados e documentação, com a inferência de um gráfico ao final, apresentando a porcentagem de aceitação pelo usuário.
 
 ## Formulário de Cadastro
 
-<font size="3"><p style="text-align: left">**Tabela 1** - Respostas do formulário de cadastro.</p></font>
+<font size="3"><p style="text-align: left">**Tabela 2** - Respostas do formulário de cadastro.</p></font>
 
 | Pergunta | Resposta |
 |----------|---------|
 | O formulário de cadastro está acessível através de um link escrito "Acessar", localizado na parte superior da página, que direciona o usuário para a página de cadastro? | Sim |
 | Os campos "Nome", "E-mail" e "Senha" estão presentes e são marcados como obrigatórios? O botão "Cadastrar" permanece desativado até que todos os campos obrigatórios sejam preenchidos corretamente? | Sim |
 | O sistema valida se a senha possui os critérios mínimos de 8 caracteres, 1 letra minúscula e 1 letra maiúscula? | Sim |
-| Após o envio do formulário, o sistema exibe uma mensagem de sucesso ("Cadastro realizado com sucesso! Você já pode fazer login") ou, em caso de erro, uma mensagem clara e específica (por exemplo, "E-mail já cadastrado")? | Não |
+| Após o envio do formulário, o sistema exibe uma mensagem de sucesso ("Cadastro realizado com sucesso!") e o usuário é redirecionado para a página de Perfil, ou, em caso de erro, uma mensagem clara e específica (por exemplo, "E-mail já cadastrado")? | Não |
 | Observações | Nenhuma |
 
 ## Formulário de Acesso
 
-<font size="3"><p style="text-align: left">**Tabela 2** - Respostas do formulário de acesso.</p></font>
+<font size="3"><p style="text-align: left">**Tabela 3** - Respostas do formulário de acesso.</p></font>
 
 | Pergunta | Resposta |
 |----------|---------|
-| O formulário de acesso está acessível através de um link escrito "Acessar", localizado na parte superior da página, que direciona o usuário para a página de login? | Sim |
+| O formulário de acesso está acessível através de um link escrito "Acesso", localizado na parte superior da página, que direciona o usuário para a página de login? | Sim |
 | Os campos "E-mail" e "Senha" estão presentes e são marcados como obrigatórios? O botão "Entrar" permanece desativado até que todos os campos obrigatórios sejam preenchidos corretamente? | Sim |
 | Ao tentar realizar o login, se algum dos dados estiver incorreto, o sistema exibe a mensagem "E-mail ou senha inválidos"? | Sim |
 | Após a realização do login, o usuário é redirecionado para a página de perfil em caso de sucesso? | Sim |
@@ -74,31 +78,31 @@ As perguntas feitas no formulário têm suas respostas como "Sim" ou "Não". Aqu
 
 ## Perfil
 
-<font size="3"><p style="text-align: left">**Tabela 3** - Respostas do formulário de perfil.</p></font>
+<font size="3"><p style="text-align: left">**Tabela 4** - Respostas do formulário de perfil.</p></font>
 
 | Pergunta | Resposta |
 |----------|---------|
 | A tela de perfil está disponível na página "Perfil" e é acessível apenas para usuários que estiverem logados? | Sim |
-| O nome do usuário logado é exibido corretamente na tela de perfil? | Sim |
+| O nome do usuário logado são exibidos corretamente na tela de perfil? | Sim |
 | Caso o usuário já tenha realizado alguma publicação, elas são listadas corretamente, exibindo título, data de publicação e categoria? | Sim |
-| Caso o usuário não tenha realizado nenhuma publicação, é exibida a mensagem "Você ainda não publicou nenhum artigo"? | Não |
-| O botão "Sair" funciona corretamente, realizando o logout e redirecionando o usuário para a página de login?  | Sim |
-| Observações | A mensagem exibida não é exatamente igual à citada, mas a versão atual está aceitável. |
+| Caso o usuário não tenha realizado nenhuma publicação, é exibida a mensagem "Você ainda não publicou nenhum artigo"? | A mensagem relatada na pergunta não aparece dessa forma. Mas a forma que está no site está ótima. |
+| O botão "Sair" funciona corretamente, realizando o logout e redirecionando o usuário para a página de login? | Sim |
+| Observações | Nenhuma |
 
 ## Publicação de Artigos
 
-<font size="3"><p style="text-align: left">**Tabela 4** - Respostas do formulário de publicação de artigos.</p></font>
+<font size="3"><p style="text-align: left">**Tabela 5** - Respostas do formulário de publicação de artigos.</p></font>
 
 | Pergunta | Resposta |
 |----------|---------|
 | A funcionalidade de publicação está disponível na página "Perfil" e é acessível apenas para usuários logados? | Sim |
-| Os campos "Título", "Conteúdo" e "Categoria" estão presentes e são marcados como obrigatórios? O botão "Publicar" permanece desativado até que todos os campos obrigatórios sejam preenchidos corretamente? | Sim |
+| Os campos  Título", "Conteúdo" e "Categoria"  estão presentes e são marcados como obrigatórios? O botão "Publicar" permanece desativado até que todos os campos obrigatórios sejam preenchidos corretamente? | Sim |
 | Após enviar o formulário, o usuário recebe um retorno sobre a publicação? Se tudo der certo, aparece a mensagem "Artigo publicado com sucesso!". Caso ocorra algum erro, a mensagem exibida é "Erro ao publicar o artigo. Tente novamente mais tarde." | Não |
 | Observações | Nenhuma |
 
 ## Meus Artigos
 
-<font size="3"><p style="text-align: left">**Tabela 5** - Respostas do formulário de Meus Artigos.</p></font>
+<font size="3"><p style="text-align: left">**Tabela 6** - Respostas do formulário de Meus Artigos.</p></font>
 
 | Pergunta | Resposta |
 |----------|---------|
@@ -112,7 +116,7 @@ As perguntas feitas no formulário têm suas respostas como "Sim" ou "Não". Aqu
 
 ## Correções da 1ª Sprint
 
-<font size="3"><p style="text-align: left">**Tabela 6** - Respostas sobre as correções da 1ª Sprint.</p></font>
+<font size="3"><p style="text-align: left">**Tabela 7** - Respostas sobre as correções da 1ª Sprint.</p></font>
 
 | Pergunta | Resposta |
 |----------|---------|
@@ -123,7 +127,7 @@ Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 
 ### Resultado
 
-Com a medição a partir de um gráfico contendo 24 perguntas respondidas, sendo 20 respostas "Sim" e 4 respostas "Não", temos a seguinte estatística de aceitação pelo cliente:
+Com a medição a partir de um gráfico contendo 23 perguntas respondidas, sendo 20 respostas "Sim" e 4 respostas "Não", temos a seguinte estatística de aceitação pelo cliente:
 
 <font size="3"><p style="text-align: left">**Imagem 1** - Gráfico das respostas.</p></font>
 
@@ -133,7 +137,7 @@ Autor(es): [João Vitor](https://github.com/Jauzimm), 2025.
 
 ## Histórico de Versões
 
-<font size="3"><p style="text-align: left">**Tabela 7** - Histórico de versões.</p></font>
+<font size="3"><p style="text-align: left">**Tabela 8** - Histórico de versões.</p></font>
 
 | Versão |               Descrição                |   Autor    |    Data    |    Revisor     | Data de revisão |
 | :----: | :------------------------------------: | :--------: | :--------: | :------------: | :-------------: |
