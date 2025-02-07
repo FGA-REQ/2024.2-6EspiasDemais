@@ -19,6 +19,7 @@ nav:
     - Requisitos do Sistema: "Tarefas/RequisitosSistema.md"
     - Visão do Produto: "Tarefas/VisaoProduto.md"
     - Modelagem de Processos: "Tarefas/ModelagemDeProcessos.md"
+    - Planejamento das Gravações: "Tarefas/PlanejamentoGravacao.md"
   - User Stories: 
     - MVP: "user-stories/MVP.md"
     - US:
