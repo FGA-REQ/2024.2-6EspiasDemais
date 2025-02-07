@@ -10,6 +10,11 @@ nav:
     - Ata 4: "atas-reuniao/ATA-Reunião-04.md"
     - Ata 5: "atas-reuniao/ATA-Reunião-05.md"
     - Ata 6: "atas-reuniao/ATA-Reunião-06.md"
+  
+  - Gravações:
+    - Planejamento de gravação de validação dos resultados: "Gravações/PlanejamentoGravacaoEquipe"
+    - Planejamento de gravação de validação com cliente: "Gravações/PlanejamentoGravacaoCliente"
+    
   - Recursos:
     - Padrões de commit e branch: "recursos/padrões_commit.md"
     - Ferramentas: "recursos/tecnologias.md"
@@ -19,7 +24,6 @@ nav:
     - Requisitos do Sistema: "Tarefas/RequisitosSistema.md"
     - Visão do Produto: "Tarefas/VisaoProduto.md"
     - Modelagem de Processos: "Tarefas/ModelagemDeProcessos.md"
-    - Planejamento das Gravações: "Tarefas/PlanejamentoGravacao.md"
   - User Stories: 
     - MVP: "user-stories/MVP.md"
     - US:

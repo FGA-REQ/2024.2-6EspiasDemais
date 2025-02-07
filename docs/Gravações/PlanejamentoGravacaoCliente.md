@@ -1,8 +1,8 @@
-# Planejamento para a gravação dos vídeos de validação
+# Planejamento para a gravação do vídeo de validação com cliente
 
 ## Introdução
 
-Esse arquivo visa fornecer um roteiro para conduzir as gravações dos videos de validação do produto desenvolvido ao longo do semestre a fim de auxiliar o grupo a entregar esta etapa de forma clara e organizada.
+Esse arquivo visa fornecer um roteiro para conduzir a gravação do video de validação do produto com o cliente a fim de auxiliar o grupo a apresentar o produto desenvolvido de forma clara e organizada.
 
 ---
 
@@ -33,4 +33,4 @@ Esse arquivo visa fornecer um roteiro para conduzir as gravações dos videos de
 
 | Versão |    Descrição     |                     Autor                      |    Data    |                       Revisor                        | Data de revisão |
 | :----: | :--------------: | :--------------------------------------------: | :--------: | :--------------------------------------------------: | :-------------: |
-|  1.0   | Planejamento das gravações | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 07/02/2025 |  |  |
+|  1.0   | Planejamento da gravação de validação com cliente | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 07/02/2025 |  |  |
