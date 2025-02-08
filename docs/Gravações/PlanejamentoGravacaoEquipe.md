@@ -31,13 +31,13 @@ Esse arquivo visa fornecer um planejamento para a execução e gravação da reu
 - Realização de verificações com o cliente:
     - Verificação da Sprint 1 realizada no formulário da Sprint 2;
     - Verificação da Sprint 2 feita de forma informal e documentada em arquivo.
-- Conclusão de casrds no Jira marcados como "Done";
+- Conclusão de cards no Jira marcados como "Done";
 - Fechamento de issues no GitHub.
 
 ### 6. Produtos de Trabalho Gerados Durante o Processo de Desenvolvimento
 - Formulários de verificação;
 - Relatórios de Sprint.
-- 
+  
 ---
 
 # Modelo de Registro de Gravação de Validação de Resultados com Equipe
