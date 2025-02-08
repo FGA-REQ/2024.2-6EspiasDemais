@@ -14,6 +14,7 @@ nav:
   - Gravações:
     - Planejamento de gravação de validação dos resultados: "Gravações/PlanejamentoGravacaoEquipe"
     - Planejamento de gravação de validação com cliente: "Gravações/PlanejamentoGravacaoCliente"
+    - Relatório da gravação de validação com cliente: "Gravações/RelatorioGravacaoCliente.md"
     
   - Recursos:
     - Padrões de commit e branch: "recursos/padrões_commit.md"

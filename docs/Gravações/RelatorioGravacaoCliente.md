@@ -3,15 +3,18 @@
 ### Informações Gerais
 
 - **Data:** 07/02/2025
-- **Hora:** Início-21:00, término-21:20
-- **Membros da Equipe Presentes:**
+- **Hora:** Início 21:00, término 21:20
+
+#### Membros da Equipe Presentes:
   - Carlos, responsável por explicar o diagrama de fluxos de navegação do usuário não logado;
   - Gabriel, responsável pela ata da reunião;
   - Jéssica, responsável por verificar os pontos positivos e negativos da entrega;
   - João Vitor, responsável por verificar a navegabilidade da entrega;
   - Pedro, responsável pela introdução da reunião;
   - Ruan, responsável por explicar o diagrama de fluxos de navegação do usuário logado.
-- **Dados do Cliente:**
+
+#### Dados do Cliente:
+
   - Nome: Letícia Gabriela Saraiva Araújo
   - Organização: Universidade de Brasília-UnB
   - Papel/Setor: Estudante do 4° semestre
@@ -154,4 +157,4 @@
 
 | Versão |             Descrição              |                        Autor                         |    Data    | Revisor | Data de revisão |
 | :----: | :--------------------------------: | :--------------------------------------------------: | :--------: | :-----: | :-------------: |
-|  1.0   | Relatório da reunião com o cliente | [Gabriel Henrique](https://github.com/gabrielhrlima) | 08/02/2025 |         |                 |
+|  1.0   | Relatório da reunião com o cliente | [Gabriel Henrique](https://github.com/gabrielhrlima) | 08/02/2025 | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 08/02/2025 |
