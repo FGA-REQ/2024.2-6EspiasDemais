@@ -17,14 +17,15 @@
 
   - Nome: Letícia Gabriela Saraiva Araújo
   - Organização: Universidade de Brasília-UnB
-  - Papel/Setor: Estudante do 4° semestre
+  - Papel/Setor: Estudante do 4° semestre de Letras Inglês
 
 ### Preparação Prévia
 
 - **Sistema Funcional:**
 
   - Verificação completa realizada: Sim
-  - **Fluxos testados:**
+  
+  **Fluxos testados:**
   - **Fluxo:** Sugestão de Tema e Artigo
 
     - **Objetivo**
@@ -89,10 +90,8 @@
       - O artigo é removido tanto da página _Meus Artigos_ quanto do Feed.
 
 - **Organização do Ambiente:**
-  - Dispositivos configurados: Sim/Não
-  - Credenciais e dados de teste disponíveis: Sim/Não
-- **Revisão de Feedbacks Anteriores:**
-  - Feedbacks identificados: [Resumir principais pontos]
+  - Dispositivos configurados: Sim
+  - Credenciais e dados de teste disponíveis: Sim
 
 ### Introdução
 
@@ -157,4 +156,4 @@
 
 | Versão |             Descrição              |                        Autor                         |    Data    | Revisor | Data de revisão |
 | :----: | :--------------------------------: | :--------------------------------------------------: | :--------: | :-----: | :-------------: |
-|  1.0   | Relatório da reunião com o cliente | [Gabriel Henrique](https://github.com/gabrielhrlima) | 08/02/2025 | [Ruan Carvalho](https://github.com/Ruan-Carvalho) | 08/02/2025 |
+|  1.0   | Relatório da reunião com o cliente | [Gabriel Henrique](https://github.com/gabrielhrlima) | 08/02/2025 | [Ruan Carvalho](https://github.com/Ruan-Carvalho), [Jéssica Eveline](https://github.com/xzxjesse) | 08/02/2025, 09/02/2025 |
