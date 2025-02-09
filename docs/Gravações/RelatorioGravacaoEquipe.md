@@ -4,7 +4,7 @@
 - **Data da gravação:** 07/02/2025
 - **Horário:** 21:40 - 22:00
 - **Local da gravação:** Google Meets
-- **Versão:**1.0
+- **Versão:** 1.0
 
 ### **Objetivo da Gravação**
 - O objetivo da gravação é fazer a entrega final do projeto
@@ -25,6 +25,20 @@
 
 2. **Destaques:**
    - O cliente achou interessante o a função do Sua Voz na Ciência
+
+### **Itens Apresentados**
+| Artefato | Objetivo do artefato                    | Observações                          |
+|----------------------|-----------------------------|-----------------------|
+| Visão do Poduto            | Definição dos objetivos e funcionalidades principais do projeto        | Funcionou |
+| Requisitos do Sistema            | Definição do que o projeto deve fazer          | Funcionou |
+| Modelagem de processos            | Representação visual do fluxo de atividades do projeto          | Funcionou |
+| Regras de Negócio            | Diretrizes do projeto         | Funcionou |
+| Atas da Reunião           | Registro formal das decisões e discussões.         | Funcionou |
+| Relato do Cliente            |  Feedback sobre necessidades e problemas.          | Funcionou |
+| Histórias do Usuário            | Descrição de funcionalidades sob a ótica do usuário.          | Funcionou |
+| Formulários          | Coletar a opinião do usuário         | Funcionou |
+
+
 
 ### **Observações Importantes**
 - Na aba Sua Voz na Ciência o cliente apontou que ficarai mais intuitivo o formulário de sugerir tema vir antes do formulário com seus dados.
